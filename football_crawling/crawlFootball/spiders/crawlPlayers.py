@@ -120,73 +120,71 @@ class CrawlplayersSpider(scrapy.Spider):
         for speciality in specialities:
             player['specialities']+=speciality
         #Teams
-        teams = response.xpath('(//div[./h5/text()="Club"]//a)[1]/text()').extract()[1:]
-        player['team1'] = teams[0]
-        player['team1'] = player['team1'][1:]
-        player['team1_rating'] = response.xpath('//ul[@class = "ellipsis pl"]/li[1]/span/text()').get()
-        player['team1_position'] = response.xpath('(//ul[@class = "ellipsis pl"]/li[./label/text()="Position"]/span/text())[1]').get()
-        player['team1_kitnum']=response.xpath('(//ul[@class = "ellipsis pl"]/li[./label/text()="Kit number"]/text())[1]').get()
-        player['team1_loaned_from']=response.xpath('(//ul[@class = "ellipsis pl"]/li[./label/text()="Loaned from"]/a/text())[1]').get()
-        player['team1_joined'] = response.xpath('(//ul[@class = "ellipsis pl"]/li[./label/text()="Joined"]/text())[1]').get()
-        player['team1_contract'] = response.xpath('(//ul[@class = "ellipsis pl"]/li[./label/text()="Contract valid until"]/text())[1]').get()
-        if (len(teams)>1):
-            player['team2'] = teams[1]
-            player['team2'] = player['team2'][1:]
-            player['team2_rating'] = response.xpath('//ul[@class = "ellipsis pl"]/li[1]/span/text()').extract()[1]
-            player['team2_position'] = response.xpath('(//ul[@class = "ellipsis pl"]/li[./label/text()="Position"]/span/text())[2]').get()
-            player['team2_kitnum']=response.xpath('(//ul[@class = "ellipsis pl"]/li[./label/text()="Kit number"]/text())[2]').get()
+        player['club'] = response.xpath('(//div[./h5/text()="Club"]//a)[1]/text()').get()[1:]
+        player['club_league'] = response.xpath('(//div[./h5/text()="Club"]//a)[2]/text()').get()[1:]
+        player['club_rating'] = response.xpath('(//div[./h5/text()="Club"]/p)[3]/text()').get()[:-1]
+        player['club_position'] = response.xpath('(//div[./h5/text()="Club"])//p[./label/text()="Position"]/span/text()').get()
+        player['club_kitnum']=response.xpath('(//div[./h5/text()="Club"])//p[./label/text()="Kit number"]/text()').get()[1:]
+        player['club_loaned_from']=response.xpath('(//div[./h5/text()="Club"])//p[./label/text()="Loaned from"]/a/text()').get()
+        player['club_joined'] = response.xpath('(//div[./h5/text()="Club"])//p[./label/text()="Joined"]/text()').get()[1:]
+        player['club_contract'] = response.xpath('(//div[./h5/text()="Club"])//p[./label/text()="Contract valid until"]/text()').get()[1:]
         
-        updateDate = response.css('span[class="bp3-button-text"]::text').extract()[1]
-        updateDate = functions.ConvertUpdateDate(updateDate)
-        player['update_date'] = updateDate
+        player['national'] = response.xpath('(//div[./h5/text()="National team"]//a)[1]/text()').get()[1:]
+        player['national_rating'] = response.xpath('(//div[./h5/text()="National team"]/p)[3]/text()').get()[:-1]
+        player['national_position'] = response.xpath('(//div[./h5/text()="National team"])//p[./label/text()="Position"]/span/text()').get()
+        player['national_kitnum']=response.xpath('(//div[./h5/text()="National team"])//p[./label/text()="Kit number"]/text()').get()[1:]
+        
+        # updateDate = response.css('span[class="bp3-button-text"]::text').extract()[1]
+        # updateDate = functions.ConvertUpdateDate(updateDate)
+        # player['update_date'] = updateDate
         #Attacking
-        player['crossing'] = response.xpath('//ul/li[./span/text()="Crossing"]/span[1]/text()').get()[1:]
-        player['finishing'] = response.xpath('//ul/li[./span/text()="Finishing"]/span[1]/text()').get()
-        player['heading_accuracy'] = response.xpath('//ul/li[./span/text()="Heading accuracy"]/span[1]/text()').get()
-        player['short_passing'] = response.xpath('//ul/li[./span/text()="Short passing"]/span[1]/text()').get()
-        player['volleys'] = response.xpath('//ul/li[./span/text()="Volleys"]/span[1]/text()').get()
+        player['crossing'] = response.xpath('//p[./span/text()="Crossing"]/em/text()').get()
+        player['finishing'] = response.xpath('//p[./span/text()="Finishing"]/em/text()').get()
+        player['heading_accuracy'] = response.xpath('//p[./span/text()="Heading accuracy"]/em/text()').get()
+        player['short_passing'] = response.xpath('//p[./span/text()="Short passing"]/em/text()').get()
+        player['volleys'] = response.xpath('//p[./span/text()="Volleys"]/em/text()').get()
         #Skill
-        player['dribbling'] = response.xpath('//ul/li[./span/text()="Dribbling"]/span[1]/text()').get()
-        player['curve'] = response.xpath('//ul/li[./span/text()="Curve"]/span[1]/text()').get()
-        player['fk_accuracy'] = response.xpath('//ul/li[./span/text()="FK Accuracy"]/span[1]/text()').get()
-        player['long_passing'] = response.xpath('//ul/li[./span/text()="Long passing"]/span[1]/text()').get()
-        player['ball_control'] = response.xpath('//ul/li[./span/text()="Ball control"]/span[1]/text()').get()
+        player['dribbling'] = response.xpath('//p[./span/text()="Dribbling"]/em/text()').get()
+        player['curve'] = response.xpath('//p[./span/text()="Curve"]/em/text()').get()
+        player['fk_accuracy'] =  response.xpath('//p[./span/text()="FK Accuracy"]/em/text()').get()
+        player['long_passing'] = response.xpath('//p[./span/text()="Long passing"]/em/text()').get()
+        player['ball_control'] = response.xpath('//p[./span/text()="Ball control"]/em/text()').get()
         #Movement
-        player['acceleration'] = response.xpath('//ul/li[./span/text()="Acceleration"]/span[1]/text()').get()
-        player['sprint_speed'] = response.xpath('//ul/li[./span/text()="Sprint speed"]/span[1]/text()').get()
-        player['agility'] = response.xpath('//ul/li[./span/text()="Agility"]/span[1]/text()').get()
-        player['reactions'] = response.xpath('//ul/li[./span/text()="Reactions"]/span[1]/text()').get()
-        player['balance'] = response.xpath('//ul/li[./span/text()="Balance"]/span[1]/text()').get()
+        player['acceleration'] = response.xpath('//p[./span/text()="Acceleration"]/em/text()').get()
+        player['sprint_speed'] = response.xpath('//p[./span/text()="Sprint speed"]/em/text()').get()
+        player['agility'] = response.xpath('//p[./span/text()="Agility"]/em/text()').get()
+        player['reactions'] = response.xpath('//p[./span/text()="Reactions"]/em/text()').get()
+        player['balance'] = response.xpath('//p[./span/text()="Balance"]/em/text()').get()
         #Power
-        player['shot_power'] = response.xpath('//ul/li[./span/text()="Shot power"]/span[1]/text()').get()
-        player['jumping'] = response.xpath('//ul/li[./span/text()="Jumping"]/span[1]/text()').get()
-        player['stamina'] = response.xpath('//ul/li[./span/text()="Stamina"]/span[1]/text()').get()
-        player['strength'] = response.xpath('//ul/li[./span/text()="Strength"]/span[1]/text()').get()
-        player['long_shots'] = response.xpath('//ul/li[./span/text()="Long shots"]/span[1]/text()').get()
+        player['shot_power'] = response.xpath('//p[./span/text()="Shot power"]/em/text()').get()
+        player['jumping'] = response.xpath('//p[./span/text()="Jumping"]/em/text()').get()
+        player['stamina'] = response.xpath('//p[./span/text()="Stamina"]/em/text()').get()
+        player['strength'] = response.xpath('//p[./span/text()="Strength"]/em/text()').get()
+        player['long_shots'] = response.xpath('//p[./span/text()="Long shots"]/em/text()').get()
         #Mentality
-        player['aggression'] = response.xpath('//ul/li[./span/text()="Aggression"]/span[1]/text()').get()
-        player['interceptions'] = response.xpath('//ul/li[./span/text()="Interceptions"]/span[1]/text()').get()
-        player['positioning'] = response.xpath('//ul/li[./span/text()="Positioning"]/span[1]/text()').get()
-        player['vision'] = response.xpath('//ul/li[./span/text()="Vision"]/span[1]/text()').get()
-        player['penalties'] = response.xpath('//ul/li[./span/text()="Penalties"]/span[1]/text()').get()
-        player['composure'] = response.xpath('//ul/li[./span/text()="Composure"]/span[1]/text()').get()
+        player['aggression'] = response.xpath('//p[./span/text()="Aggression"]/em/text()').get()
+        player['interceptions'] = response.xpath('//p[./span/text()="Interceptions"]/em/text()').get()
+        player['positioning'] = response.xpath('//p[./span/text()="Att. Position"]/em/text()').get()
+        player['vision'] = response.xpath('//p[./span/text()="Vision"]/em/text()').get()
+        player['penalties'] = response.xpath('//p[./span/text()="Penalties"]/em/text()').get()
+        player['composure'] = response.xpath('//p[./span/text()="Composure"]/em/text()').get()
         #DEFENDING
-        player['marking'] = response.xpath('//ul/li[./span/text()="Marking"]/span[1]/text()').get()
-        player['defensive_awareness'] = response.xpath('//ul/li[./span/text()="Defensive awareness"]/span[1]/text()').get()
-        player['standing_tackle'] = response.xpath('//ul/li[./span/text()="Standing tackle"]/span[1]/text()').get()
-        player['sliding_tackle'] = response.xpath('//ul/li[./span/text()="Sliding tackle"]/span[1]/text()').get()
+        player['marking'] = response.xpath('//p[./span/text()="Marking"]/em/text()').get()
+        player['defensive_awareness'] = response.xpath('//p[./span/text()="Defensive Awareness"]/em/text()').get()
+        player['standing_tackle'] = response.xpath('//p[./span/text()="Standing tackle"]/em/text()').get()
+        player['sliding_tackle'] = response.xpath('//p[./span/text()="Sliding tackle"]/em/text()').get()
         #GOALKEEPING
-        player['gk_diving'] = response.xpath('//ul/li[./span/text()="GK Diving"]/span[1]/text()').get()
-        player['gk_handling'] = response.xpath('//ul/li[./span/text()="GK Handling"]/span[1]/text()').get()
-        player['gk_kicking'] = response.xpath('//ul/li[./span/text()="GK Kicking"]/span[1]/text()').get()
-        player['gk_positioning'] = response.xpath('//ul/li[./span/text()="GK Positioning"]/span[1]/text()').get()
-        player['gk_reflexes'] = response.xpath('//ul/li[./span/text()="GK Reflexes"]/span[1]/text()').get()
+        player['gk_diving'] = response.xpath('//p[./span/text()="GK Diving"]/em/text()').get()
+        player['gk_handling'] = response.xpath('//p[./span/text()="GK Handling"]/em/text()').get()
+        player['gk_kicking'] = response.xpath('//p[./span/text()="GK Kicking"]/em/text()').get()
+        player['gk_positioning'] = response.xpath('//p[./span/text()="GK Positioning"]/em/text()').get()
+        player['gk_reflexes'] = response.xpath('//p[./span/text()="GK Reflexes"]/em/text()').get()
 
-        traits = response.xpath('//div[./h5/text()="Traits"]/ul/li/span/text()').extract()
-        player['traits'] = ''
-        for trait in traits:
-            player['traits']+='#'
-            player['traits']+=trait
+        play_styles = response.xpath('//div[./h5/text()="PlayStyles"]//span/text()').extract()
+        player['play_styles'] = ''
+        for play_style in play_styles:
+            player['play_styles']+='#'
+            player['play_styles']+=play_style
         yield player
 
 

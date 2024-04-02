@@ -37,6 +37,7 @@ class Player(scrapy.Item):
 
     #Team information
     club = scrapy.Field()
+    club_leauge = scrapy.Field()
     club_rating = scrapy.Field()
     club_position = scrapy.Field()
     club_kitnum = scrapy.Field()
@@ -85,7 +86,8 @@ class Player(scrapy.Item):
     vision= scrapy.Field()
     volleys= scrapy.Field()
     
-    traits = scrapy.Field()
+    # traits = scrapy.Field()
+    play_styles = scrapy.Field()
 
 class PlayerInfo(scrapy.Item):
     birthday = scrapy.Field()
