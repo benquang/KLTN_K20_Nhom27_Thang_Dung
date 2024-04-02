@@ -78,19 +78,25 @@ class Functions:
         team_id = split_string[index_squads+1]
         return team_id
     
-    def GetFirstDaysOfEachMonth(self,input_df):
-        dates = input_df['date'].tolist()
-        first_days_of_each_month = []
-        for i in range (0,len(dates)):
-            if (i+1<len(dates)):
-                next_date = dates[i+1]
-            else: break
-            current_month = dates[i].split(' ')[0]
-            next_month = next_date.split(' ')[0]
-            if (current_month != next_month):
-                first_days_of_each_month.append(dates[i])
-        result = input_df[input_df['date'].isin(first_days_of_each_month)]
-        return result
+    # def GetFirstDaysOfEachMonth(self,input_df):
+    #     """
+    #     This function will get the first update of each month only
+    #     input_df contains column "date" and "url"
+    #     """
+
+    #     dates = input_df['date'].tolist()
+    #     first_days_of_each_month = []
+    #     # Loop through the list of dates
+    #     for i in range (0,len(dates)):
+    #         if (i+1<len(dates)): # Check if the next date exists
+    #             next_date = dates[i+1] # Get the next date
+    #         else: break
+    #         current_month = dates[i].split(' ')[0] # Get the current month
+    #         next_month = next_date.split(' ')[0] # Get the next month
+    #         if (current_month != next_month): # Check if the current month is different from the next month
+    #             first_days_of_each_month.append(dates[i])
+    #     result = input_df[input_df['date'].isin(first_days_of_each_month)]
+    #     return result
     
     def Fbref_ExtractFormation(self,str):
         opening_paren_index = str.index("(")

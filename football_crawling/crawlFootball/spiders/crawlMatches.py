@@ -49,8 +49,7 @@ class CrawlmatchSpider(scrapy.Spider):
                                   meta = response.meta
                                   )
     def parse_on_matches(self,response):
-        matches = response.xpath('//td[@class= "center " 
-                                  and @data-stat="score"]/a/@href').extract()
+        matches = response.xpath('//td[@class= "center " and @data-stat="score"]/a/@href').extract()
         for match in matches:
             current_url = "https://fbref.com" + match
             response.meta['current_url'] = current_url
