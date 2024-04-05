@@ -1,4 +1,4 @@
 scrapy
-re
+regex
 datetime
 pandas
