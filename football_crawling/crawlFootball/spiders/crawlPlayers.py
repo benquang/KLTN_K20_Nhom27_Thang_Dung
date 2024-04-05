@@ -15,19 +15,17 @@ class CrawlplayersSpider(scrapy.Spider):
         # 'LOG_STDOUT' : {True},
         # "LOG_FILE" :'./scrapy_output.txt',
         'DOWNLOAD_DELAY' : 0.75,
-        'CONCURRENT_REQUESTS' : 3,
+        'CONCURRENT_REQUESTS' : 1,
     }
     start_urls = ["https://sofifa.com"]
     start_url = "https://www.sofifa.com"
-    fromVersion = 230054
-    toVersion = 230054
     leauges = ['13', #Premier League
                '16', #League 1
                '19', #Bundesliga
                '31', #Serie A
                '53' #LaLiga
                ] 
-    # numOfVersions = 11
+    numOfVersions = 1
     
     def parse(self, response):
         current_url = self.start_url

@@ -117,4 +117,5 @@ FEED_EXPORT_ENCODING = 'utf-8-sig'
 # ROTATING_PROXY_LIST_PATH = "proxies.txt"
 
 #429 Too many requests
-# RETRY_HTTP_CODES = [429]
+# RETRY_HTTP_CODES = [429,403]
+# RETRY_TIMES = 10

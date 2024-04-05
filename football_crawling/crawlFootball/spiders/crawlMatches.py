@@ -21,14 +21,16 @@ class CrawlmatchSpider(scrapy.Spider):
         'LOG_STDOUT' : {True},
         "LOG_FILE" :'./crawlMatches_log.txt',
         'DOWNLOADER_MIDDLEWARES':{
-            'crawlFootball.middlewares.TooManyRequestsRetryMiddleware': 543,
+            # 'crawlFootball.middlewares.TooManyRequestsRetryMiddleware': 543,
+            "crawlFootball.middlewares.ScrapeOpsFakeUserAgentMiddleWare":543,
         },
         'ITEM_PIPELINES':{
             "crawlFootball.pipelines.MultiCSVItemPipeline": 300,
         },
         'DOWNLOAD_DELAY' : 2,
         'CONCURRENT_REQUESTS' : 1,
-        'RETRY_HTTP_CODES' : [429],
+        'RETRY_HTTP_CODES' : [429,403],
+        'RETRY_TIMES' : 10
     }
     def parse(self, response):
         for url in self.start_urls:

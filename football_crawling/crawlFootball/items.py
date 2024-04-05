@@ -37,7 +37,7 @@ class Player(scrapy.Item):
 
     #Team information
     club = scrapy.Field()
-    club_leauge = scrapy.Field()
+    club_league = scrapy.Field()
     club_rating = scrapy.Field()
     club_position = scrapy.Field()
     club_kitnum = scrapy.Field()
