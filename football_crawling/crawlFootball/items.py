@@ -45,9 +45,9 @@ class Player(scrapy.Item):
     club_joined = scrapy.Field()
     club_contract = scrapy.Field()
     national= scrapy.Field()
-    national_rating = scrapy.Field()
-    national_position = scrapy.Field()
-    national_kitnum = scrapy.Field()
+    national_team_rating = scrapy.Field()
+    national_team_position = scrapy.Field()
+    national_team_kitnum = scrapy.Field()
 
     acceleration = scrapy.Field()
     aggression = scrapy.Field()

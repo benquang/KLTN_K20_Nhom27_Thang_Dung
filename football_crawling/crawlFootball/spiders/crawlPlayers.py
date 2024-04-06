@@ -127,10 +127,10 @@ class CrawlplayersSpider(scrapy.Spider):
         player['club_joined'] = response.xpath('(//div[./h5/text()="Club"])//p[./label/text()="Joined"]/text()').get()[1:]
         player['club_contract'] = response.xpath('(//div[./h5/text()="Club"])//p[./label/text()="Contract valid until"]/text()').get()[1:]
         
-        player['national'] = response.xpath('(//div[./h5/text()="National team"]//a)[1]/text()').get()[1:]
-        player['national_rating'] = response.xpath('(//div[./h5/text()="National team"]/p)[3]/text()').get()[:-1]
-        player['national_position'] = response.xpath('(//div[./h5/text()="National team"])//p[./label/text()="Position"]/span/text()').get()
-        player['national_kitnum']=response.xpath('(//div[./h5/text()="National team"])//p[./label/text()="Kit number"]/text()').get()[1:]
+        player['national_team'] = response.xpath('(//div[./h5/text()="National team"]//a)[1]/text()').get()[1:]
+        player['national_team_rating'] = response.xpath('(//div[./h5/text()="National team"]/p)[3]/text()').get()[:-1]
+        player['national_team_position'] = response.xpath('(//div[./h5/text()="National team"])//p[./label/text()="Position"]/span/text()').get()
+        player['national_team_kitnum']=response.xpath('(//div[./h5/text()="National team"])//p[./label/text()="Kit number"]/text()').get()[1:]
         
         # updateDate = response.css('span[class="bp3-button-text"]::text').extract()[1]
         # updateDate = functions.ConvertUpdateDate(updateDate)
