@@ -53,6 +53,7 @@ ROBOTSTXT_OBEY = False
 DOWNLOADER_MIDDLEWARES = {
 #    "crawlFootball.middlewares.CrawlfootballDownloaderMiddleware": 543,
     "crawlFootball.middlewares.ScrapeOpsFakeUserAgentMiddleWare":543,
+    'crawlFootball.middlewares.ScrapeOpsFakeBrowserHeadersMiddleware': 400,
     # "rotating_proxies.middlewares.RotatingProxyMiddleware":600,
     # "rotating_proxies.middlewares.BanDetectionMiddleware":610,
     # 'scrapy.downloadermiddlewares.retry.RetryMiddleware': None,
