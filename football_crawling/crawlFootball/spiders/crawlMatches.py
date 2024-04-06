@@ -19,11 +19,7 @@ class CrawlmatchSpider(scrapy.Spider):
         #     'matches.csv':{'format':'csv','overwrite':True}
         #     },
         'LOG_STDOUT' : {True},
-        "LOG_FILE" :'./crawlMatches_log.txt',
-        'DOWNLOADER_MIDDLEWARES':{
-            # 'crawlFootball.middlewares.TooManyRequestsRetryMiddleware': 543,
-            "crawlFootball.middlewares.ScrapeOpsFakeUserAgentMiddleWare":543,
-        },
+        "LOG_FILE" :'./logs/crawlMatches_log.txt',
         'ITEM_PIPELINES':{
             "crawlFootball.pipelines.MultiCSVItemPipeline": 300,
         },

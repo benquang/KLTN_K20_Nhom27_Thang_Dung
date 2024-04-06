@@ -12,8 +12,8 @@ class CrawlplayersSpider(scrapy.Spider):
         'FEEDS':{
             'player_attr.csv':{'format':'csv','overwrite':True}
             },
-        # 'LOG_STDOUT' : {True},
-        # "LOG_FILE" :'./scrapy_output.txt',
+        'LOG_STDOUT' : {True},
+        "LOG_FILE" :'./logs/crawlPlayers_log.txt',
         'DOWNLOAD_DELAY' : 0.3,
         'CONCURRENT_REQUESTS' : 1,
     }
