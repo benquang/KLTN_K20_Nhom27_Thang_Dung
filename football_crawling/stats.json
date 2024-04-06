@@ -21,9 +21,9 @@
         "delete_existing_json_files_at_startup": false,
         "keep_data_in_memory": false,
         "verbose": false,
-        "main_pid": 24835
+        "main_pid": 26518
     },
-    "last_update_timestamp": 1712395662,
-    "last_update_time": "2024-04-06 09:27:42",
+    "last_update_timestamp": 1712408377,
+    "last_update_time": "2024-04-06 12:59:37",
     "logparser_version": "0.8.2"
 }

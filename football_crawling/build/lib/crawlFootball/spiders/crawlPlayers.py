@@ -14,7 +14,7 @@ class CrawlplayersSpider(scrapy.Spider):
             },
         # 'LOG_STDOUT' : {True},
         # "LOG_FILE" :'./scrapy_output.txt',
-        'DOWNLOAD_DELAY' : 0.75,
+        'DOWNLOAD_DELAY' : 0.3,
         'CONCURRENT_REQUESTS' : 1,
     }
     start_urls = ["https://sofifa.com"]
@@ -118,19 +118,37 @@ class CrawlplayersSpider(scrapy.Spider):
         for speciality in specialities:
             player['specialities']+=speciality
         #Teams
-        player['club'] = response.xpath('(//div[./h5/text()="Club"]//a)[1]/text()').get()[1:]
-        player['club_league'] = response.xpath('(//div[./h5/text()="Club"]//a)[2]/text()').get()[1:]
+        player['club'] = response.xpath('(//div[./h5/text()="Club"]//a)[1]/text()').get()
+        if player['club'] is not None:
+            player['club'] = player['club'][1:]
+        player['club_league'] = response.xpath('(//div[./h5/text()="Club"]//a)[2]/text()').get()
+        if player['club_league'] is not None:
+            player['club_league'] = player['club_league'][1:]
         player['club_rating'] = response.xpath('(//div[./h5/text()="Club"]/p)[3]/text()').get()[:-1]
+        if player['club_rating'] is not None:
+            player['club_rating'] = player['club_rating'][:-1]
         player['club_position'] = response.xpath('(//div[./h5/text()="Club"])//p[./label/text()="Position"]/span/text()').get()
-        player['club_kitnum']=response.xpath('(//div[./h5/text()="Club"])//p[./label/text()="Kit number"]/text()').get()[1:]
+        player['club_kitnum']=response.xpath('(//div[./h5/text()="Club"])//p[./label/text()="Kit number"]/text()').get()
+        if player['club_kitnum'] is not None:
+            player['club_kitnum'] = player['club_kitnum'][1:]
         player['club_loaned_from']=response.xpath('(//div[./h5/text()="Club"])//p[./label/text()="Loaned from"]/a/text()').get()
-        player['club_joined'] = response.xpath('(//div[./h5/text()="Club"])//p[./label/text()="Joined"]/text()').get()[1:]
-        player['club_contract'] = response.xpath('(//div[./h5/text()="Club"])//p[./label/text()="Contract valid until"]/text()').get()[1:]
+        player['club_joined'] = response.xpath('(//div[./h5/text()="Club"])//p[./label/text()="Joined"]/text()').get()
+        if player['club_joined'] is not None:
+            player['club_joined'] = player['club_joined'][1:]
+        player['club_contract'] = response.xpath('(//div[./h5/text()="Club"])//p[./label/text()="Contract valid until"]/text()').get()
+        if player['club_contract'] is not None:
+            player['club_contract'] = player['club_contract'][1:]
         
-        player['national'] = response.xpath('(//div[./h5/text()="National team"]//a)[1]/text()').get()[1:]
-        player['national_rating'] = response.xpath('(//div[./h5/text()="National team"]/p)[3]/text()').get()[:-1]
-        player['national_position'] = response.xpath('(//div[./h5/text()="National team"])//p[./label/text()="Position"]/span/text()').get()
-        player['national_kitnum']=response.xpath('(//div[./h5/text()="National team"])//p[./label/text()="Kit number"]/text()').get()[1:]
+        player['national_team'] = response.xpath('(//div[./h5/text()="National team"]//a)[1]/text()').get()
+        if player['national_team'] is not None:
+            player['national_team'] = player['national_team'][1:]
+        player['national_team_rating'] = response.xpath('(//div[./h5/text()="National team"]/p)[3]/text()').get()
+        if player['national_team_rating'] is not None:
+            player['national_team_rating'] = player['national_team_rating'][:-1]
+        player['national_team_position'] = response.xpath('(//div[./h5/text()="National team"])//p[./label/text()="Position"]/span/text()').get()
+        player['national_team_kitnum']=response.xpath('(//div[./h5/text()="National team"])//p[./label/text()="Kit number"]/text()').get()
+        if player['national_team_kitnum'] is not None:
+            player['national_team_kitnum'] = player['national_team_kitnum'][1:]
         
         # updateDate = response.css('span[class="bp3-button-text"]::text').extract()[1]
         # updateDate = functions.ConvertUpdateDate(updateDate)
