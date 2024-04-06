@@ -1,0 +1,94 @@
+Removing stale pidfile /home/superherodung123/KLTN_K20_Nhom27_Thang_Dung/football_crawling/twistd.pid
+2024-04-05T16:02:26+0000 [-] Removing stale pidfile /home/superherodung123/KLTN_K20_Nhom27_Thang_Dung/football_crawling/twistd.pid
+2024-04-05T16:02:26+0000 [-] Loading /home/superherodung123/venv/lib/python3.8/site-packages/scrapyd/txapp.py...
+2024-04-05T16:02:26+0000 [-] Basic authentication disabled as either `username` or `password` is unset
+2024-04-05T16:02:26+0000 [-] Scrapyd web console available at http://127.0.0.1:6800/
+2024-04-05T16:02:26+0000 [-] Loaded.
+2024-04-05T16:02:26+0000 [twisted.scripts._twistd_unix.UnixAppLogger#info] twistd 24.3.0 (/home/superherodung123/venv/bin/python 3.8.10) starting up.
+2024-04-05T16:02:26+0000 [twisted.scripts._twistd_unix.UnixAppLogger#info] reactor class: twisted.internet.epollreactor.EPollReactor.
+2024-04-05T16:02:26+0000 [-] Site starting on 6800
+2024-04-05T16:02:26+0000 [twisted.web.server.Site#info] Starting factory <twisted.web.server.Site object at 0x7f087f4e14f0>
+2024-04-05T16:02:26+0000 [Launcher] Scrapyd 1.4.3 started: max_proc=8, runner='scrapyd.runner'
+2024-04-05T16:02:54+0000 [twisted.python.log#info] "127.0.0.1" - - [05/Apr/2024:16:02:53 +0000] "GET / HTTP/1.1" 200 750 "-" "python-requests/2.31.0"
+2024-04-05T16:03:54+0000 [twisted.web.http.HTTPChannel#info] Timing out client: IPv4Address(type='TCP', host='127.0.0.1', port=53526)
+2024-04-05T16:07:54+0000 [twisted.python.log#info] "127.0.0.1" - - [05/Apr/2024:16:07:53 +0000] "GET /jobs HTTP/1.1" 200 643 "-" "python-requests/2.31.0"
+2024-04-05T16:07:54+0000 [twisted.python.log#info] "127.0.0.1" - - [05/Apr/2024:16:07:53 +0000] "GET /logs/stats.json HTTP/1.1" 404 145 "-" "python-requests/2.31.0"
+2024-04-05T16:08:54+0000 [twisted.web.http.HTTPChannel#info] Timing out client: IPv4Address(type='TCP', host='127.0.0.1', port=50914)
+2024-04-05T16:14:01+0000 [twisted.python.log#info] "127.0.0.1" - - [05/Apr/2024:16:14:01 +0000] "GET / HTTP/1.1" 200 750 "-" "python-requests/2.31.0"
+2024-04-05T16:15:01+0000 [twisted.web.http.HTTPChannel#info] Timing out client: IPv4Address(type='TCP', host='127.0.0.1', port=48192)
+2024-04-05T16:16:15+0000 [twisted.python.log#info] "127.0.0.1" - - [05/Apr/2024:16:16:15 +0000] "GET /daemonstatus.json HTTP/1.1" 200 90 "-" "python-requests/2.31.0"
+2024-04-05T16:16:15+0000 [twisted.python.log#info] "127.0.0.1" - - [05/Apr/2024:16:16:15 +0000] "GET /daemonstatus.json HTTP/1.1" 200 90 "-" "python-requests/2.31.0"
+2024-04-05T16:16:15+0000 [twisted.python.log#info] "127.0.0.1" - - [05/Apr/2024:16:16:15 +0000] "GET /jobs HTTP/1.1" 200 643 "-" "python-requests/2.31.0"
+2024-04-05T16:16:15+0000 [twisted.python.log#info] "127.0.0.1" - - [05/Apr/2024:16:16:15 +0000] "GET /logs/stats.json HTTP/1.1" 404 145 "-" "python-requests/2.31.0"
+2024-04-05T16:16:25+0000 [twisted.python.log#info] "127.0.0.1" - - [05/Apr/2024:16:16:25 +0000] "GET /daemonstatus.json HTTP/1.1" 200 90 "-" "python-requests/2.31.0"
+2024-04-05T16:16:35+0000 [twisted.python.log#info] "127.0.0.1" - - [05/Apr/2024:16:16:35 +0000] "GET /daemonstatus.json HTTP/1.1" 200 90 "-" "python-requests/2.31.0"
+2024-04-05T16:16:45+0000 [twisted.python.log#info] "127.0.0.1" - - [05/Apr/2024:16:16:45 +0000] "GET /daemonstatus.json HTTP/1.1" 200 90 "-" "python-requests/2.31.0"
+2024-04-05T16:17:45+0000 [twisted.web.http.HTTPChannel#info] Timing out client: IPv4Address(type='TCP', host='127.0.0.1', port=42742)
+2024-04-05T16:18:16+0000 [twisted.python.log#info] "127.0.0.1" - - [05/Apr/2024:16:18:15 +0000] "GET /daemonstatus.json HTTP/1.1" 200 90 "-" "python-requests/2.31.0"
+2024-04-05T16:18:16+0000 [twisted.python.log#info] "127.0.0.1" - - [05/Apr/2024:16:18:15 +0000] "GET /daemonstatus.json HTTP/1.1" 200 90 "-" "python-requests/2.31.0"
+2024-04-05T16:18:16+0000 [twisted.python.log#info] "127.0.0.1" - - [05/Apr/2024:16:18:15 +0000] "GET /jobs HTTP/1.1" 200 643 "-" "python-requests/2.31.0"
+2024-04-05T16:18:16+0000 [twisted.python.log#info] "127.0.0.1" - - [05/Apr/2024:16:18:15 +0000] "GET /logs/stats.json HTTP/1.1" 404 145 "-" "python-requests/2.31.0"
+2024-04-05T16:18:26+0000 [twisted.python.log#info] "127.0.0.1" - - [05/Apr/2024:16:18:26 +0000] "GET /daemonstatus.json HTTP/1.1" 200 90 "-" "python-requests/2.31.0"
+2024-04-05T16:18:36+0000 [twisted.python.log#info] "127.0.0.1" - - [05/Apr/2024:16:18:35 +0000] "GET /daemonstatus.json HTTP/1.1" 200 90 "-" "python-requests/2.31.0"
+2024-04-05T16:18:46+0000 [twisted.python.log#info] "127.0.0.1" - - [05/Apr/2024:16:18:45 +0000] "GET /daemonstatus.json HTTP/1.1" 200 90 "-" "python-requests/2.31.0"
+2024-04-05T16:18:47+0000 [twisted.python.log#info] "127.0.0.1" - - [05/Apr/2024:16:18:46 +0000] "GET /logs/ HTTP/1.1" 404 145 "-" "python-requests/2.31.0"
+2024-04-05T16:18:47+0000 [twisted.python.log#info] "127.0.0.1" - - [05/Apr/2024:16:18:47 +0000] "GET /daemonstatus.json HTTP/1.1" 200 90 "-" "python-requests/2.31.0"
+2024-04-05T16:18:57+0000 [twisted.python.log#info] "127.0.0.1" - - [05/Apr/2024:16:18:57 +0000] "GET /daemonstatus.json HTTP/1.1" 200 90 "-" "python-requests/2.31.0"
+2024-04-05T16:18:58+0000 [twisted.python.log#info] "127.0.0.1" - - [05/Apr/2024:16:18:58 +0000] "GET /daemonstatus.json HTTP/1.1" 200 90 "-" "python-requests/2.31.0"
+2024-04-05T16:18:58+0000 [twisted.python.log#info] "127.0.0.1" - - [05/Apr/2024:16:18:58 +0000] "GET /daemonstatus.json HTTP/1.1" 200 90 "-" "python-requests/2.31.0"
+2024-04-05T16:18:58+0000 [twisted.python.log#info] "127.0.0.1" - - [05/Apr/2024:16:18:58 +0000] "GET /jobs HTTP/1.1" 200 643 "-" "python-requests/2.31.0"
+2024-04-05T16:18:58+0000 [twisted.python.log#info] "127.0.0.1" - - [05/Apr/2024:16:18:58 +0000] "GET /logs/stats.json HTTP/1.1" 404 145 "-" "python-requests/2.31.0"
+2024-04-05T16:19:01+0000 [twisted.python.log#info] "127.0.0.1" - - [05/Apr/2024:16:19:00 +0000] "GET /jobs HTTP/1.1" 200 643 "-" "python-requests/2.31.0"
+2024-04-05T16:19:01+0000 [twisted.python.log#info] "127.0.0.1" - - [05/Apr/2024:16:19:00 +0000] "GET /logs/stats.json HTTP/1.1" 404 145 "-" "python-requests/2.31.0"
+2024-04-05T16:19:06+0000 [twisted.python.log#info] "127.0.0.1" - - [05/Apr/2024:16:19:06 +0000] "GET /jobs HTTP/1.1" 200 643 "-" "python-requests/2.31.0"
+2024-04-05T16:19:07+0000 [twisted.python.log#info] "127.0.0.1" - - [05/Apr/2024:16:19:07 +0000] "GET /daemonstatus.json HTTP/1.1" 200 90 "-" "python-requests/2.31.0"
+2024-04-05T16:19:09+0000 [twisted.python.log#info] "127.0.0.1" - - [05/Apr/2024:16:19:08 +0000] "GET /daemonstatus.json HTTP/1.1" 200 90 "-" "python-requests/2.31.0"
+2024-04-05T16:19:09+0000 [twisted.python.log#info] "127.0.0.1" - - [05/Apr/2024:16:19:08 +0000] "GET /daemonstatus.json HTTP/1.1" 200 90 "-" "python-requests/2.31.0"
+2024-04-05T16:19:09+0000 [twisted.python.log#info] "127.0.0.1" - - [05/Apr/2024:16:19:08 +0000] "GET /jobs HTTP/1.1" 200 643 "-" "python-requests/2.31.0"
+2024-04-05T16:19:09+0000 [twisted.python.log#info] "127.0.0.1" - - [05/Apr/2024:16:19:08 +0000] "GET /logs/stats.json HTTP/1.1" 404 145 "-" "python-requests/2.31.0"
+2024-04-05T16:19:19+0000 [twisted.python.log#info] "127.0.0.1" - - [05/Apr/2024:16:19:18 +0000] "GET /daemonstatus.json HTTP/1.1" 200 90 "-" "python-requests/2.31.0"
+2024-04-05T16:19:23+0000 [twisted.python.log#info] "127.0.0.1" - - [05/Apr/2024:16:19:22 +0000] "GET /daemonstatus.json HTTP/1.1" 200 90 "-" "python-requests/2.31.0"
+2024-04-05T16:19:29+0000 [twisted.python.log#info] "127.0.0.1" - - [05/Apr/2024:16:19:28 +0000] "GET /daemonstatus.json HTTP/1.1" 200 90 "-" "python-requests/2.31.0"
+2024-04-05T16:19:32+0000 [twisted.python.log#info] "127.0.0.1" - - [05/Apr/2024:16:19:32 +0000] "GET /listprojects.json HTTP/1.1" 200 98 "-" "python-requests/2.31.0"
+2024-04-05T16:19:34+0000 [twisted.python.log#info] "127.0.0.1" - - [05/Apr/2024:16:19:34 +0000] "GET /listversions.json?project=crawlFootball HTTP/1.1" 200 75 "-" "python-requests/2.31.0"
+2024-04-05T16:19:38+0000 [twisted.python.log#info] "127.0.0.1" - - [05/Apr/2024:16:19:36 +0000] "GET /listspiders.json?project=crawlFootball HTTP/1.1" 200 161 "-" "python-requests/2.31.0"
+2024-04-05T16:19:39+0000 [twisted.python.log#info] "127.0.0.1" - - [05/Apr/2024:16:19:38 +0000] "GET /daemonstatus.json HTTP/1.1" 200 90 "-" "python-requests/2.31.0"
+2024-04-05T16:19:49+0000 [twisted.python.log#info] "127.0.0.1" - - [05/Apr/2024:16:19:48 +0000] "GET /daemonstatus.json HTTP/1.1" 200 90 "-" "python-requests/2.31.0"
+2024-04-05T16:19:59+0000 [twisted.python.log#info] "127.0.0.1" - - [05/Apr/2024:16:19:58 +0000] "GET /daemonstatus.json HTTP/1.1" 200 90 "-" "python-requests/2.31.0"
+2024-04-05T16:20:09+0000 [twisted.python.log#info] "127.0.0.1" - - [05/Apr/2024:16:20:08 +0000] "GET /daemonstatus.json HTTP/1.1" 200 90 "-" "python-requests/2.31.0"
+2024-04-05T16:20:20+0000 [twisted.python.log#info] "127.0.0.1" - - [05/Apr/2024:16:20:19 +0000] "GET /daemonstatus.json HTTP/1.1" 200 90 "-" "python-requests/2.31.0"
+2024-04-05T16:20:29+0000 [twisted.python.log#info] "127.0.0.1" - - [05/Apr/2024:16:20:28 +0000] "GET /daemonstatus.json HTTP/1.1" 200 90 "-" "python-requests/2.31.0"
+2024-04-05T16:20:39+0000 [twisted.python.log#info] "127.0.0.1" - - [05/Apr/2024:16:20:38 +0000] "GET /daemonstatus.json HTTP/1.1" 200 90 "-" "python-requests/2.31.0"
+2024-04-05T16:20:49+0000 [twisted.python.log#info] "127.0.0.1" - - [05/Apr/2024:16:20:48 +0000] "GET /daemonstatus.json HTTP/1.1" 200 90 "-" "python-requests/2.31.0"
+2024-04-05T16:20:59+0000 [twisted.python.log#info] "127.0.0.1" - - [05/Apr/2024:16:20:58 +0000] "GET /daemonstatus.json HTTP/1.1" 200 90 "-" "python-requests/2.31.0"
+2024-04-05T16:21:09+0000 [twisted.python.log#info] "127.0.0.1" - - [05/Apr/2024:16:21:08 +0000] "GET /daemonstatus.json HTTP/1.1" 200 90 "-" "python-requests/2.31.0"
+2024-04-05T16:21:19+0000 [twisted.python.log#info] "127.0.0.1" - - [05/Apr/2024:16:21:18 +0000] "GET /daemonstatus.json HTTP/1.1" 200 90 "-" "python-requests/2.31.0"
+2024-04-05T16:21:29+0000 [twisted.python.log#info] "127.0.0.1" - - [05/Apr/2024:16:21:28 +0000] "GET /daemonstatus.json HTTP/1.1" 200 90 "-" "python-requests/2.31.0"
+2024-04-05T16:21:39+0000 [twisted.python.log#info] "127.0.0.1" - - [05/Apr/2024:16:21:38 +0000] "GET /daemonstatus.json HTTP/1.1" 200 90 "-" "python-requests/2.31.0"
+2024-04-05T16:21:49+0000 [twisted.python.log#info] "127.0.0.1" - - [05/Apr/2024:16:21:48 +0000] "GET /daemonstatus.json HTTP/1.1" 200 90 "-" "python-requests/2.31.0"
+2024-04-05T16:21:59+0000 [twisted.python.log#info] "127.0.0.1" - - [05/Apr/2024:16:21:58 +0000] "GET /daemonstatus.json HTTP/1.1" 200 90 "-" "python-requests/2.31.0"
+2024-04-05T16:22:09+0000 [twisted.python.log#info] "127.0.0.1" - - [05/Apr/2024:16:22:08 +0000] "GET /daemonstatus.json HTTP/1.1" 200 90 "-" "python-requests/2.31.0"
+2024-04-05T16:23:09+0000 [twisted.web.http.HTTPChannel#info] Timing out client: IPv4Address(type='TCP', host='127.0.0.1', port=51954)
+2024-04-05T16:23:14+0000 [twisted.python.log#info] "127.0.0.1" - - [05/Apr/2024:16:23:14 +0000] "GET /daemonstatus.json HTTP/1.1" 200 90 "-" "python-requests/2.31.0"
+2024-04-05T16:23:43+0000 [twisted.python.log#info] "127.0.0.1" - - [05/Apr/2024:16:23:43 +0000] "GET /daemonstatus.json HTTP/1.1" 200 90 "-" "python-requests/2.31.0"
+2024-04-05T16:23:49+0000 [twisted.python.log#info] "127.0.0.1" - - [05/Apr/2024:16:23:49 +0000] "GET /daemonstatus.json HTTP/1.1" 200 90 "-" "python-requests/2.31.0"
+2024-04-05T16:23:59+0000 [twisted.python.log#info] "127.0.0.1" - - [05/Apr/2024:16:23:59 +0000] "GET /daemonstatus.json HTTP/1.1" 200 90 "-" "python-requests/2.31.0"
+2024-04-05T16:24:01+0000 [twisted.python.log#info] "127.0.0.1" - - [05/Apr/2024:16:24:01 +0000] "GET /jobs HTTP/1.1" 200 643 "-" "python-requests/2.31.0"
+2024-04-05T16:24:01+0000 [twisted.python.log#info] "127.0.0.1" - - [05/Apr/2024:16:24:01 +0000] "GET /logs/stats.json HTTP/1.1" 404 145 "-" "python-requests/2.31.0"
+2024-04-05T16:24:09+0000 [twisted.python.log#info] "127.0.0.1" - - [05/Apr/2024:16:24:09 +0000] "GET /daemonstatus.json HTTP/1.1" 200 90 "-" "python-requests/2.31.0"
+2024-04-05T16:24:19+0000 [twisted.python.log#info] "127.0.0.1" - - [05/Apr/2024:16:24:19 +0000] "GET /daemonstatus.json HTTP/1.1" 200 90 "-" "python-requests/2.31.0"
+2024-04-05T16:24:29+0000 [twisted.python.log#info] "127.0.0.1" - - [05/Apr/2024:16:24:29 +0000] "GET /daemonstatus.json HTTP/1.1" 200 90 "-" "python-requests/2.31.0"
+2024-04-05T16:24:39+0000 [twisted.python.log#info] "127.0.0.1" - - [05/Apr/2024:16:24:39 +0000] "GET /daemonstatus.json HTTP/1.1" 200 90 "-" "python-requests/2.31.0"
+2024-04-05T16:24:49+0000 [twisted.python.log#info] "127.0.0.1" - - [05/Apr/2024:16:24:49 +0000] "GET /daemonstatus.json HTTP/1.1" 200 90 "-" "python-requests/2.31.0"
+2024-04-05T16:25:14+0000 [twisted.python.log#info] "127.0.0.1" - - [05/Apr/2024:16:25:14 +0000] "GET /daemonstatus.json HTTP/1.1" 200 90 "-" "python-requests/2.31.0"
+2024-04-05T16:25:17+0000 [twisted.python.log#info] "127.0.0.1" - - [05/Apr/2024:16:25:17 +0000] "GET /jobs HTTP/1.1" 200 643 "-" "python-requests/2.31.0"
+2024-04-05T16:25:18+0000 [twisted.python.log#info] "127.0.0.1" - - [05/Apr/2024:16:25:18 +0000] "GET /logs/stats.json HTTP/1.1" 404 145 "-" "python-requests/2.31.0"
+2024-04-05T16:25:18+0000 [twisted.python.log#info] "127.0.0.1" - - [05/Apr/2024:16:25:18 +0000] "GET /daemonstatus.json HTTP/1.1" 200 90 "-" "python-requests/2.31.0"
+2024-04-05T16:25:28+0000 [twisted.python.log#info] "127.0.0.1" - - [05/Apr/2024:16:25:28 +0000] "GET /daemonstatus.json HTTP/1.1" 200 90 "-" "python-requests/2.31.0"
+2024-04-05T16:25:38+0000 [twisted.python.log#info] "127.0.0.1" - - [05/Apr/2024:16:25:38 +0000] "GET /daemonstatus.json HTTP/1.1" 200 90 "-" "python-requests/2.31.0"
+2024-04-05T16:25:48+0000 [twisted.python.log#info] "127.0.0.1" - - [05/Apr/2024:16:25:48 +0000] "GET /daemonstatus.json HTTP/1.1" 200 90 "-" "python-requests/2.31.0"
+2024-04-05T16:32:20+0000 [-] Received SIGTERM, shutting down.
+2024-04-05T16:32:20+0000 [-] (TCP Port 6800 Closed)
+2024-04-05T16:32:20+0000 [twisted.web.server.Site#info] Stopping factory <twisted.web.server.Site object at 0x7f087f4e14f0>
+2024-04-05T16:32:20+0000 [-] Main loop terminated.
+2024-04-05T16:32:20+0000 [twisted.scripts._twistd_unix.UnixAppLogger#info] Server Shut Down.
