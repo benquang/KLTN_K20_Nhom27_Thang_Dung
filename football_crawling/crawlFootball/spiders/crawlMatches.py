@@ -5,7 +5,9 @@ from crawlFootball.spiders.functions import *
 class CrawlmatchSpider(scrapy.Spider):
     name = "crawlMatches"
     allowed_domains = ["fbref.com"]
-    start_urls = ["https://fbref.com/en/comps/9/",  #Premier Leauge
+    start_urls = [
+                    "https://fbref.com/en/comps/9/schedule/Premier-League-Scores-and-Fixtures",
+                    # "https://fbref.com/en/comps/9/",  #Premier Leauge
                     # "https://fbref.com/en/comps/12/", #LaLiga
                     # "https://fbref.com/en/comps/11/",  #Seria A
                     # "https://fbref.com/en/comps/20/", #Bundesliga
@@ -18,6 +20,12 @@ class CrawlmatchSpider(scrapy.Spider):
         # 'FEEDS':{
         #     'matches.csv':{'format':'csv','overwrite':True}
         #     },
+        'DOWNLOADER_MIDDLEWARES':{
+            # "crawlFootball.middlewares.ScrapeOpsFakeUserAgentMiddleWare":100,
+            # 'crawlFootball.middlewares.ScrapeOpsFakeBrowserHeadersMiddleware': 200,
+            'crawlFootball.middlewares.MyProxyMiddleware': 300, 
+            'scrapy.downloadermiddlewares.httpproxy.HttpProxyMiddleware': 400, 
+        },
         'LOG_STDOUT' : {True},
         "LOG_FILE" :'./logs/crawlMatches_log.txt',
         'ITEM_PIPELINES':{
@@ -26,14 +34,16 @@ class CrawlmatchSpider(scrapy.Spider):
         'DOWNLOAD_DELAY' : 2,
         'CONCURRENT_REQUESTS' : 1,
         'RETRY_HTTP_CODES' : [429,403],
-        'RETRY_TIMES' : 10
+        'RETRY_TIMES' : 50
     }
     def parse(self, response):
         for url in self.start_urls:
-            yield response.follow(url = url,
-                                  callback = self.parse_on_seasons,
-                                  meta = {'current_url':url}
-                                )
+            # yield self.parse_on_seasons(url = url,
+                                #   callback = self.parse_on_seasons,
+                                #   meta = {'current_url':url}
+                                # )
+            yield response.follow(url=url, callback=self.parse_on_matches,meta = {'current_url':url})
+        
     def parse_on_seasons(self,response):
         start_url=response.meta.get('current_url')
         for i in range(0,self.numOfSeason):

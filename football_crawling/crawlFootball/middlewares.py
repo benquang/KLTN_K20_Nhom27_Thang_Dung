@@ -116,7 +116,7 @@ class ScrapeOpsFakeUserAgentMiddleWare:
 # TAO SETTING
     def __init__(self, settings):
         self.scrapeops_api_key = settings.get('SCRAPEOPS_API_KEY')
-        self.scrapeops_endpoint = settings.get('SCRAPEOPS_FAKE_BROWSER_HEADER_ENDPOINT', 'http://headers.scrapeops.io/v1/browser-headers') 
+        self.scrapeops_endpoint = settings.get('SCRAPEOPS_FAKE_BROWSER_HEADER_ENDPOINT', 'http://headers.scrapeops.io/v1/user-agents') 
         self.scrapeops_fake_browser_headers_active = settings.get('SCRAPEOPS_FAKE_BROWSER_HEADER_ENABLED', True)
         self.scrapeops_num_results = settings.get('SCRAPEOPS_NUM_RESULTS')
         self.headers_list = []
@@ -166,7 +166,7 @@ class ScrapeOpsFakeBrowserHeadersMiddleware:
 
     def __init__(self, settings):
         self.scrapeops_api_key = settings.get('SCRAPEOPS_API_KEY')
-        self.scrapeops_endpoint = settings.get('SCRAPEOPS_FAKE_HEADERS_ENDPOINT', 'http://headers.scrapeops.io/v1/browser-headers?') 
+        self.scrapeops_endpoint = settings.get('SCRAPEOPS_FAKE_HEADERS_ENDPOINT', 'http://headers.scrapeops.io/v1/browser-headers') 
         self.scrapeops_fake_headers_active = settings.get('SCRAPEOPS_FAKE_HEADERS_ENABLED', False)
         self.scrapeops_num_results = settings.get('SCRAPEOPS_NUM_RESULTS')
         self.headers_list = []
@@ -195,7 +195,6 @@ class ScrapeOpsFakeBrowserHeadersMiddleware:
         for key, val in random_header.items():
             request.headers[key] = val
 
-
 import time
 class TooManyRequestsRetryMiddleware(RetryMiddleware):
 
@@ -208,9 +207,10 @@ class TooManyRequestsRetryMiddleware(RetryMiddleware):
         return cls(crawler)
 
     def process_response(self, request, response, spider):
+        status_code=[429,403]
         if request.meta.get('dont_retry', False):
             return response
-        elif response.status == 429:
+        elif response.status in status_code:
             self.crawler.engine.pause()
             time.sleep(1800) # If the rate limit is renewed in a minute, put 60 seconds, and so on.
             self.crawler.engine.unpause()
@@ -220,3 +220,22 @@ class TooManyRequestsRetryMiddleware(RetryMiddleware):
             reason = response_status_message(response.status)
             return self._retry(request, reason, spider) or response
         return response
+    
+import base64
+class MyProxyMiddleware:
+    @classmethod
+    def from_crawler(cls, crawler):
+        return cls(crawler.settings)
+
+    def __init__(self, settings):
+        self.user = settings.get('PROXY_USER')
+        self.password = settings.get('PROXY_PASSWORD')
+        self.endpoint = settings.get('PROXY_ENDPOINT')
+        self.port = settings.get('PROXY_PORT')
+
+    def process_request(self, request, spider):
+        user_credentials = '{user}:{passw}'.format(user=self.user, passw=self.password)
+        basic_authentication = 'Basic ' + base64.b64encode(user_credentials.encode()).decode()
+        host = 'http://{endpoint}:{port}'.format(endpoint=self.endpoint, port=self.port)
+        request.meta['proxy'] = host
+        request.headers['Proxy-Authorization'] = basic_authentication

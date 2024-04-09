@@ -57,7 +57,7 @@ DOWNLOADER_MIDDLEWARES = {
     # "rotating_proxies.middlewares.RotatingProxyMiddleware":600,
     # "rotating_proxies.middlewares.BanDetectionMiddleware":610,
     # 'scrapy.downloadermiddlewares.retry.RetryMiddleware': None,
-    # 'crawlFootball.middlewares.TooManyRequestsRetryMiddleware': 550,
+    # 'crawlFootball.middlewares.TooManyRequestsRetryMiddleware': 600,
 }
 
 # Enable or disable extensions
@@ -117,6 +117,13 @@ FEED_EXPORT_ENCODING = 'utf-8-sig'
 #Thư viện scrapy-rotating-proxies:
 # ROTATING_PROXY_LIST_PATH = "proxies.txt"
 
+#Smart Proxy
+PROXY_USER = 'superherodung123'
+PROXY_PASSWORD = 'ic1kggV+8Axt8I0Qgy'
+PROXY_ENDPOINT = 'gate.smartproxy.com'
+PROXY_PORT = '7000'
+
+
 #429 Too many requests
 RETRY_HTTP_CODES = [429,403]
-RETRY_TIMES = 20
+RETRY_TIMES = 50
