@@ -116,7 +116,7 @@ class ScrapeOpsFakeUserAgentMiddleWare:
 # TAO SETTING
     def __init__(self, settings):
         self.scrapeops_api_key = settings.get('SCRAPEOPS_API_KEY')
-        self.scrapeops_endpoint = settings.get('SCRAPEOPS_FAKE_BROWSER_HEADER_ENDPOINT', 'http://headers.scrapeops.io/v1/browser-headers') 
+        self.scrapeops_endpoint = settings.get('SCRAPEOPS_FAKE_BROWSER_HEADER_ENDPOINT', 'http://headers.scrapeops.io/v1/user-agents') 
         self.scrapeops_fake_browser_headers_active = settings.get('SCRAPEOPS_FAKE_BROWSER_HEADER_ENABLED', True)
         self.scrapeops_num_results = settings.get('SCRAPEOPS_NUM_RESULTS')
         self.headers_list = []
@@ -154,8 +154,48 @@ class ScrapeOpsFakeUserAgentMiddleWare:
         request.headers['user-agent'] = random_browser_header['user-agent'] 
         request.headers['upgrade-insecure-requests'] = random_browser_header.get('upgrade-insecure-requests')
 
-import time
+from urllib.parse import urlencode
+from random import randint
+import requests
+
+class ScrapeOpsFakeBrowserHeadersMiddleware:
+
+    @classmethod
+    def from_crawler(cls, crawler):
+        return cls(crawler.settings)
+
+    def __init__(self, settings):
+        self.scrapeops_api_key = settings.get('SCRAPEOPS_API_KEY')
+        self.scrapeops_endpoint = settings.get('SCRAPEOPS_FAKE_HEADERS_ENDPOINT', 'http://headers.scrapeops.io/v1/browser-headers') 
+        self.scrapeops_fake_headers_active = settings.get('SCRAPEOPS_FAKE_HEADERS_ENABLED', False)
+        self.scrapeops_num_results = settings.get('SCRAPEOPS_NUM_RESULTS')
+        self.headers_list = []
+        self._get_headers_list()
+        self._scrapeops_fake_headers_enabled()
+
+    def _get_headers_list(self):
+        payload = {'api_key': self.scrapeops_api_key}
+        if self.scrapeops_num_results is not None:
+            payload['num_results'] = self.scrapeops_num_results
+        response = requests.get(self.scrapeops_endpoint, params=urlencode(payload))
+        json_response = response.json()
+        self.headers_list = json_response.get('result', [])
+
+    def _get_random_header(self):
+        random_index = randint(0, len(self.headers_list) - 1)
+        return self.headers_list[random_index]
+
+    def _scrapeops_fake_headers_enabled(self):
+        if self.scrapeops_api_key is None or self.scrapeops_api_key == '' or self.scrapeops_fake_headers_active == False:
+            self.scrapeops_fake_headers_active = False
+        self.scrapeops_fake_headers_active = True
     
+    def process_request(self, request, spider):        
+        random_header = self._get_random_header()
+        for key, val in random_header.items():
+            request.headers[key] = val
+
+import time
 class TooManyRequestsRetryMiddleware(RetryMiddleware):
 
     def __init__(self, crawler):
@@ -167,9 +207,10 @@ class TooManyRequestsRetryMiddleware(RetryMiddleware):
         return cls(crawler)
 
     def process_response(self, request, response, spider):
+        status_code=[429,403]
         if request.meta.get('dont_retry', False):
             return response
-        elif response.status == 429:
+        elif response.status in status_code:
             self.crawler.engine.pause()
             time.sleep(1800) # If the rate limit is renewed in a minute, put 60 seconds, and so on.
             self.crawler.engine.unpause()
@@ -179,3 +220,22 @@ class TooManyRequestsRetryMiddleware(RetryMiddleware):
             reason = response_status_message(response.status)
             return self._retry(request, reason, spider) or response
         return response
+    
+import base64
+class MyProxyMiddleware:
+    @classmethod
+    def from_crawler(cls, crawler):
+        return cls(crawler.settings)
+
+    def __init__(self, settings):
+        self.user = settings.get('PROXY_USER')
+        self.password = settings.get('PROXY_PASSWORD')
+        self.endpoint = settings.get('PROXY_ENDPOINT')
+        self.port = settings.get('PROXY_PORT')
+
+    def process_request(self, request, spider):
+        user_credentials = '{user}:{passw}'.format(user=self.user, passw=self.password)
+        basic_authentication = 'Basic ' + base64.b64encode(user_credentials.encode()).decode()
+        host = 'http://{endpoint}:{port}'.format(endpoint=self.endpoint, port=self.port)
+        request.meta['proxy'] = host
+        request.headers['Proxy-Authorization'] = basic_authentication

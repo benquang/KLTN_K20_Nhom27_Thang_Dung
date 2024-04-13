@@ -36,17 +36,18 @@ class Player(scrapy.Item):
     specialities = scrapy.Field()
 
     #Team information
-    team1 = scrapy.Field()
-    team1_rating = scrapy.Field()
-    team1_position = scrapy.Field()
-    team1_kitnum = scrapy.Field()
-    team1_loaned_from = scrapy.Field()
-    team1_joined = scrapy.Field()
-    team1_contract = scrapy.Field()
-    team2= scrapy.Field()
-    team2_rating = scrapy.Field()
-    team2_position = scrapy.Field()
-    team2_kitnum = scrapy.Field()
+    club = scrapy.Field()
+    club_league = scrapy.Field()
+    club_rating = scrapy.Field()
+    club_position = scrapy.Field()
+    club_kitnum = scrapy.Field()
+    club_loaned_from = scrapy.Field()
+    club_joined = scrapy.Field()
+    club_contract = scrapy.Field()
+    national_team= scrapy.Field()
+    national_team_rating = scrapy.Field()
+    national_team_position = scrapy.Field()
+    national_team_kitnum = scrapy.Field()
 
     acceleration = scrapy.Field()
     aggression = scrapy.Field()
@@ -85,7 +86,8 @@ class Player(scrapy.Item):
     vision= scrapy.Field()
     volleys= scrapy.Field()
     
-    traits = scrapy.Field()
+    # traits = scrapy.Field()
+    play_styles = scrapy.Field()
 
 class PlayerInfo(scrapy.Item):
     birthday = scrapy.Field()

@@ -1,0 +1,4 @@
+scrapy
+regex
+datetime
+pandas
