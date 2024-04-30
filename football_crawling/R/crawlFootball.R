@@ -3,8 +3,8 @@ library(worldfootballR)
 library(dplyr)
 
 countries <- c("ENG","FRA","ESP","ITA","GER")
-# seasons <- c(2018:2024)
-seasons<-c(2024)
+seasons <- c(2018:2024)
+# seasons<-c(2024)
 
 parse <- function() {
     parse_on_country()

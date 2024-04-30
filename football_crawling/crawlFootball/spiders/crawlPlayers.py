@@ -25,7 +25,7 @@ class CrawlplayersSpider(scrapy.Spider):
                '31', #Serie A
                '53' #LaLiga
                ] 
-    numOfVersions = 6
+    numOfVersions = 7
     
     def parse(self, response):
         current_url = self.start_url
