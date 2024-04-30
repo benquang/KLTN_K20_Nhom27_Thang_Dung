@@ -14,7 +14,7 @@ class CrawlplayersSpider(scrapy.Spider):
             },
         'LOG_STDOUT' : {True},
         "LOG_FILE" :'./logs/crawlPlayers_log.txt',
-        'DOWNLOAD_DELAY' : 0.3,
+        'DOWNLOAD_DELAY' : 0.35,
         'CONCURRENT_REQUESTS' : 1,
     }
     start_urls = ["https://sofifa.com"]
@@ -25,7 +25,7 @@ class CrawlplayersSpider(scrapy.Spider):
                '31', #Serie A
                '53' #LaLiga
                ] 
-    numOfVersions = 1
+    numOfVersions = 6
     
     def parse(self, response):
         current_url = self.start_url
@@ -40,7 +40,8 @@ class CrawlplayersSpider(scrapy.Spider):
         return url
     def parse_on_versions(self,response):
         versions = response.xpath('//select[@name="version"]/option/@value').extract()
-        versions = versions[0:self.numOfVersions]
+        # Remove the first element because it is FC 24, which is already done
+        versions = versions[1:self.numOfVersions]
         for version in versions:
             current_url = self.start_url+version
             yield response.follow(current_url,callback = self.parse_on_updates,
