@@ -1,0 +1,87 @@
+#library
+devtools::install_github("JaseZiv/worldfootballR")
+
+library(worldfootballR)
+
+#list all URL of 380 matchs in season 2023-2024 Premier League
+epl_2024_urls <- fb_match_urls(country = "ENG", gender = "M", season_end_year = 2024, tier="1st")
+#test list 2 matchs
+test_urls_multiple <- c("https://fbref.com/en/matches/c0996cac/Bordeaux-Nantes-August-21-2020-Ligue-1",
+                        "https://fbref.com/en/matches/9cbccb37/Dijon-Angers-August-22-2020-Ligue-1")
+
+#fbref_match_infos
+epl_2024_infos <- fb_match_results(country = "ENG", gender = "M", season_end_year = 2024, tier = "1st")
+#in ra
+dplyr::glimpse(epl_2024_infos)
+
+
+#fbref_match_squad
+epl_2024_squad <- data.frame()
+for (i in test_urls_multiple){
+	temp <- fb_match_lineups(match_url = i)
+	epl_2024_squad <- rbind(epl_2024_squad, temp)
+}
+
+#fbref_match_goals
+epl_2024_goals <- data.frame()
+for (i in test_urls_multiple){
+	temp <- fb_match_summary(match_url = i)
+	epl_2024_goals <- rbind(epl_2024_goals, temp)
+}
+
+#fbref_match_stats
+epl_2024_stats <- data.frame()
+for (i in test_urls_multiple){
+	temp <- fb_team_match_stats(match_url = i)
+	epl_2024_stats <- rbind(epl_2024_stats, temp)
+}
+
+#more statistic
+epl_2024_stats_more <- data.frame()
+for (i in test_urls_multiple){
+	temp <- fb_advanced_match_stats(match_url = i, stat_type = "summary", team_or_player = "team")
+	epl_2024_stats_more <- rbind(epl_2024_stats_more, temp)
+}
+
+
+
+
+#library
+devtools::install_github("JaseZiv/worldfootballR")
+
+library(worldfootballR)
+
+#list all URL of 380 matchs in season 2023-2024 Premier League
+epl_2024_urls <- fb_match_urls(country = "ENG", gender = "M", season_end_year = 2024, tier="1st")
+#test list 2 matchs
+test_urls_multiple <- c("https://fbref.com/en/matches/c0996cac/Bordeaux-Nantes-August-21-2020-Ligue-1",
+                        "https://fbref.com/en/matches/9cbccb37/Dijon-Angers-August-22-2020-Ligue-1")
+
+#fbref_match_infos
+epl_2024_infos <- fb_match_results(country = "ENG", gender = "M", season_end_year = 2024, tier = "1st")
+#in ra
+dplyr::glimpse(epl_2024_infos)
+
+
+#fbref_match_squad
+epl_2024_squad <- fb_match_lineups(match_url = epl_2024_urls)
+
+#fbref_match_goals
+epl_2024_goals fb_match_summary(match_url = epl_2024_urls)
+
+#fbref_match_stats
+epl_2024_stats <- fb_team_match_stats(match_url = epl_2024_urls)
+#more statistic
+epl_2024_stats_more <- fb_advanced_match_stats(match_url = epl_2024_urls, stat_type = "summary", team_or_player = "team")
+
+#fbref_match_player_stats
+epl_2024_player_stats <- fb_advanced_match_stats(match_url = epl_2024_urls, stat_type = "summary", team_or_player = "player")
+
+
+
+
+
+
+
+
+
