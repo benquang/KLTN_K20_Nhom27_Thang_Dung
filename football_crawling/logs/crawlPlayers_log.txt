@@ -1,0 +1,175 @@
+2024-05-03 22:55:25 [urllib3.connectionpool] DEBUG: https://headers.scrapeops.io:443 "GET /v1/browser-headers?api_key=bae67f41-9b19-40c3-bf08-2007213b4037&num_results=50 HTTP/1.1" 200 None
+2024-05-03 22:55:26 [urllib3.connectionpool] DEBUG: Starting new HTTPS connection (1): headers.scrapeops.io:443
+2024-05-03 22:55:30 [urllib3.connectionpool] DEBUG: https://headers.scrapeops.io:443 "GET /v1/browser-headers?api_key=bae67f41-9b19-40c3-bf08-2007213b4037&num_results=50 HTTP/1.1" 200 None
+2024-05-03 22:55:31 [scrapy.middleware] INFO: Enabled downloader middlewares:
+['scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware',
+ 'scrapy.downloadermiddlewares.downloadtimeout.DownloadTimeoutMiddleware',
+ 'scrapy.downloadermiddlewares.defaultheaders.DefaultHeadersMiddleware',
+ 'crawlFootball.middlewares.ScrapeOpsFakeBrowserHeadersMiddleware',
+ 'scrapy.downloadermiddlewares.useragent.UserAgentMiddleware',
+ 'crawlFootball.middlewares.ScrapeOpsFakeUserAgentMiddleWare',
+ 'scrapy.downloadermiddlewares.retry.RetryMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.MetaRefreshMiddleware',
+ 'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.RedirectMiddleware',
+ 'scrapy.downloadermiddlewares.cookies.CookiesMiddleware',
+ 'scrapy.downloadermiddlewares.httpproxy.HttpProxyMiddleware',
+ 'scrapy.downloadermiddlewares.stats.DownloaderStats']
+2024-05-03 22:55:31 [scrapy.middleware] INFO: Enabled spider middlewares:
+['scrapy.spidermiddlewares.httperror.HttpErrorMiddleware',
+ 'scrapy.spidermiddlewares.offsite.OffsiteMiddleware',
+ 'scrapy.spidermiddlewares.referer.RefererMiddleware',
+ 'scrapy.spidermiddlewares.urllength.UrlLengthMiddleware',
+ 'scrapy.spidermiddlewares.depth.DepthMiddleware']
+2024-05-03 22:55:31 [scrapy.middleware] INFO: Enabled item pipelines:
+[]
+2024-05-03 22:55:31 [scrapy.core.engine] INFO: Spider opened
+2024-05-03 22:55:31 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2024-05-03 22:55:31 [scrapy.extensions.telnet] INFO: Telnet console listening on 127.0.0.1:6023
+2024-05-03 22:55:32 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://sofifa.com> (referer: None)
+2024-05-03 22:55:32 [scrapy.downloadermiddlewares.retry] DEBUG: Retrying <GET https://www.sofifa.com/?type=all&lg%5B%5D=13&lg%5B%5D=16&lg%5B%5D=19&lg%5B%5D=31&lg%5B%5D=53> (failed 1 times): 403 Forbidden
+2024-05-03 22:55:32 [scrapy.downloadermiddlewares.retry] DEBUG: Retrying <GET https://www.sofifa.com/?type=all&lg%5B%5D=13&lg%5B%5D=16&lg%5B%5D=19&lg%5B%5D=31&lg%5B%5D=53> (failed 2 times): 403 Forbidden
+2024-05-03 22:55:33 [scrapy.downloadermiddlewares.retry] DEBUG: Retrying <GET https://www.sofifa.com/?type=all&lg%5B%5D=13&lg%5B%5D=16&lg%5B%5D=19&lg%5B%5D=31&lg%5B%5D=53> (failed 3 times): 403 Forbidden
+2024-05-03 22:55:35 [scrapy.downloadermiddlewares.redirect] DEBUG: Redirecting (301) to <GET https://sofifa.com/?type=all&lg%5B%5D=13&lg%5B%5D=16&lg%5B%5D=19&lg%5B%5D=31&lg%5B%5D=53> from <GET https://www.sofifa.com/?type=all&lg%5B%5D=13&lg%5B%5D=16&lg%5B%5D=19&lg%5B%5D=31&lg%5B%5D=53>
+2024-05-03 22:55:35 [scrapy.downloadermiddlewares.retry] DEBUG: Retrying <GET https://sofifa.com/?type=all&lg%5B%5D=13&lg%5B%5D=16&lg%5B%5D=19&lg%5B%5D=31&lg%5B%5D=53> (failed 4 times): 403 Forbidden
+2024-05-03 22:55:35 [scrapy.downloadermiddlewares.retry] DEBUG: Retrying <GET https://sofifa.com/?type=all&lg%5B%5D=13&lg%5B%5D=16&lg%5B%5D=19&lg%5B%5D=31&lg%5B%5D=53> (failed 5 times): 403 Forbidden
+2024-05-03 22:55:37 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://sofifa.com/?type=all&lg%5B%5D=13&lg%5B%5D=16&lg%5B%5D=19&lg%5B%5D=31&lg%5B%5D=53> (referer: https://sofifa.com)
+2024-05-03 22:55:37 [scrapy.downloadermiddlewares.retry] DEBUG: Retrying <GET https://www.sofifa.com/?type=all&lg%5B0%5D=13&lg%5B1%5D=16&lg%5B2%5D=19&lg%5B3%5D=31&lg%5B4%5D=53&r=230054&set=true> (failed 1 times): 403 Forbidden
+2024-05-03 22:55:38 [scrapy.downloadermiddlewares.redirect] DEBUG: Redirecting (301) to <GET https://sofifa.com/?type=all&lg%5B0%5D=13&lg%5B1%5D=16&lg%5B2%5D=19&lg%5B3%5D=31&lg%5B4%5D=53&r=180084&set=true> from <GET https://www.sofifa.com/?type=all&lg%5B0%5D=13&lg%5B1%5D=16&lg%5B2%5D=19&lg%5B3%5D=31&lg%5B4%5D=53&r=180084&set=true>
+2024-05-03 22:55:40 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://sofifa.com/?type=all&lg%5B0%5D=13&lg%5B1%5D=16&lg%5B2%5D=19&lg%5B3%5D=31&lg%5B4%5D=53&r=180084&set=true> (referer: https://sofifa.com/?type=all&lg%5B%5D=13&lg%5B%5D=16&lg%5B%5D=19&lg%5B%5D=31&lg%5B%5D=53)
+2024-05-03 22:55:40 [scrapy.downloadermiddlewares.retry] DEBUG: Retrying <GET https://www.sofifa.com/?type=all&lg%5B0%5D=13&lg%5B1%5D=16&lg%5B2%5D=19&lg%5B3%5D=31&lg%5B4%5D=53&r=190075&set=true> (failed 1 times): 403 Forbidden
+2024-05-03 22:55:40 [scrapy.downloadermiddlewares.retry] DEBUG: Retrying <GET https://www.sofifa.com/?type=all&lg%5B0%5D=13&lg%5B1%5D=16&lg%5B2%5D=19&lg%5B3%5D=31&lg%5B4%5D=53&r=200061&set=true> (failed 1 times): 403 Forbidden
+2024-05-03 22:55:42 [scrapy.downloadermiddlewares.retry] DEBUG: Retrying <GET https://www.sofifa.com/?type=all&lg%5B0%5D=13&lg%5B1%5D=16&lg%5B2%5D=19&lg%5B3%5D=31&lg%5B4%5D=53&r=180001&set=true> (failed 1 times): 403 Forbidden
+2024-05-03 22:55:42 [scrapy.downloadermiddlewares.retry] DEBUG: Retrying <GET https://www.sofifa.com/?type=all&lg%5B0%5D=13&lg%5B1%5D=16&lg%5B2%5D=19&lg%5B3%5D=31&lg%5B4%5D=53&r=180002&set=true> (failed 1 times): 403 Forbidden
+2024-05-03 22:55:43 [scrapy.downloadermiddlewares.redirect] DEBUG: Redirecting (301) to <GET https://sofifa.com/?type=all&lg%5B0%5D=13&lg%5B1%5D=16&lg%5B2%5D=19&lg%5B3%5D=31&lg%5B4%5D=53&r=180006&set=true> from <GET https://www.sofifa.com/?type=all&lg%5B0%5D=13&lg%5B1%5D=16&lg%5B2%5D=19&lg%5B3%5D=31&lg%5B4%5D=53&r=180006&set=true>
+2024-05-03 22:55:43 [scrapy.downloadermiddlewares.retry] DEBUG: Retrying <GET https://sofifa.com/?type=all&lg%5B0%5D=13&lg%5B1%5D=16&lg%5B2%5D=19&lg%5B3%5D=31&lg%5B4%5D=53&r=180006&set=true> (failed 1 times): 403 Forbidden
+2024-05-03 22:55:44 [scrapy.downloadermiddlewares.retry] DEBUG: Retrying <GET https://sofifa.com/?type=all&lg%5B0%5D=13&lg%5B1%5D=16&lg%5B2%5D=19&lg%5B3%5D=31&lg%5B4%5D=53&r=180006&set=true> (failed 2 times): 403 Forbidden
+2024-05-03 22:55:47 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://sofifa.com/?type=all&lg%5B0%5D=13&lg%5B1%5D=16&lg%5B2%5D=19&lg%5B3%5D=31&lg%5B4%5D=53&r=180006&set=true> (referer: https://sofifa.com/?type=all&lg%5B0%5D=13&lg%5B1%5D=16&lg%5B2%5D=19&lg%5B3%5D=31&lg%5B4%5D=53&r=180084&set=true)
+2024-05-03 22:55:48 [scrapy.downloadermiddlewares.redirect] DEBUG: Redirecting (301) to <GET https://sofifa.com/?type=all&lg%5B0%5D=13&lg%5B1%5D=16&lg%5B2%5D=19&lg%5B3%5D=31&lg%5B4%5D=53&r=180015&set=true> from <GET https://www.sofifa.com/?type=all&lg%5B0%5D=13&lg%5B1%5D=16&lg%5B2%5D=19&lg%5B3%5D=31&lg%5B4%5D=53&r=180015&set=true>
+2024-05-03 22:55:48 [scrapy.downloadermiddlewares.retry] DEBUG: Retrying <GET https://sofifa.com/?type=all&lg%5B0%5D=13&lg%5B1%5D=16&lg%5B2%5D=19&lg%5B3%5D=31&lg%5B4%5D=53&r=180015&set=true> (failed 1 times): 403 Forbidden
+2024-05-03 22:55:49 [scrapy.downloadermiddlewares.retry] DEBUG: Retrying <GET https://sofifa.com/?type=all&lg%5B0%5D=13&lg%5B1%5D=16&lg%5B2%5D=19&lg%5B3%5D=31&lg%5B4%5D=53&r=180015&set=true> (failed 2 times): 403 Forbidden
+2024-05-03 22:55:49 [scrapy.downloadermiddlewares.retry] DEBUG: Retrying <GET https://sofifa.com/?type=all&lg%5B0%5D=13&lg%5B1%5D=16&lg%5B2%5D=19&lg%5B3%5D=31&lg%5B4%5D=53&r=180015&set=true> (failed 3 times): 403 Forbidden
+2024-05-03 22:55:50 [scrapy.downloadermiddlewares.retry] DEBUG: Retrying <GET https://www.sofifa.com/?type=all&lg%5B0%5D=13&lg%5B1%5D=16&lg%5B2%5D=19&lg%5B3%5D=31&lg%5B4%5D=53&r=180006&set=true&offset=60> (failed 1 times): 403 Forbidden
+2024-05-03 22:55:51 [scrapy.downloadermiddlewares.retry] DEBUG: Retrying <GET https://www.sofifa.com/player/172879/sokratis-papastathopoulos/180006/> (failed 1 times): 403 Forbidden
+2024-05-03 22:55:52 [scrapy.downloadermiddlewares.redirect] DEBUG: Redirecting (301) to <GET https://sofifa.com/player/198710/james-rodriguez/180006/> from <GET https://www.sofifa.com/player/198710/james-rodriguez/180006/>
+2024-05-03 22:55:52 [scrapy.downloadermiddlewares.retry] DEBUG: Retrying <GET https://sofifa.com/player/198710/james-rodriguez/180006/> (failed 1 times): 403 Forbidden
+2024-05-03 22:55:53 [scrapy.downloadermiddlewares.retry] DEBUG: Retrying <GET https://sofifa.com/player/198710/james-rodriguez/180006/> (failed 2 times): 403 Forbidden
+2024-05-03 22:55:54 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://sofifa.com/player/198710/james-rodriguez/180006/> (referer: https://sofifa.com/?type=all&lg%5B0%5D=13&lg%5B1%5D=16&lg%5B2%5D=19&lg%5B3%5D=31&lg%5B4%5D=53&r=180006&set=true)
+2024-05-03 22:55:54 [scrapy.downloadermiddlewares.retry] DEBUG: Retrying <GET https://www.sofifa.com/player/197445/david-alaba/180006/> (failed 1 times): 403 Forbidden
+2024-05-03 22:55:54 [scrapy.core.scraper] DEBUG: Scraped from <200 https://sofifa.com/player/198710/james-rodriguez/180006/>
+{'acceleration': '77',
+ 'age': '25',
+ 'aggression': '65',
+ 'agility': '82',
+ 'all_positions': 'CAM CM RM',
+ 'attacking_work_rate': 'Medium',
+ 'balance': '75',
+ 'ball_control': '85',
+ 'birthday': '1991-07-12',
+ 'body_type': ' Normal (170-185)',
+ 'club': 'FC Bayern München',
+ 'club_contract': 'Jun 30, 2019',
+ 'club_joined': None,
+ 'club_kitnum': '11',
+ 'club_league': 'Bundesliga',
+ 'club_loaned_from': 'Real Madrid',
+ 'club_position': 'SUB',
+ 'club_rating': '8',
+ 'composure': '87',
+ 'crossing': '88',
+ 'curve': '87',
+ 'defensive_awareness': None,
+ 'defensive_work_rate': 'Low',
+ 'dribbling': '83',
+ 'finishing': '82',
+ 'fk_accuracy': '86',
+ 'gk_diving': '15',
+ 'gk_handling': '15',
+ 'gk_kicking': '15',
+ 'gk_positioning': '5',
+ 'gk_reflexes': '14',
+ 'heading_accuracy': '62',
+ 'height': '180',
+ 'interceptions': '55',
+ 'jumping': '54',
+ 'long_passing': '80',
+ 'long_shots': '91',
+ 'marking': '25',
+ 'national_team': 'Colombia',
+ 'national_team_kitnum': '10',
+ 'national_team_position': 'LAM',
+ 'national_team_rating': '78',
+ 'nationality': 'Colombia',
+ 'overall_rating': '86',
+ 'penalties': '81',
+ 'play_styles': '',
+ 'player_full_name': 'James David Rodríguez Rubio',
+ 'player_name': 'J. Rodríguez',
+ 'positioning': '80',
+ 'potential': '89',
+ 'preferred_foot': 'Left',
+ 'reactions': '84',
+ 'real_face': 'Yes',
+ 'reputation': '4',
+ 'short_passing': '84',
+ 'shot_power': '86',
+ 'skill_moves': '4',
+ 'sliding_tackle': '30',
+ 'sofifa_id': '198710',
+ 'specialities': '#Distance shooter#Crosser#FK Specialist',
+ 'sprint_speed': '75',
+ 'stamina': '68',
+ 'standing_tackle': '42',
+ 'strength': '70',
+ 'update_date': 'Oct 2, 2017',
+ 'value': '€56M',
+ 'vision': '86',
+ 'volleys': '91',
+ 'wage': '€170K',
+ 'weak_foot': '3',
+ 'weight': '75'}
+2024-05-03 22:55:55 [scrapy.downloadermiddlewares.retry] DEBUG: Retrying <GET https://www.sofifa.com/player/189596/thomas-muller/180006/> (failed 1 times): 403 Forbidden
+2024-05-03 22:55:56 [scrapy.downloadermiddlewares.retry] DEBUG: Retrying <GET https://www.sofifa.com/player/177610/javier-martinez-aginaga/180006/> (failed 1 times): 403 Forbidden
+2024-05-03 22:55:56 [scrapy.downloadermiddlewares.retry] DEBUG: Retrying <GET https://www.sofifa.com/player/156616/franck-ribery/180006/> (failed 1 times): 403 Forbidden
+2024-05-03 22:55:57 [scrapy.downloadermiddlewares.retry] DEBUG: Retrying <GET https://www.sofifa.com/player/202126/harry-kane/180006/> (failed 1 times): 403 Forbidden
+2024-05-03 22:55:58 [scrapy.downloadermiddlewares.retry] DEBUG: Retrying <GET https://www.sofifa.com/player/184087/toby-alderweireld/180006/> (failed 1 times): 403 Forbidden
+2024-05-03 22:55:58 [scrapy.downloadermiddlewares.retry] DEBUG: Retrying <GET https://www.sofifa.com/player/192505/romelu-lukaku/180006/> (failed 1 times): 403 Forbidden
+2024-05-03 22:55:59 [scrapy.downloadermiddlewares.redirect] DEBUG: Redirecting (301) to <GET https://sofifa.com/player/189242/philippe-coutinho-correia/180006/> from <GET https://www.sofifa.com/player/189242/philippe-coutinho-correia/180006/>
+2024-05-03 22:55:59 [scrapy.downloadermiddlewares.retry] DEBUG: Retrying <GET https://sofifa.com/player/189242/philippe-coutinho-correia/180006/> (failed 1 times): 403 Forbidden
+2024-05-03 22:56:00 [scrapy.downloadermiddlewares.retry] DEBUG: Retrying <GET https://sofifa.com/player/189242/philippe-coutinho-correia/180006/> (failed 2 times): 403 Forbidden
+2024-05-03 22:56:01 [scrapy.downloadermiddlewares.retry] DEBUG: Retrying <GET https://sofifa.com/player/189242/philippe-coutinho-correia/180006/> (failed 3 times): 403 Forbidden
+2024-05-03 22:56:01 [scrapy.downloadermiddlewares.retry] DEBUG: Retrying <GET https://www.sofifa.com/player/179944/david-luiz-moreira-marinho/180006/> (failed 1 times): 403 Forbidden
+2024-05-03 22:56:02 [scrapy.downloadermiddlewares.retry] DEBUG: Retrying <GET https://www.sofifa.com/player/179844/diego-da-silva-costa/180006/> (failed 1 times): 403 Forbidden
+2024-05-03 22:56:05 [scrapy.downloadermiddlewares.redirect] DEBUG: Redirecting (301) to <GET https://sofifa.com/player/162895/francesc-fabregas-i-soler/180006/> from <GET https://www.sofifa.com/player/162895/francesc-fabregas-i-soler/180006/>
+2024-05-03 22:56:05 [scrapy.crawler] INFO: Received SIGINT, shutting down gracefully. Send again to force 
+2024-05-03 22:56:05 [scrapy.core.engine] INFO: Closing spider (shutdown)
+2024-05-03 22:56:05 [scrapy.downloadermiddlewares.retry] DEBUG: Retrying <GET https://sofifa.com/player/162895/francesc-fabregas-i-soler/180006/> (failed 1 times): 403 Forbidden
+2024-05-03 22:56:05 [scrapy.extensions.feedexport] INFO: Stored csv feed (1 items) in: player_attr.csv
+2024-05-03 22:56:05 [scrapy.statscollectors] INFO: Dumping Scrapy stats:
+{'downloader/request_bytes': 34305,
+ 'downloader/request_count': 44,
+ 'downloader/request_method_count/GET': 44,
+ 'downloader/response_bytes': 422187,
+ 'downloader/response_count': 44,
+ 'downloader/response_status_count/200': 5,
+ 'downloader/response_status_count/301': 7,
+ 'downloader/response_status_count/403': 32,
+ 'elapsed_time_seconds': 34.246223,
+ 'feedexport/success_count/FileFeedStorage': 1,
+ 'finish_reason': 'shutdown',
+ 'finish_time': datetime.datetime(2024, 5, 3, 15, 56, 5, 799094),
+ 'httpcompression/response_bytes': 1509685,
+ 'httpcompression/response_count': 37,
+ 'item_scraped_count': 1,
+ 'log_count/DEBUG': 54,
+ 'log_count/INFO': 12,
+ 'request_depth_max': 4,
+ 'response_received_count': 5,
+ 'retry/count': 32,
+ 'retry/reason_count/403 Forbidden': 32,
+ 'scheduler/dequeued': 44,
+ 'scheduler/dequeued/memory': 44,
+ 'scheduler/enqueued': 122,
+ 'scheduler/enqueued/memory': 122,
+ 'start_time': datetime.datetime(2024, 5, 3, 15, 55, 31, 552871)}
+2024-05-03 22:56:05 [scrapy.core.engine] INFO: Spider closed (shutdown)

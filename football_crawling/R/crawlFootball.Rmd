@@ -11,6 +11,8 @@ library(dplyr)
 
 
 ```{r,echo=FALSE}
+epl_2024_urls <- fb_match_urls(country = "ESP", gender = "M", season_end_year = 2024, tier="1st")
+print(epl_2024_urls)
 ```
 
 
