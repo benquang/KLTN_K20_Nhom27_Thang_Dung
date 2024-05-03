@@ -18,7 +18,7 @@ class CrawlplayersSpider(scrapy.Spider):
         'CONCURRENT_REQUESTS' : 1,
     }
     start_urls = ["https://sofifa.com"]
-    start_url = "https://www.sofifa.com"
+    start_url = "https://sofifa.com"
     leauges = ['13', #Premier League
                '16', #League 1
                '19', #Bundesliga
@@ -55,9 +55,6 @@ class CrawlplayersSpider(scrapy.Spider):
         update = pd.DataFrame({'url':update_urls,'date':update_dates})
         update = function.GetFirstDaysOfEachMonth(update)
         next_urls = update['url'].tolist()
-        
-        for next_url in next_urls:
-            print('Next URL:',self.start_url+next_url)
 
         for next_url in next_urls:
             yield response.follow(self.start_url+next_url,callback = self.parse_on_pages,
