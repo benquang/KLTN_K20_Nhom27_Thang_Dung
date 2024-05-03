@@ -1754,30 +1754,44 @@ display: none;
 <!-- rnb-text-begin -->
 <!-- rnb-text-end -->
 <!-- rnb-chunk-begin -->
-<!-- rnb-output-begin eyJkYXRhIjoiVXNpbmcgR2l0SHViIFBBVCBmcm9tIHRoZSBnaXQgY3JlZGVudGlhbCBzdG9yZS5cblNraXBwaW5nIGluc3RhbGwgb2YgJ3dvcmxkZm9vdGJhbGxSJyBmcm9tIGEgZ2l0aHViIHJlbW90ZSwgdGhlIFNIQTEgKDcwMzkwNGEzKSBoYXMgbm90IGNoYW5nZWQgc2luY2UgbGFzdCBpbnN0YWxsLlxuICBVc2UgYGZvcmNlID0gVFJVRWAgdG8gZm9yY2UgaW5zdGFsbGF0aW9uXG4ifQ== -->
+<!-- rnb-output-begin eyJkYXRhIjoiVXNpbmcgR2l0SHViIFBBVCBmcm9tIHRoZSBnaXQgY3JlZGVudGlhbCBzdG9yZS5cblNraXBwaW5nIGluc3RhbGwgb2YgJ3dvcmxkZm9vdGJhbGxSJyBmcm9tIGEgZ2l0aHViIHJlbW90ZSwgdGhlIFNIQTEgKDcwMzkwNGEzKSBoYXMgbm90IGNoYW5nZWQgc2luY2UgbGFzdCBpbnN0YWxsLlxuICBVc2UgYGZvcmNlID0gVFJVRWAgdG8gZm9yY2UgaW5zdGFsbGF0aW9uXG5cbkF0dGFjaGluZyBwYWNrYWdlOiDigJhkcGx5cuKAmVxuXG5UaGUgZm9sbG93aW5nIG9iamVjdHMgYXJlIG1hc2tlZCBmcm9tIOKAmHBhY2thZ2U6c3RhdHPigJk6XG5cbiAgICBmaWx0ZXIsIGxhZ1xuXG5UaGUgZm9sbG93aW5nIG9iamVjdHMgYXJlIG1hc2tlZCBmcm9tIOKAmHBhY2thZ2U6YmFzZeKAmTpcblxuICAgIGludGVyc2VjdCwgc2V0ZGlmZiwgc2V0ZXF1YWwsIHVuaW9uXG4ifQ== -->
 <pre><code>Using GitHub PAT from the git credential store.
 Skipping install of &#39;worldfootballR&#39; from a github remote, the SHA1 (703904a3) has not changed since last install.
-  Use `force = TRUE` to force installation</code></pre>
+  Use `force = TRUE` to force installation
+
+Attaching package: ‘dplyr’
+
+The following objects are masked from ‘package:stats’:
+
+    filter, lag
+
+The following objects are masked from ‘package:base’:
+
+    intersect, setdiff, setequal, union</code></pre>
 <!-- rnb-output-end -->
 <!-- rnb-chunk-end -->
 <!-- rnb-text-begin -->
 <!-- rnb-text-end -->
 <!-- rnb-chunk-begin -->
-<!-- rnb-source-begin eyJkYXRhIjoiYGBgclxuZm9yIChpIGluIDIwMTg6MjAyNClcbntcbiAgcHJpbnQoaSlcbn1cbmBgYCJ9 -->
-<pre class="r"><code>for (i in 2018:2024)
+<!-- rnb-chunk-end -->
+<!-- rnb-text-begin -->
+<!-- rnb-text-end -->
+<!-- rnb-chunk-begin -->
+<!-- rnb-source-begin eyJkYXRhIjoiYGBgclxuI2ZvciAoaSBpbiAyMDE4OjIwMjQpXG5mb3IgKGkgaW4gMjAyNDoyMDI0KVxue1xuICBlcGxfMjAyNF91cmxzIDwtIGZiX21hdGNoX3VybHMoY291bnRyeSA9IFwiRU5HXCIsIGdlbmRlciA9IFwiTVwiLCBzZWFzb25fZW5kX3llYXIgPSBpLCB0aWVyPVwiMXN0XCIpXG4gIGVwbF8yMDI0X2luZm9zIDwtIGZiX21hdGNoX3Jlc3VsdHMoY291bnRyeSA9IFwiRU5HXCIsIGdlbmRlciA9IFwiTVwiLCBzZWFzb25fZW5kX3llYXIgPSBpLCB0aWVyID0gXCIxc3RcIilcbiAgZm9yICh1cmwgaW4gZXBsXzIwMjRfdXJscyl7XG4gICAgZXBsXzIwMjRfc3F1YWQgPC0gZmJfbWF0Y2hfbGluZXVwcyhtYXRjaF91cmwgPSB1cmwpXG4gICAgZXBsXzIwMjRfZ29hbHM8LSBmYl9tYXRjaF9zdW1tYXJ5KG1hdGNoX3VybCA9IHVybClcbiAgICBlcGxfMjAyNF9zdGF0cyA8LSBmYl90ZWFtX21hdGNoX3N0YXRzKG1hdGNoX3VybCA9IGVwbF8yMDI0X3VybHMpXG4gICAgZXBsXzIwMjRfc3RhdHNfbW9yZSA8LSBmYl9hZHZhbmNlZF9tYXRjaF9zdGF0cyhtYXRjaF91cmwgPSBlcGxfMjAyNF91cmxzLCBzdGF0X3R5cGUgPSBcInN1bW1hcnlcIiwgdGVhbV9vcl9wbGF5ZXIgPSBcInRlYW1cIilcbiAgICBcbiAgfVxufVxuYGBgIn0= -->
+<pre class="r"><code>#for (i in 2018:2024)
+for (i in 2024:2024)
 {
-  print(i)
+  epl_2024_urls &lt;- fb_match_urls(country = &quot;ENG&quot;, gender = &quot;M&quot;, season_end_year = i, tier=&quot;1st&quot;)
+  epl_2024_infos &lt;- fb_match_results(country = &quot;ENG&quot;, gender = &quot;M&quot;, season_end_year = i, tier = &quot;1st&quot;)
+  for (url in epl_2024_urls){
+    epl_2024_squad &lt;- fb_match_lineups(match_url = url)
+    epl_2024_goals&lt;- fb_match_summary(match_url = url)
+    epl_2024_stats &lt;- fb_team_match_stats(match_url = epl_2024_urls)
+    epl_2024_stats_more &lt;- fb_advanced_match_stats(match_url = epl_2024_urls, stat_type = &quot;summary&quot;, team_or_player = &quot;team&quot;)
+    
+  }
 }</code></pre>
 <!-- rnb-source-end -->
-<!-- rnb-output-begin eyJkYXRhIjoiWzFdIDIwMThcblsxXSAyMDE5XG5bMV0gMjAyMFxuWzFdIDIwMjFcblsxXSAyMDIyXG5bMV0gMjAyM1xuWzFdIDIwMjRcbiJ9 -->
-<pre><code>[1] 2018
-[1] 2019
-[1] 2020
-[1] 2021
-[1] 2022
-[1] 2023
-[1] 2024</code></pre>
-<!-- rnb-output-end -->
 <!-- rnb-chunk-end -->
 <!-- rnb-chunk-begin -->
 <!-- rnb-source-begin eyJkYXRhIjoiYGBgclxudGVzdF91cmxzX211bHRpcGxlIDwtIGMoXCJodHRwczovL2ZicmVmLmNvbS9lbi9tYXRjaGVzL2MwOTk2Y2FjL0JvcmRlYXV4LU5hbnRlcy1BdWd1c3QtMjEtMjAyMC1MaWd1ZS0xXCIsXG4gICAgICAgICAgICAgICAgICAgICAgICBcImh0dHBzOi8vZmJyZWYuY29tL2VuL21hdGNoZXMvOWNiY2NiMzcvRGlqb24tQW5nZXJzLUF1Z3VzdC0yMi0yMDIwLUxpZ3VlLTFcIilcbmBgYCJ9 -->
@@ -1795,36 +1809,13 @@ Skipping install of &#39;worldfootballR&#39; from a github remote, the SHA1 (703
 <!-- rnb-text-begin -->
 <!-- rnb-text-end -->
 <!-- rnb-chunk-begin -->
-<!-- rnb-source-begin eyJkYXRhIjoiYGBgclxuI2ZicmVmX21hdGNoX2luZm9zXG5lcGxfMjAyNF9pbmZvcyA8LSBmYl9tYXRjaF9yZXN1bHRzKGNvdW50cnkgPSBcIkVOR1wiLCBnZW5kZXIgPSBcIk1cIiwgc2Vhc29uX2VuZF95ZWFyID0gMjAyNCwgdGllciA9IFwiMXN0XCIpXG4jaW4gcmFcbmRwbHlyOjpnbGltcHNlKGVwbF8yMDI0X2luZm9zKVxuYGBgIn0= -->
+<!-- rnb-source-begin eyJkYXRhIjoiYGBgclxuI2ZicmVmX21hdGNoX2luZm9zXG5lcGxfMjAyNF9pbmZvcyA8LSBmYl9tYXRjaF9yZXN1bHRzKGNvdW50cnkgPSBcIkVOR1wiLCBnZW5kZXIgPSBcIk1cIiwgc2Vhc29uX2VuZF95ZWFyID0gMjAyNCwgdGllciA9IFwiMXN0XCIpXG4jaW4gcmFcbmdsaW1wc2UoZXBsXzIwMjRfaW5mb3MpXG5cbmBgYCJ9 -->
 <pre class="r"><code>#fbref_match_infos
 epl_2024_infos &lt;- fb_match_results(country = &quot;ENG&quot;, gender = &quot;M&quot;, season_end_year = 2024, tier = &quot;1st&quot;)
 #in ra
-dplyr::glimpse(epl_2024_infos)</code></pre>
+glimpse(epl_2024_infos)
+</code></pre>
 <!-- rnb-source-end -->
-<!-- rnb-output-begin eyJkYXRhIjoiUm93czogMzgwXG5Db2x1bW5zOiAyMFxuJCBDb21wZXRpdGlvbl9OYW1lIDxjaHI+IFwiUHJlbWllciBMZWFndWVcIiwgXCJQcmVtaWVyIExlYeKAplxuJCBHZW5kZXIgICAgICAgICAgIDxjaHI+IFwiTVwiLCBcIk1cIiwgXCJNXCIsIFwiTVwiLCBcIk1cIiwgXCJNXCIsIOKAplxuJCBDb3VudHJ5ICAgICAgICAgIDxjaHI+IFwiRU5HXCIsIFwiRU5HXCIsIFwiRU5HXCIsIFwiRU5HXCIsIFwiReKAplxuJCBTZWFzb25fRW5kX1llYXIgIDxpbnQ+IDIwMjQsIDIwMjQsIDIwMjQsIDIwMjQsIDIwMjQsIOKAplxuJCBSb3VuZCAgICAgICAgICAgIDxsZ2w+IE5BLCBOQSwgTkEsIE5BLCBOQSwgTkEsIE5BLCBOQeKAplxuJCBXayAgICAgICAgICAgICAgIDxjaHI+IFwiMVwiLCBcIjFcIiwgXCIxXCIsIFwiMVwiLCBcIjFcIiwgXCIxXCIsIOKAplxuJCBEYXkgICAgICAgICAgICAgIDxjaHI+IFwiRnJpXCIsIFwiU2F0XCIsIFwiU2F0XCIsIFwiU2F0XCIsIFwiU+KAplxuJCBEYXRlICAgICAgICAgICAgIDxkYXRlPiAyMDIzLTA4LTExLCAyMDIzLTA4LTEyLCAyMDIzLeKAplxuJCBUaW1lICAgICAgICAgICAgIDxjaHI+IFwiMjA6MDBcIiwgXCIxMjozMFwiLCBcIjE1OjAwXCIsIFwiMTXigKZcbiQgSG9tZSAgICAgICAgICAgICA8Y2hyPiBcIkJ1cm5sZXlcIiwgXCJBcnNlbmFsXCIsIFwiRXZlcnRvbuKAplxuJCBIb21lR29hbHMgICAgICAgIDxkYmw+IDAsIDIsIDAsIDAsIDQsIDEsIDUsIDIsIDEsIDEsIOKAplxuJCBIb21lX3hHICAgICAgICAgIDxkYmw+IDAuMywgMC44LCAyLjcsIDAuNSwgNC4wLCAxLjMsIOKAplxuJCBBd2F5ICAgICAgICAgICAgIDxjaHI+IFwiTWFuY2hlc3RlciBDaXR5XCIsIFwiTm90dCdoYW0gRuKAplxuJCBBd2F5R29hbHMgICAgICAgIDxkYmw+IDMsIDEsIDEsIDEsIDEsIDEsIDEsIDIsIDEsIDAsIOKAplxuJCBBd2F5X3hHICAgICAgICAgIDxkYmw+IDEuOSwgMS4yLCAxLjUsIDEuOSwgMS41LCAxLjEsIOKAplxuJCBBdHRlbmRhbmNlICAgICAgIDxkYmw+IDIxNTcyLCA1OTk4NCwgMzk5NDAsIDMxMTk0LCAzMeKAplxuJCBWZW51ZSAgICAgICAgICAgIDxjaHI+IFwiVHVyZiBNb29yXCIsIFwiRW1pcmF0ZXMgU3RhZGl1beKAplxuJCBSZWZlcmVlICAgICAgICAgIDxjaHI+IFwiQ3JhaWcgUGF3c29uXCIsIFwiTWljaGFlbCBPbGl2ZeKAplxuJCBOb3RlcyAgICAgICAgICAgIDxsZ2w+IE5BLCBOQSwgTkEsIE5BLCBOQSwgTkEsIE5BLCBOQeKAplxuJCBNYXRjaFVSTCAgICAgICAgIDxjaHI+IFwiaHR0cHM6Ly9mYnJlZi5jb20vZW4vbWF0Y2hlcy/igKZcbiJ9 -->
-<pre><code>Rows: 380
-Columns: 20
-$ Competition_Name &lt;chr&gt; &quot;Premier League&quot;, &quot;Premier Lea…
-$ Gender           &lt;chr&gt; &quot;M&quot;, &quot;M&quot;, &quot;M&quot;, &quot;M&quot;, &quot;M&quot;, &quot;M&quot;, …
-$ Country          &lt;chr&gt; &quot;ENG&quot;, &quot;ENG&quot;, &quot;ENG&quot;, &quot;ENG&quot;, &quot;E…
-$ Season_End_Year  &lt;int&gt; 2024, 2024, 2024, 2024, 2024, …
-$ Round            &lt;lgl&gt; NA, NA, NA, NA, NA, NA, NA, NA…
-$ Wk               &lt;chr&gt; &quot;1&quot;, &quot;1&quot;, &quot;1&quot;, &quot;1&quot;, &quot;1&quot;, &quot;1&quot;, …
-$ Day              &lt;chr&gt; &quot;Fri&quot;, &quot;Sat&quot;, &quot;Sat&quot;, &quot;Sat&quot;, &quot;S…
-$ Date             &lt;date&gt; 2023-08-11, 2023-08-12, 2023-…
-$ Time             &lt;chr&gt; &quot;20:00&quot;, &quot;12:30&quot;, &quot;15:00&quot;, &quot;15…
-$ Home             &lt;chr&gt; &quot;Burnley&quot;, &quot;Arsenal&quot;, &quot;Everton…
-$ HomeGoals        &lt;dbl&gt; 0, 2, 0, 0, 4, 1, 5, 2, 1, 1, …
-$ Home_xG          &lt;dbl&gt; 0.3, 0.8, 2.7, 0.5, 4.0, 1.3, …
-$ Away             &lt;chr&gt; &quot;Manchester City&quot;, &quot;Nott&#39;ham F…
-$ AwayGoals        &lt;dbl&gt; 3, 1, 1, 1, 1, 1, 1, 2, 1, 0, …
-$ Away_xG          &lt;dbl&gt; 1.9, 1.2, 1.5, 1.9, 1.5, 1.1, …
-$ Attendance       &lt;dbl&gt; 21572, 59984, 39940, 31194, 31…
-$ Venue            &lt;chr&gt; &quot;Turf Moor&quot;, &quot;Emirates Stadium…
-$ Referee          &lt;chr&gt; &quot;Craig Pawson&quot;, &quot;Michael Olive…
-$ Notes            &lt;lgl&gt; NA, NA, NA, NA, NA, NA, NA, NA…
-$ MatchURL         &lt;chr&gt; &quot;https://fbref.com/en/matches/…</code></pre>
-<!-- rnb-output-end -->
 <!-- rnb-chunk-end -->
 <!-- rnb-text-begin -->
 <!-- rnb-text-end -->
@@ -1874,8 +1865,39 @@ for (i in test_urls_multiple){
 }</code></pre>
 <!-- rnb-source-end -->
 <!-- rnb-chunk-end -->
+<!-- rnb-text-begin -->
+<!-- rnb-text-end -->
+<!-- rnb-chunk-begin -->
+<!-- rnb-source-begin eyJkYXRhIjoiYGBgclxuICAgIHRlc3RfdXJsIDwtIGMoXCJodHRwczovL2ZicmVmLmNvbS9lbi9tYXRjaGVzL2Y5Mjc3MTlkL0FqYWNjaW8tVG91bG91c2UtTWF5LTIzLTIwMTgtRnJlbmNoLTEyLVJlbGVnYXRpb25Qcm9tb3Rpb24tUGxheS1vZmZzXCIpXG50cnlDYXRjaChcbiAge1xuICAgIG1hdGNoX2xpbmV1cHMgPC0gZmJfbWF0Y2hfbGluZXVwcyhtYXRjaF91cmwgPSB0ZXN0X3VybClcbiAgICBtYXRjaF9zdW1tYXJ5PC0gZmJfbWF0Y2hfc3VtbWFyeShtYXRjaF91cmwgPSB0ZXN0X3VybClcbiAgICBtYXRjaF9zdGF0cyA8LSBmYl90ZWFtX21hdGNoX3N0YXRzKG1hdGNoX3VybCA9IHRlc3RfdXJsKVxuICAgIGFkdmFuY2VkX21hdGNoX3N0YXRzIDwtIGZiX2FkdmFuY2VkX21hdGNoX3N0YXRzKG1hdGNoX3VybCA9IHRlc3RfdXJsLCBzdGF0X3R5cGUgPSBcInN1bW1hcnlcIiwgdGVhbV9vcl9wbGF5ZXIgPSBcInRlYW1cIilcbiAgfSwgZXJyb3IgPSBmdW5jdGlvbihlKSB7XG4gICAgcHJpbnQocGFzdGUoXCJFcnJvciBhdCBVUkw6XCIsIHRlc3RfdXJsKSlcbiAgICBwcmludChwYXN0ZShcIkVycm9yOiBcIiwgY29uZGl0aW9uTWVzc2FnZShlKSkpXG4gICAgcHJpbnQoXCJcXG5cIilcbiAgfVxuKVxuYGBgIn0= -->
+<pre class="r"><code>    test_url &lt;- c(&quot;https://fbref.com/en/matches/f927719d/Ajaccio-Toulouse-May-23-2018-French-12-RelegationPromotion-Play-offs&quot;)
+tryCatch(
+  {
+    match_lineups &lt;- fb_match_lineups(match_url = test_url)
+    match_summary&lt;- fb_match_summary(match_url = test_url)
+    match_stats &lt;- fb_team_match_stats(match_url = test_url)
+    advanced_match_stats &lt;- fb_advanced_match_stats(match_url = test_url, stat_type = &quot;summary&quot;, team_or_player = &quot;team&quot;)
+  }, error = function(e) {
+    print(paste(&quot;Error at URL:&quot;, test_url))
+    print(paste(&quot;Error: &quot;, conditionMessage(e)))
+    print(&quot;\n&quot;)
+  }
+)</code></pre>
+<!-- rnb-source-end -->
+<!-- rnb-output-begin eyJkYXRhIjoiTGluZXVwcyBub3QgYXZhaWxhYmxlIGZvciBodHRwczovL2ZicmVmLmNvbS9lbi9tYXRjaGVzL2Y5Mjc3MTlkL0FqYWNjaW8tVG91bG91c2UtTWF5LTIzLTIwMTgtRnJlbmNoLTEyLVJlbGVnYXRpb25Qcm9tb3Rpb24tUGxheS1vZmZzXG5bMV0gXCJFcnJvciBhdCBVUkw6IGh0dHBzOi8vZmJyZWYuY29tL2VuL21hdGNoZXMvZjkyNzcxOWQvQWphY2Npby1Ub3Vsb3VzZS1NYXktMjMtMjAxOC1GcmVuY2gtMTItUmVsZWdhdGlvblByb21vdGlvbi1QbGF5LW9mZnNcIlxuWzFdIFwiRXJyb3I6ICBcXDAzM1szODs1OzIzMm1cXDAzM1szNm3ihLlcXDAzM1szODs1OzIzMm0gSW4gaW5kZXg6IDEuXFwwMzNbMzltXFxuXFwwMzNbMW1DYXVzZWQgYnkgZXJyb3IgaW4gYGRwbHlyOjptdXRhdGUoKWA6XFwwMzNbMjJtXFxuXFwwMzNbMzg7NTsyMzJtXFwwMzNbMzZt4oS5XFwwMzNbMzg7NTsyMzJtIEluIGFyZ3VtZW50OiBgSG9tZV9TdWNjZXNzX1Bhc3MgPSBhcy5udW1lcmljKC5kYXRhW1tcXFwiSG9tZV9TdWNjZXNzX1Bhc3NcXFwiXV0pYC5cXDAzM1szOW1cXG5cXDAzM1sxbUNhdXNlZCBieSBlcnJvciBpbiBgLmRhdGFbW1xcXCJIb21lX1N1Y2Nlc3NfUGFzc1xcXCJdXWA6XFwwMzNbMjJtXFxuXFwwMzNbMzg7NTsyMzJtXFwwMzNbMzNtIVxcMDMzWzM4OzU7MjMybSBDb2x1bW4gYEhvbWVfU3VjY2Vzc19QYXNzYCBub3QgZm91bmQgaW4gYC5kYXRhYC5cXDAzM1szOW1cIlxuWzFdIFwiXFxuXCJcbiJ9 -->
+<pre><code>Lineups not available for https://fbref.com/en/matches/f927719d/Ajaccio-Toulouse-May-23-2018-French-12-RelegationPromotion-Play-offs
+[1] &quot;Error at URL: https://fbref.com/en/matches/f927719d/Ajaccio-Toulouse-May-23-2018-French-12-RelegationPromotion-Play-offs&quot;
+[1] &quot;Error:  \033[38;5;232m\033[36mℹ\033[38;5;232m In index: 1.\033[39m\n\033[1mCaused by error in `dplyr::mutate()`:\033[22m\n\033[38;5;232m\033[36mℹ\033[38;5;232m In argument: `Home_Success_Pass = as.numeric(.data[[\&quot;Home_Success_Pass\&quot;]])`.\033[39m\n\033[1mCaused by error in `.data[[\&quot;Home_Success_Pass\&quot;]]`:\033[22m\n\033[38;5;232m\033[33m!\033[38;5;232m Column `Home_Success_Pass` not found in `.data`.\033[39m&quot;
+[1] &quot;\n&quot;</code></pre>
+<!-- rnb-output-end -->
+<!-- rnb-source-begin eyJkYXRhIjoiYGBgclxucHJpbnQoXCJIZWxsb1dvcmxkXCIpXG5gYGAifQ== -->
+<pre class="r"><code>print(&quot;HelloWorld&quot;)</code></pre>
+<!-- rnb-source-end -->
+<!-- rnb-output-begin eyJkYXRhIjoiWzFdIFwiSGVsbG9Xb3JsZFwiXG4ifQ== -->
+<pre><code>[1] &quot;HelloWorld&quot;</code></pre>
+<!-- rnb-output-end -->
+<!-- rnb-chunk-end -->
 
-<div id="rmd-source-code">LS0tDQp0aXRsZTogIlIgTm90ZWJvb2siDQpvdXRwdXQ6IGh0bWxfbm90ZWJvb2sNCi0tLQ0KDQpgYGB7cixlY2hvPUZBTFNFfQ0KZGV2dG9vbHM6Omluc3RhbGxfZ2l0aHViKCJKYXNlWml2L3dvcmxkZm9vdGJhbGxSIikNCmxpYnJhcnkod29ybGRmb290YmFsbFIpDQpsaWJyYXJ5KGRwbHlyKQ0KYGBgDQoNCg0KYGBge3J9DQojZm9yIChpIGluIDIwMTg6MjAyNCkNCmZvciAoaSBpbiAyMDI0OjIwMjQpDQp7DQogIGVwbF8yMDI0X3VybHMgPC0gZmJfbWF0Y2hfdXJscyhjb3VudHJ5ID0gIkVORyIsIGdlbmRlciA9ICJNIiwgc2Vhc29uX2VuZF95ZWFyID0gaSwgdGllcj0iMXN0IikNCiAgZXBsXzIwMjRfaW5mb3MgPC0gZmJfbWF0Y2hfcmVzdWx0cyhjb3VudHJ5ID0gIkVORyIsIGdlbmRlciA9ICJNIiwgc2Vhc29uX2VuZF95ZWFyID0gaSwgdGllciA9ICIxc3QiKQ0KICBmb3IgKHVybCBpbiBlcGxfMjAyNF91cmxzKXsNCiAgICBlcGxfMjAyNF9zcXVhZCA8LSBmYl9tYXRjaF9saW5ldXBzKG1hdGNoX3VybCA9IHVybCkNCiAgICBlcGxfMjAyNF9nb2FsczwtIGZiX21hdGNoX3N1bW1hcnkobWF0Y2hfdXJsID0gdXJsKQ0KICAgIGVwbF8yMDI0X3N0YXRzIDwtIGZiX3RlYW1fbWF0Y2hfc3RhdHMobWF0Y2hfdXJsID0gZXBsXzIwMjRfdXJscykNCiAgICBlcGxfMjAyNF9zdGF0c19tb3JlIDwtIGZiX2FkdmFuY2VkX21hdGNoX3N0YXRzKG1hdGNoX3VybCA9IGVwbF8yMDI0X3VybHMsIHN0YXRfdHlwZSA9ICJzdW1tYXJ5IiwgdGVhbV9vcl9wbGF5ZXIgPSAidGVhbSIpDQogICAgDQogIH0NCn0NCmBgYA0KYGBge3J9DQp0ZXN0X3VybHNfbXVsdGlwbGUgPC0gYygiaHR0cHM6Ly9mYnJlZi5jb20vZW4vbWF0Y2hlcy9jMDk5NmNhYy9Cb3JkZWF1eC1OYW50ZXMtQXVndXN0LTIxLTIwMjAtTGlndWUtMSIsDQogICAgICAgICAgICAgICAgICAgICAgICAiaHR0cHM6Ly9mYnJlZi5jb20vZW4vbWF0Y2hlcy85Y2JjY2IzNy9EaWpvbi1BbmdlcnMtQXVndXN0LTIyLTIwMjAtTGlndWUtMSIpDQpgYGANCg0KYGBge3J9DQplcGxfMjAyNF91cmxzIDwtIGZiX21hdGNoX3VybHMoY291bnRyeSA9ICJFTkciLCBnZW5kZXIgPSAiTSIsIHNlYXNvbl9lbmRfeWVhciA9IDIwMjQsIHRpZXI9IjFzdCIpDQpgYGANCg0KYGBge3J9DQojZmJyZWZfbWF0Y2hfaW5mb3MNCmVwbF8yMDI0X2luZm9zIDwtIGZiX21hdGNoX3Jlc3VsdHMoY291bnRyeSA9ICJFTkciLCBnZW5kZXIgPSAiTSIsIHNlYXNvbl9lbmRfeWVhciA9IDIwMjQsIHRpZXIgPSAiMXN0IikNCiNpbiByYQ0KZ2xpbXBzZShlcGxfMjAyNF9pbmZvcykNCg0KYGBgDQoNCmBgYHtyfQ0KI2ZicmVmX21hdGNoX3NxdWFkDQplcGxfMjAyNF9zcXVhZCA8LSBkYXRhLmZyYW1lKCkNCmZvciAoaSBpbiB0ZXN0X3VybHNfbXVsdGlwbGUpew0KCXRlbXAgPC0gZmJfbWF0Y2hfbGluZXVwcyhtYXRjaF91cmwgPSBpKQ0KCWVwbF8yMDI0X3NxdWFkIDwtIHJiaW5kKGVwbF8yMDI0X3NxdWFkLCB0ZW1wKQ0KfQ0KYGBgDQoNCmBgYHtyfQ0KI2ZicmVmX21hdGNoX2dvYWxzDQplcGxfMjAyNF9nb2FscyA8LSBkYXRhLmZyYW1lKCkNCmZvciAoaSBpbiB0ZXN0X3VybHNfbXVsdGlwbGUpew0KCXRlbXAgPC0gZmJfbWF0Y2hfc3VtbWFyeShtYXRjaF91cmwgPSBpKQ0KCWVwbF8yMDI0X2dvYWxzIDwtIHJiaW5kKGVwbF8yMDI0X2dvYWxzLCB0ZW1wKQ0KfQ0KYGBgDQoNCmBgYHtyfQ0KI2ZicmVmX21hdGNoX3N0YXRzDQplcGxfMjAyNF9zdGF0cyA8LSBkYXRhLmZyYW1lKCkNCmZvciAoaSBpbiB0ZXN0X3VybHNfbXVsdGlwbGUpew0KCXRlbXAgPC0gZmJfdGVhbV9tYXRjaF9zdGF0cyhtYXRjaF91cmwgPSBpKQ0KCWVwbF8yMDI0X3N0YXRzIDwtIHJiaW5kKGVwbF8yMDI0X3N0YXRzLCB0ZW1wKQ0KfQ0KYGBgDQoNCmBgYHtyfQ0KI21vcmUgc3RhdGlzdGljDQplcGxfMjAyNF9zdGF0c19tb3JlIDwtIGRhdGEuZnJhbWUoKQ0KZm9yIChpIGluIHRlc3RfdXJsc19tdWx0aXBsZSl7DQoJdGVtcCA8LSBmYl9hZHZhbmNlZF9tYXRjaF9zdGF0cyhtYXRjaF91cmwgPSBpLCBzdGF0X3R5cGUgPSAic3VtbWFyeSIsIHRlYW1fb3JfcGxheWVyID0gInRlYW0iKQ0KCWVwbF8yMDI0X3N0YXRzX21vcmUgPC0gcmJpbmQoZXBsXzIwMjRfc3RhdHNfbW9yZSwgdGVtcCkNCn0NCmBgYA0K</div>
+<div id="rmd-source-code">LS0tDQp0aXRsZTogIlIgTm90ZWJvb2siDQpvdXRwdXQ6IGh0bWxfbm90ZWJvb2sNCi0tLQ0KDQpgYGB7cixlY2hvPUZBTFNFfQ0KZGV2dG9vbHM6Omluc3RhbGxfZ2l0aHViKCJKYXNlWml2L3dvcmxkZm9vdGJhbGxSIikNCmxpYnJhcnkod29ybGRmb290YmFsbFIpDQpsaWJyYXJ5KGRwbHlyKQ0KYGBgDQoNCg0KYGBge3IsZWNobz1GQUxTRX0NCmBgYA0KDQoNCmBgYHtyfQ0KI2ZvciAoaSBpbiAyMDE4OjIwMjQpDQpmb3IgKGkgaW4gMjAyNDoyMDI0KQ0Kew0KICBlcGxfMjAyNF91cmxzIDwtIGZiX21hdGNoX3VybHMoY291bnRyeSA9ICJFTkciLCBnZW5kZXIgPSAiTSIsIHNlYXNvbl9lbmRfeWVhciA9IGksIHRpZXI9IjFzdCIpDQogIGVwbF8yMDI0X2luZm9zIDwtIGZiX21hdGNoX3Jlc3VsdHMoY291bnRyeSA9ICJFTkciLCBnZW5kZXIgPSAiTSIsIHNlYXNvbl9lbmRfeWVhciA9IGksIHRpZXIgPSAiMXN0IikNCiAgZm9yICh1cmwgaW4gZXBsXzIwMjRfdXJscyl7DQogICAgZXBsXzIwMjRfc3F1YWQgPC0gZmJfbWF0Y2hfbGluZXVwcyhtYXRjaF91cmwgPSB1cmwpDQogICAgZXBsXzIwMjRfZ29hbHM8LSBmYl9tYXRjaF9zdW1tYXJ5KG1hdGNoX3VybCA9IHVybCkNCiAgICBlcGxfMjAyNF9zdGF0cyA8LSBmYl90ZWFtX21hdGNoX3N0YXRzKG1hdGNoX3VybCA9IGVwbF8yMDI0X3VybHMpDQogICAgZXBsXzIwMjRfc3RhdHNfbW9yZSA8LSBmYl9hZHZhbmNlZF9tYXRjaF9zdGF0cyhtYXRjaF91cmwgPSBlcGxfMjAyNF91cmxzLCBzdGF0X3R5cGUgPSAic3VtbWFyeSIsIHRlYW1fb3JfcGxheWVyID0gInRlYW0iKQ0KICAgIA0KICB9DQp9DQpgYGANCmBgYHtyfQ0KdGVzdF91cmxzX211bHRpcGxlIDwtIGMoImh0dHBzOi8vZmJyZWYuY29tL2VuL21hdGNoZXMvYzA5OTZjYWMvQm9yZGVhdXgtTmFudGVzLUF1Z3VzdC0yMS0yMDIwLUxpZ3VlLTEiLA0KICAgICAgICAgICAgICAgICAgICAgICAgImh0dHBzOi8vZmJyZWYuY29tL2VuL21hdGNoZXMvOWNiY2NiMzcvRGlqb24tQW5nZXJzLUF1Z3VzdC0yMi0yMDIwLUxpZ3VlLTEiKQ0KYGBgDQoNCmBgYHtyfQ0KZXBsXzIwMjRfdXJscyA8LSBmYl9tYXRjaF91cmxzKGNvdW50cnkgPSAiRU5HIiwgZ2VuZGVyID0gIk0iLCBzZWFzb25fZW5kX3llYXIgPSAyMDI0LCB0aWVyPSIxc3QiKQ0KYGBgDQoNCmBgYHtyfQ0KI2ZicmVmX21hdGNoX2luZm9zDQplcGxfMjAyNF9pbmZvcyA8LSBmYl9tYXRjaF9yZXN1bHRzKGNvdW50cnkgPSAiRU5HIiwgZ2VuZGVyID0gIk0iLCBzZWFzb25fZW5kX3llYXIgPSAyMDI0LCB0aWVyID0gIjFzdCIpDQojaW4gcmENCmdsaW1wc2UoZXBsXzIwMjRfaW5mb3MpDQoNCmBgYA0KDQpgYGB7cn0NCiNmYnJlZl9tYXRjaF9zcXVhZA0KZXBsXzIwMjRfc3F1YWQgPC0gZGF0YS5mcmFtZSgpDQpmb3IgKGkgaW4gdGVzdF91cmxzX211bHRpcGxlKXsNCgl0ZW1wIDwtIGZiX21hdGNoX2xpbmV1cHMobWF0Y2hfdXJsID0gaSkNCgllcGxfMjAyNF9zcXVhZCA8LSByYmluZChlcGxfMjAyNF9zcXVhZCwgdGVtcCkNCn0NCmBgYA0KDQpgYGB7cn0NCiNmYnJlZl9tYXRjaF9nb2Fscw0KZXBsXzIwMjRfZ29hbHMgPC0gZGF0YS5mcmFtZSgpDQpmb3IgKGkgaW4gdGVzdF91cmxzX211bHRpcGxlKXsNCgl0ZW1wIDwtIGZiX21hdGNoX3N1bW1hcnkobWF0Y2hfdXJsID0gaSkNCgllcGxfMjAyNF9nb2FscyA8LSByYmluZChlcGxfMjAyNF9nb2FscywgdGVtcCkNCn0NCmBgYA0KDQpgYGB7cn0NCiNmYnJlZl9tYXRjaF9zdGF0cw0KZXBsXzIwMjRfc3RhdHMgPC0gZGF0YS5mcmFtZSgpDQpmb3IgKGkgaW4gdGVzdF91cmxzX211bHRpcGxlKXsNCgl0ZW1wIDwtIGZiX3RlYW1fbWF0Y2hfc3RhdHMobWF0Y2hfdXJsID0gaSkNCgllcGxfMjAyNF9zdGF0cyA8LSByYmluZChlcGxfMjAyNF9zdGF0cywgdGVtcCkNCn0NCmBgYA0KDQpgYGB7cn0NCiNtb3JlIHN0YXRpc3RpYw0KZXBsXzIwMjRfc3RhdHNfbW9yZSA8LSBkYXRhLmZyYW1lKCkNCmZvciAoaSBpbiB0ZXN0X3VybHNfbXVsdGlwbGUpew0KCXRlbXAgPC0gZmJfYWR2YW5jZWRfbWF0Y2hfc3RhdHMobWF0Y2hfdXJsID0gaSwgc3RhdF90eXBlID0gInN1bW1hcnkiLCB0ZWFtX29yX3BsYXllciA9ICJ0ZWFtIikNCgllcGxfMjAyNF9zdGF0c19tb3JlIDwtIHJiaW5kKGVwbF8yMDI0X3N0YXRzX21vcmUsIHRlbXApDQp9DQpgYGANCg0KYGBge3J9DQogICAgdGVzdF91cmwgPC0gYygiaHR0cHM6Ly9mYnJlZi5jb20vZW4vbWF0Y2hlcy9mOTI3NzE5ZC9BamFjY2lvLVRvdWxvdXNlLU1heS0yMy0yMDE4LUZyZW5jaC0xMi1SZWxlZ2F0aW9uUHJvbW90aW9uLVBsYXktb2ZmcyIpDQp0cnlDYXRjaCgNCiAgew0KICAgIG1hdGNoX2xpbmV1cHMgPC0gZmJfbWF0Y2hfbGluZXVwcyhtYXRjaF91cmwgPSB0ZXN0X3VybCkNCiAgICBtYXRjaF9zdW1tYXJ5PC0gZmJfbWF0Y2hfc3VtbWFyeShtYXRjaF91cmwgPSB0ZXN0X3VybCkNCiAgICBtYXRjaF9zdGF0cyA8LSBmYl90ZWFtX21hdGNoX3N0YXRzKG1hdGNoX3VybCA9IHRlc3RfdXJsKQ0KICAgIGFkdmFuY2VkX21hdGNoX3N0YXRzIDwtIGZiX2FkdmFuY2VkX21hdGNoX3N0YXRzKG1hdGNoX3VybCA9IHRlc3RfdXJsLCBzdGF0X3R5cGUgPSAic3VtbWFyeSIsIHRlYW1fb3JfcGxheWVyID0gInRlYW0iKQ0KICB9LCBlcnJvciA9IGZ1bmN0aW9uKGUpIHsNCiAgICBwcmludChwYXN0ZSgiRXJyb3IgYXQgVVJMOiIsIHRlc3RfdXJsKSkNCiAgICBwcmludChwYXN0ZSgiRXJyb3I6ICIsIGNvbmRpdGlvbk1lc3NhZ2UoZSkpKQ0KICAgIHByaW50KCJcbiIpDQogIH0NCikNCnByaW50KCJIZWxsb1dvcmxkIikNCmBgYA0K</div>
 
 
 

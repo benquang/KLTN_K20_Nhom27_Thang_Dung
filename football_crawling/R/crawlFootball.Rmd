@@ -10,6 +10,10 @@ library(dplyr)
 ```
 
 
+```{r,echo=FALSE}
+```
+
+
 ```{r}
 #for (i in 2018:2024)
 for (i in 2024:2024)
@@ -76,4 +80,21 @@ for (i in test_urls_multiple){
 	temp <- fb_advanced_match_stats(match_url = i, stat_type = "summary", team_or_player = "team")
 	epl_2024_stats_more <- rbind(epl_2024_stats_more, temp)
 }
+```
+
+```{r}
+    test_url <- c("https://fbref.com/en/matches/f927719d/Ajaccio-Toulouse-May-23-2018-French-12-RelegationPromotion-Play-offs")
+tryCatch(
+  {
+    match_lineups <- fb_match_lineups(match_url = test_url)
+    match_summary<- fb_match_summary(match_url = test_url)
+    match_stats <- fb_team_match_stats(match_url = test_url)
+    advanced_match_stats <- fb_advanced_match_stats(match_url = test_url, stat_type = "summary", team_or_player = "team")
+  }, error = function(e) {
+    print(paste("Error at URL:", test_url))
+    print(paste("Error: ", conditionMessage(e)))
+    print("\n")
+  }
+)
+print("HelloWorld")
 ```
