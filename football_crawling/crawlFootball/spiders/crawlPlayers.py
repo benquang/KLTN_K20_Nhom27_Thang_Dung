@@ -14,7 +14,7 @@ class CrawlplayersSpider(scrapy.Spider):
             },
         'LOG_STDOUT' : {True},
         "LOG_FILE" :'./logs/crawlPlayers_log.txt',
-        'DOWNLOAD_DELAY' : 0.35,
+        'DOWNLOAD_DELAY' : 2,
         'CONCURRENT_REQUESTS' : 1,
     }
     start_urls = ["https://sofifa.com"]
@@ -53,8 +53,12 @@ class CrawlplayersSpider(scrapy.Spider):
         update_urls = response.xpath('//select[@name="roster"]/option/@value').extract()
         update_dates = response.xpath('//select[@name="roster"]/option/text()').extract()
         update = pd.DataFrame({'url':update_urls,'date':update_dates})
-        # update = function.GetFirstDaysOfEachMonth(update)
+        update = function.GetFirstDaysOfEachMonth(update)
         next_urls = update['url'].tolist()
+        
+        for next_url in next_urls:
+            print('Next URL:',self.start_url+next_url)
+
         for next_url in next_urls:
             yield response.follow(self.start_url+next_url,callback = self.parse_on_pages,
                                     meta = {'current_url':self.start_url+next_url}

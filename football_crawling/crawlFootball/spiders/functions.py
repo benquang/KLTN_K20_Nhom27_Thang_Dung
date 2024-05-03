@@ -1,5 +1,6 @@
 from datetime import datetime
 import re
+import pandas as pd
 class Functions:
     def ExtractWorkRates(self, str):
         result = str.split('/')
@@ -83,7 +84,6 @@ class Functions:
     #     This function will get the first update of each month only
     #     input_df contains column "date" and "url"
     #     """
-
     #     dates = input_df['date'].tolist()
     #     first_days_of_each_month = []
     #     # Loop through the list of dates
@@ -97,6 +97,18 @@ class Functions:
     #             first_days_of_each_month.append(dates[i])
     #     result = input_df[input_df['date'].isin(first_days_of_each_month)]
     #     return result
+    def GetFirstDaysOfEachMonth(self,df):
+        # Format "date" column
+        df['date'] = pd.to_datetime(df['date'], format="%b %d, %Y")
+        df['year'] = df['date'].dt.year
+        df['month'] = df['date'].dt.month
+        df['day'] = df['date'].dt.day
+
+        # Find the minimum day for each month and year
+        min_day_df = df.groupby(['year', 'month'])['day'].min().reset_index()
+        # Merge with the original dataframe to get the corresponding URL
+        result = pd.merge(df, min_day_df, on=['year', 'month', 'day'])
+        return result[['url', 'date']]
     
     def Fbref_ExtractFormation(self,str):
         opening_paren_index = str.index("(")
