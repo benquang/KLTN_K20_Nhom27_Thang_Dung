@@ -10,10 +10,10 @@ class CrawlplayersSpider(scrapy.Spider):
     
     custom_settings = {
         'FEEDS':{
-            'player_attr_Laliga.csv':{'format':'csv','overwrite':True}
+            'player_attr_FRA.csv':{'format':'csv','overwrite':True}
             },
         'LOG_STDOUT' : {True},
-        "LOG_FILE" :'./logs/crawlPlayers_Laliga_log.txt',
+        "LOG_FILE" :'./logs/crawlPlayers_FRA_log.txt',
         'DOWNLOAD_DELAY' : 0.5,
         'CONCURRENT_REQUESTS' : 1,
     }
@@ -21,10 +21,10 @@ class CrawlplayersSpider(scrapy.Spider):
     start_url = "https://sofifa.com"
     leauges = [
         # '13', #Premier League
-        #        '16', #League 1
+               '16', #League 1
         #        '19', #Bundesliga
         #        '31', #Serie A
-               '53' #LaLiga
+            #    '53' #LaLiga
                ] 
     numOfVersions = 7
     
