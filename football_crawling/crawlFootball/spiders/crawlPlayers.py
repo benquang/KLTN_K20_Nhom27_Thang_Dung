@@ -14,7 +14,7 @@ class CrawlplayersSpider(scrapy.Spider):
             },
         'LOG_STDOUT' : {True},
         "LOG_FILE" :'./logs/crawlPlayers_log.txt',
-        'DOWNLOAD_DELAY' : 0.3,
+        'DOWNLOAD_DELAY' : 0.5,
         'CONCURRENT_REQUESTS' : 1,
     }
     start_urls = ["https://sofifa.com"]
