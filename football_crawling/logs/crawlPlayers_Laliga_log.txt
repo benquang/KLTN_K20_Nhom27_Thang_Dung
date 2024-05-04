@@ -1,0 +1,138 @@
+2024-05-04 13:51:52 [asyncio] DEBUG: Using selector: SelectSelector
+2024-05-04 13:51:52 [scrapy.utils.log] DEBUG: Using reactor: twisted.internet.asyncioreactor.AsyncioSelectorReactor
+2024-05-04 13:51:52 [scrapy.utils.log] DEBUG: Using asyncio event loop: asyncio.windows_events._WindowsSelectorEventLoop
+2024-05-04 13:51:52 [scrapy.extensions.telnet] INFO: Telnet Password: 75c97688181ebc0c
+2024-05-04 13:51:52 [scrapy.middleware] INFO: Enabled extensions:
+['scrapy.extensions.corestats.CoreStats',
+ 'scrapy.extensions.telnet.TelnetConsole',
+ 'scrapy.extensions.feedexport.FeedExporter',
+ 'scrapy.extensions.logstats.LogStats']
+2024-05-04 13:51:52 [urllib3.connectionpool] DEBUG: Starting new HTTP connection (1): headers.scrapeops.io:80
+2024-05-04 13:51:53 [twisted] CRITICAL: Unhandled error in Deferred:
+2024-05-04 13:51:53 [twisted] CRITICAL: 
+Traceback (most recent call last):
+  File "C:\Users\super\AppData\Local\Programs\Python\Python311\Lib\site-packages\twisted\internet\defer.py", line 1697, in _inlineCallbacks
+    result = context.run(gen.send, result)
+  File "C:\Users\super\AppData\Local\Programs\Python\Python311\Lib\site-packages\scrapy\crawler.py", line 134, in crawl
+    self.engine = self._create_engine()
+  File "C:\Users\super\AppData\Local\Programs\Python\Python311\Lib\site-packages\scrapy\crawler.py", line 148, in _create_engine
+    return ExecutionEngine(self, lambda _: self.stop())
+  File "C:\Users\super\AppData\Local\Programs\Python\Python311\Lib\site-packages\scrapy\core\engine.py", line 98, in __init__
+    self.downloader: Downloader = downloader_cls(crawler)
+  File "C:\Users\super\AppData\Local\Programs\Python\Python311\Lib\site-packages\scrapy\core\downloader\__init__.py", line 97, in __init__
+    DownloaderMiddlewareManager.from_crawler(crawler)
+  File "C:\Users\super\AppData\Local\Programs\Python\Python311\Lib\site-packages\scrapy\middleware.py", line 67, in from_crawler
+    return cls.from_settings(crawler.settings, crawler)
+  File "C:\Users\super\AppData\Local\Programs\Python\Python311\Lib\site-packages\scrapy\middleware.py", line 44, in from_settings
+    mw = create_instance(mwcls, settings, crawler)
+  File "C:\Users\super\AppData\Local\Programs\Python\Python311\Lib\site-packages\scrapy\utils\misc.py", line 188, in create_instance
+    instance = objcls.from_crawler(crawler, *args, **kwargs)
+  File "D:\Uni\Nam4\DaiLuan\KLTN_K20_Nhom27_Thang_Dung\football_crawling\crawlFootball\middlewares.py", line 165, in from_crawler
+    return cls(crawler.settings)
+  File "D:\Uni\Nam4\DaiLuan\KLTN_K20_Nhom27_Thang_Dung\football_crawling\crawlFootball\middlewares.py", line 173, in __init__
+    self._get_headers_list()
+  File "D:\Uni\Nam4\DaiLuan\KLTN_K20_Nhom27_Thang_Dung\football_crawling\crawlFootball\middlewares.py", line 180, in _get_headers_list
+    response = requests.get(self.scrapeops_endpoint, params=urlencode(payload))
+  File "C:\Users\super\AppData\Local\Programs\Python\Python311\Lib\site-packages\requests\api.py", line 73, in get
+    return request("get", url, params=params, **kwargs)
+  File "C:\Users\super\AppData\Local\Programs\Python\Python311\Lib\site-packages\requests\api.py", line 59, in request
+    return session.request(method=method, url=url, **kwargs)
+  File "C:\Users\super\AppData\Local\Programs\Python\Python311\Lib\site-packages\requests\sessions.py", line 589, in request
+    resp = self.send(prep, **send_kwargs)
+  File "C:\Users\super\AppData\Local\Programs\Python\Python311\Lib\site-packages\requests\sessions.py", line 703, in send
+    r = adapter.send(request, **kwargs)
+  File "C:\Users\super\AppData\Local\Programs\Python\Python311\Lib\site-packages\requests\adapters.py", line 486, in send
+    resp = conn.urlopen(
+  File "C:\Users\super\AppData\Local\Programs\Python\Python311\Lib\site-packages\urllib3\connectionpool.py", line 714, in urlopen
+    httplib_response = self._make_request(
+  File "C:\Users\super\AppData\Local\Programs\Python\Python311\Lib\site-packages\urllib3\connectionpool.py", line 415, in _make_request
+    conn.request(method, url, **httplib_request_kw)
+  File "C:\Users\super\AppData\Local\Programs\Python\Python311\Lib\site-packages\urllib3\connection.py", line 244, in request
+    super(HTTPConnection, self).request(method, url, body=body, headers=headers)
+  File "C:\Users\super\AppData\Local\Programs\Python\Python311\Lib\http\client.py", line 1286, in request
+    self._send_request(method, url, body, headers, encode_chunked)
+  File "C:\Users\super\AppData\Local\Programs\Python\Python311\Lib\http\client.py", line 1332, in _send_request
+    self.endheaders(body, encode_chunked=encode_chunked)
+  File "C:\Users\super\AppData\Local\Programs\Python\Python311\Lib\http\client.py", line 1281, in endheaders
+    self._send_output(message_body, encode_chunked=encode_chunked)
+  File "C:\Users\super\AppData\Local\Programs\Python\Python311\Lib\http\client.py", line 1041, in _send_output
+    self.send(msg)
+  File "C:\Users\super\AppData\Local\Programs\Python\Python311\Lib\http\client.py", line 979, in send
+    self.connect()
+  File "C:\Users\super\AppData\Local\Programs\Python\Python311\Lib\site-packages\urllib3\connection.py", line 205, in connect
+    conn = self._new_conn()
+  File "C:\Users\super\AppData\Local\Programs\Python\Python311\Lib\site-packages\urllib3\connection.py", line 174, in _new_conn
+    conn = connection.create_connection(
+  File "C:\Users\super\AppData\Local\Programs\Python\Python311\Lib\site-packages\urllib3\util\connection.py", line 85, in create_connection
+    sock.connect(sa)
+KeyboardInterrupt
+2024-05-04 13:53:29 [asyncio] DEBUG: Using selector: SelectSelector
+2024-05-04 13:53:29 [scrapy.utils.log] DEBUG: Using reactor: twisted.internet.asyncioreactor.AsyncioSelectorReactor
+2024-05-04 13:53:29 [scrapy.utils.log] DEBUG: Using asyncio event loop: asyncio.windows_events._WindowsSelectorEventLoop
+2024-05-04 13:53:29 [scrapy.extensions.telnet] INFO: Telnet Password: 2ec8e050a98ec97e
+2024-05-04 13:53:29 [scrapy.middleware] INFO: Enabled extensions:
+['scrapy.extensions.corestats.CoreStats',
+ 'scrapy.extensions.telnet.TelnetConsole',
+ 'scrapy.extensions.feedexport.FeedExporter',
+ 'scrapy.extensions.logstats.LogStats']
+2024-05-04 13:53:29 [urllib3.connectionpool] DEBUG: Starting new HTTP connection (1): headers.scrapeops.io:80
+2024-05-04 13:53:29 [twisted] CRITICAL: Unhandled error in Deferred:
+2024-05-04 13:53:29 [twisted] CRITICAL: 
+Traceback (most recent call last):
+  File "C:\Users\super\AppData\Local\Programs\Python\Python311\Lib\site-packages\twisted\internet\defer.py", line 1697, in _inlineCallbacks
+    result = context.run(gen.send, result)
+  File "C:\Users\super\AppData\Local\Programs\Python\Python311\Lib\site-packages\scrapy\crawler.py", line 134, in crawl
+    self.engine = self._create_engine()
+  File "C:\Users\super\AppData\Local\Programs\Python\Python311\Lib\site-packages\scrapy\crawler.py", line 148, in _create_engine
+    return ExecutionEngine(self, lambda _: self.stop())
+  File "C:\Users\super\AppData\Local\Programs\Python\Python311\Lib\site-packages\scrapy\core\engine.py", line 98, in __init__
+    self.downloader: Downloader = downloader_cls(crawler)
+  File "C:\Users\super\AppData\Local\Programs\Python\Python311\Lib\site-packages\scrapy\core\downloader\__init__.py", line 97, in __init__
+    DownloaderMiddlewareManager.from_crawler(crawler)
+  File "C:\Users\super\AppData\Local\Programs\Python\Python311\Lib\site-packages\scrapy\middleware.py", line 67, in from_crawler
+    return cls.from_settings(crawler.settings, crawler)
+  File "C:\Users\super\AppData\Local\Programs\Python\Python311\Lib\site-packages\scrapy\middleware.py", line 44, in from_settings
+    mw = create_instance(mwcls, settings, crawler)
+  File "C:\Users\super\AppData\Local\Programs\Python\Python311\Lib\site-packages\scrapy\utils\misc.py", line 188, in create_instance
+    instance = objcls.from_crawler(crawler, *args, **kwargs)
+  File "D:\Uni\Nam4\DaiLuan\KLTN_K20_Nhom27_Thang_Dung\football_crawling\crawlFootball\middlewares.py", line 165, in from_crawler
+    return cls(crawler.settings)
+  File "D:\Uni\Nam4\DaiLuan\KLTN_K20_Nhom27_Thang_Dung\football_crawling\crawlFootball\middlewares.py", line 173, in __init__
+    self._get_headers_list()
+  File "D:\Uni\Nam4\DaiLuan\KLTN_K20_Nhom27_Thang_Dung\football_crawling\crawlFootball\middlewares.py", line 180, in _get_headers_list
+    response = requests.get(self.scrapeops_endpoint, params=urlencode(payload))
+  File "C:\Users\super\AppData\Local\Programs\Python\Python311\Lib\site-packages\requests\api.py", line 73, in get
+    return request("get", url, params=params, **kwargs)
+  File "C:\Users\super\AppData\Local\Programs\Python\Python311\Lib\site-packages\requests\api.py", line 59, in request
+    return session.request(method=method, url=url, **kwargs)
+  File "C:\Users\super\AppData\Local\Programs\Python\Python311\Lib\site-packages\requests\sessions.py", line 589, in request
+    resp = self.send(prep, **send_kwargs)
+  File "C:\Users\super\AppData\Local\Programs\Python\Python311\Lib\site-packages\requests\sessions.py", line 703, in send
+    r = adapter.send(request, **kwargs)
+  File "C:\Users\super\AppData\Local\Programs\Python\Python311\Lib\site-packages\requests\adapters.py", line 486, in send
+    resp = conn.urlopen(
+  File "C:\Users\super\AppData\Local\Programs\Python\Python311\Lib\site-packages\urllib3\connectionpool.py", line 714, in urlopen
+    httplib_response = self._make_request(
+  File "C:\Users\super\AppData\Local\Programs\Python\Python311\Lib\site-packages\urllib3\connectionpool.py", line 415, in _make_request
+    conn.request(method, url, **httplib_request_kw)
+  File "C:\Users\super\AppData\Local\Programs\Python\Python311\Lib\site-packages\urllib3\connection.py", line 244, in request
+    super(HTTPConnection, self).request(method, url, body=body, headers=headers)
+  File "C:\Users\super\AppData\Local\Programs\Python\Python311\Lib\http\client.py", line 1286, in request
+    self._send_request(method, url, body, headers, encode_chunked)
+  File "C:\Users\super\AppData\Local\Programs\Python\Python311\Lib\http\client.py", line 1332, in _send_request
+    self.endheaders(body, encode_chunked=encode_chunked)
+  File "C:\Users\super\AppData\Local\Programs\Python\Python311\Lib\http\client.py", line 1281, in endheaders
+    self._send_output(message_body, encode_chunked=encode_chunked)
+  File "C:\Users\super\AppData\Local\Programs\Python\Python311\Lib\http\client.py", line 1041, in _send_output
+    self.send(msg)
+  File "C:\Users\super\AppData\Local\Programs\Python\Python311\Lib\http\client.py", line 979, in send
+    self.connect()
+  File "C:\Users\super\AppData\Local\Programs\Python\Python311\Lib\site-packages\urllib3\connection.py", line 205, in connect
+    conn = self._new_conn()
+  File "C:\Users\super\AppData\Local\Programs\Python\Python311\Lib\site-packages\urllib3\connection.py", line 174, in _new_conn
+    conn = connection.create_connection(
+  File "C:\Users\super\AppData\Local\Programs\Python\Python311\Lib\site-packages\urllib3\util\connection.py", line 72, in create_connection
+    for res in socket.getaddrinfo(host, port, family, socket.SOCK_STREAM):
+  File "C:\Users\super\AppData\Local\Programs\Python\Python311\Lib\socket.py", line 962, in getaddrinfo
+    for res in _socket.getaddrinfo(host, port, family, type, proto, flags):
+KeyboardInterrupt

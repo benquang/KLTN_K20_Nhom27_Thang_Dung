@@ -5,7 +5,7 @@ import pandas as pd
 from crawlFootball.items import *
 from crawlFootball.spiders.functions import *
 class CrawlplayersSpider(scrapy.Spider):
-    name = "crawlPlayers"
+    name = "crawlPlayers_Laliga"
     allowed_domains = ["sofifa.com"]
     
     custom_settings = {
