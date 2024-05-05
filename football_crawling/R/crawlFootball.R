@@ -6,17 +6,18 @@ library(dplyr)
 countries <- c("GER")
 
 # seasons <- c(2024)
-seasons <- c(2018:2020)
+seasons <- c(2020:2024)
 
 parse <- function() {
     parse_on_country()
 }
+
 delete_all_files <- function() {
-    file.remove('./GER_fbref_18_20/match_results.csv')
-    file.remove('./GER_fbref_18_20/match_lineups.csv')
-    file.remove('./GER_fbref_18_20/match_summary.csv')
-    file.remove('./GER_fbref_18_20/match_stats.csv')
-    file.remove('./GER_fbref_18_20/advanced_match_stats.csv')
+    file.remove('./GER_fbref_20_24/match_results.csv')
+    file.remove('./GER_fbref_20_24/match_lineups.csv')
+    file.remove('./GER_fbref_20_24/match_summary.csv')
+    file.remove('./GER_fbref_20_24/match_stats.csv')
+    file.remove('./GER_fbref_20_24/advanced_match_stats.csv')
 }
 parse_on_country <- function() {
     delete_all_files()
@@ -37,7 +38,7 @@ parse_on_season <- function(country) {
             match_urls <- fb_match_urls(country = country, gender = "M", season_end_year = i, tier="1st")
             match_urls <- shuffle_match_urls(match_urls)
             match_results <- fb_match_results(country = country, gender = "M", season_end_year = i, tier = "1st")
-            write.table(match_results, file = './GER_fbref_18_20/match_results.csv', append = TRUE, row.names = FALSE, sep = ",", col.names = !file.exists('./GER_fbref_18_20/match_results.csv'))
+            write.table(match_results, file = './GER_fbref_20_24/match_results.csv', append = TRUE, row.names = FALSE, sep = ",", col.names = !file.exists('./GER_fbref_20_24/match_results.csv'))
         },
         error = function(e) {
             print(paste("Error at season:", i))
@@ -50,13 +51,13 @@ parse_on_season <- function(country) {
             tryCatch(
                 {
                     match_lineups <- fb_match_lineups(match_url = match_url)
-                    write.table(match_lineups, file = './GER_fbref_18_20/match_lineups.csv', append = TRUE, row.names = FALSE, sep = ",", col.names = !file.exists('./GER_fbref_18_20/match_lineups.csv'))
+                    write.table(match_lineups, file = './GER_fbref_20_24/match_lineups.csv', append = TRUE, row.names = FALSE, sep = ",", col.names = !file.exists('./GER_fbref_20_24/match_lineups.csv'))
                     match_summary<- fb_match_summary(match_url = match_url)
-                    write.table(match_summary, file = './GER_fbref_18_20/match_summary.csv', append = TRUE, row.names = FALSE, sep = ",", col.names = !file.exists('./GER_fbref_18_20/match_summary.csv'))
+                    write.table(match_summary, file = './GER_fbref_20_24/match_summary.csv', append = TRUE, row.names = FALSE, sep = ",", col.names = !file.exists('./GER_fbref_20_24/match_summary.csv'))
                     match_stats <- fb_team_match_stats(match_url = match_url)
-                    write.table(match_stats, file = './GER_fbref_18_20/match_stats.csv', append = TRUE, row.names = FALSE, sep = ",", col.names = !file.exists('./GER_fbref_18_20/match_stats.csv'))
+                    write.table(match_stats, file = './GER_fbref_20_24/match_stats.csv', append = TRUE, row.names = FALSE, sep = ",", col.names = !file.exists('./GER_fbref_20_24/match_stats.csv'))
                     advanced_match_stats <- fb_advanced_match_stats(match_url = match_url, stat_type = "summary", team_or_player = "team")
-                    write.table(advanced_match_stats, file = './GER_fbref_18_20/advanced_match_stats.csv', append = TRUE, row.names = FALSE, sep = ",", col.names = !file.exists('./GER_fbref_18_20/advanced_match_stats.csv'))
+                    write.table(advanced_match_stats, file = './GER_fbref_20_24/advanced_match_stats.csv', append = TRUE, row.names = FALSE, sep = ",", col.names = !file.exists('./GER_fbref_20_24/advanced_match_stats.csv'))
                 },
                 error = function(e) {
                     print(paste("Error at URL:", match_url))
