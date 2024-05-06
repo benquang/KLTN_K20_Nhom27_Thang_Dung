@@ -1,0 +1,605 @@
+Skipping install of 'worldfootballR' from a github remote, the SHA1 (703904a3) has not changed since last install.
+  Use `force = TRUE` to force installation
+
+Attaching package: ‘dplyr’
+
+The following objects are masked from ‘package:stats’:
+
+    filter, lag
+
+The following objects are masked from ‘package:base’:
+
+    intersect, setdiff, setequal, union
+
+Lineups not available for https://fbref.com/en/matches/90b7dccf/Caen-Angers-October-14-2017-Ligue-1
+Match Summary not available for https://fbref.com/en/matches/90b7dccf/Caen-Angers-October-14-2017-Ligue-1
+https://fbref.com/en/matches/90b7dccf/Caen-Angers-October-14-2017-Ligue-1 is not available
+Stats data not available for https://fbref.com/en/matches/90b7dccf/Caen-Angers-October-14-2017-Ligue-1
+Lineups not available for https://fbref.com/en/matches/4758588c/Lyon-Saint-Etienne-February-25-2018-Ligue-1
+Match Summary not available for https://fbref.com/en/matches/4758588c/Lyon-Saint-Etienne-February-25-2018-Ligue-1
+https://fbref.com/en/matches/4758588c/Lyon-Saint-Etienne-February-25-2018-Ligue-1 is not available
+Stats data not available for https://fbref.com/en/matches/4758588c/Lyon-Saint-Etienne-February-25-2018-Ligue-1
+Lineups not available for https://fbref.com/en/matches/9a865b2e/Marseille-Caen-November-5-2017-Ligue-1
+Match Summary not available for https://fbref.com/en/matches/9a865b2e/Marseille-Caen-November-5-2017-Ligue-1
+https://fbref.com/en/matches/9a865b2e/Marseille-Caen-November-5-2017-Ligue-1 is not available
+Stats data not available for https://fbref.com/en/matches/9a865b2e/Marseille-Caen-November-5-2017-Ligue-1
+Lineups not available for https://fbref.com/en/matches/095049d2/Dijon-Nantes-October-28-2017-Ligue-1
+Match Summary not available for https://fbref.com/en/matches/095049d2/Dijon-Nantes-October-28-2017-Ligue-1
+https://fbref.com/en/matches/095049d2/Dijon-Nantes-October-28-2017-Ligue-1 is not available
+Stats data not available for https://fbref.com/en/matches/095049d2/Dijon-Nantes-October-28-2017-Ligue-1
+Lineups not available for https://fbref.com/en/matches/eaf475cd/Monaco-Lille-March-16-2018-Ligue-1
+Match Summary not available for https://fbref.com/en/matches/eaf475cd/Monaco-Lille-March-16-2018-Ligue-1
+https://fbref.com/en/matches/eaf475cd/Monaco-Lille-March-16-2018-Ligue-1 is not available
+Stats data not available for https://fbref.com/en/matches/eaf475cd/Monaco-Lille-March-16-2018-Ligue-1
+Lineups not available for https://fbref.com/en/matches/fa7ea650/Dijon-Guingamp-May-6-2018-Ligue-1
+Match Summary not available for https://fbref.com/en/matches/fa7ea650/Dijon-Guingamp-May-6-2018-Ligue-1
+https://fbref.com/en/matches/fa7ea650/Dijon-Guingamp-May-6-2018-Ligue-1 is not available
+Stats data not available for https://fbref.com/en/matches/fa7ea650/Dijon-Guingamp-May-6-2018-Ligue-1
+Lineups not available for https://fbref.com/en/matches/73ebee0b/Montpellier-Bordeaux-April-15-2018-Ligue-1
+Match Summary not available for https://fbref.com/en/matches/73ebee0b/Montpellier-Bordeaux-April-15-2018-Ligue-1
+https://fbref.com/en/matches/73ebee0b/Montpellier-Bordeaux-April-15-2018-Ligue-1 is not available
+Stats data not available for https://fbref.com/en/matches/73ebee0b/Montpellier-Bordeaux-April-15-2018-Ligue-1
+Lineups not available for https://fbref.com/en/matches/2a5d750e/Marseille-Rennes-September-10-2017-Ligue-1
+Match Summary not available for https://fbref.com/en/matches/2a5d750e/Marseille-Rennes-September-10-2017-Ligue-1
+https://fbref.com/en/matches/2a5d750e/Marseille-Rennes-September-10-2017-Ligue-1 is not available
+Stats data not available for https://fbref.com/en/matches/2a5d750e/Marseille-Rennes-September-10-2017-Ligue-1
+Lineups not available for https://fbref.com/en/matches/a68e623d/Monaco-Toulouse-August-4-2017-Ligue-1
+Match Summary not available for https://fbref.com/en/matches/a68e623d/Monaco-Toulouse-August-4-2017-Ligue-1
+https://fbref.com/en/matches/a68e623d/Monaco-Toulouse-August-4-2017-Ligue-1 is not available
+Stats data not available for https://fbref.com/en/matches/a68e623d/Monaco-Toulouse-August-4-2017-Ligue-1
+Lineups not available for https://fbref.com/en/matches/d157c90c/Amiens-Strasbourg-April-21-2018-Ligue-1
+Match Summary not available for https://fbref.com/en/matches/d157c90c/Amiens-Strasbourg-April-21-2018-Ligue-1
+https://fbref.com/en/matches/d157c90c/Amiens-Strasbourg-April-21-2018-Ligue-1 is not available
+Stats data not available for https://fbref.com/en/matches/d157c90c/Amiens-Strasbourg-April-21-2018-Ligue-1
+Lineups not available for https://fbref.com/en/matches/1b40cf24/Monaco-Metz-January-21-2018-Ligue-1
+Match Summary not available for https://fbref.com/en/matches/1b40cf24/Monaco-Metz-January-21-2018-Ligue-1
+https://fbref.com/en/matches/1b40cf24/Monaco-Metz-January-21-2018-Ligue-1 is not available
+Stats data not available for https://fbref.com/en/matches/1b40cf24/Monaco-Metz-January-21-2018-Ligue-1
+Lineups not available for https://fbref.com/en/matches/f37f696e/Dijon-Monaco-August-13-2017-Ligue-1
+Match Summary not available for https://fbref.com/en/matches/f37f696e/Dijon-Monaco-August-13-2017-Ligue-1
+https://fbref.com/en/matches/f37f696e/Dijon-Monaco-August-13-2017-Ligue-1 is not available
+Stats data not available for https://fbref.com/en/matches/f37f696e/Dijon-Monaco-August-13-2017-Ligue-1
+Lineups not available for https://fbref.com/en/matches/5fb59a19/Amiens-Toulouse-February-17-2018-Ligue-1
+Match Summary not available for https://fbref.com/en/matches/5fb59a19/Amiens-Toulouse-February-17-2018-Ligue-1
+https://fbref.com/en/matches/5fb59a19/Amiens-Toulouse-February-17-2018-Ligue-1 is not available
+Stats data not available for https://fbref.com/en/matches/5fb59a19/Amiens-Toulouse-February-17-2018-Ligue-1
+Lineups not available for https://fbref.com/en/matches/84cc3ecf/Strasbourg-Troyes-February-11-2018-Ligue-1
+Match Summary not available for https://fbref.com/en/matches/84cc3ecf/Strasbourg-Troyes-February-11-2018-Ligue-1
+https://fbref.com/en/matches/84cc3ecf/Strasbourg-Troyes-February-11-2018-Ligue-1 is not available
+Stats data not available for https://fbref.com/en/matches/84cc3ecf/Strasbourg-Troyes-February-11-2018-Ligue-1
+Lineups not available for https://fbref.com/en/matches/ada4c8c3/Rennes-Metz-April-14-2018-Ligue-1
+Match Summary not available for https://fbref.com/en/matches/ada4c8c3/Rennes-Metz-April-14-2018-Ligue-1
+https://fbref.com/en/matches/ada4c8c3/Rennes-Metz-April-14-2018-Ligue-1 is not available
+Stats data not available for https://fbref.com/en/matches/ada4c8c3/Rennes-Metz-April-14-2018-Ligue-1
+Lineups not available for https://fbref.com/en/matches/54513c3b/Lille-Angers-February-24-2018-Ligue-1
+Match Summary not available for https://fbref.com/en/matches/54513c3b/Lille-Angers-February-24-2018-Ligue-1
+https://fbref.com/en/matches/54513c3b/Lille-Angers-February-24-2018-Ligue-1 is not available
+Stats data not available for https://fbref.com/en/matches/54513c3b/Lille-Angers-February-24-2018-Ligue-1
+Lineups not available for https://fbref.com/en/matches/3a44c59e/Strasbourg-Paris-Saint-Germain-December-2-2017-Ligue-1
+Match Summary not available for https://fbref.com/en/matches/3a44c59e/Strasbourg-Paris-Saint-Germain-December-2-2017-Ligue-1
+https://fbref.com/en/matches/3a44c59e/Strasbourg-Paris-Saint-Germain-December-2-2017-Ligue-1 is not available
+Stats data not available for https://fbref.com/en/matches/3a44c59e/Strasbourg-Paris-Saint-Germain-December-2-2017-Ligue-1
+Lineups not available for https://fbref.com/en/matches/f927719d/Ajaccio-Toulouse-May-23-2018-French-12-RelegationPromotion-Play-offs
+[1] "Error at URL: https://fbref.com/en/matches/f927719d/Ajaccio-Toulouse-May-23-2018-French-12-RelegationPromotion-Play-offs"
+[1] "Error:  Error in `map()`:\nℹ In index: 1.\nCaused by error in `dplyr::mutate()`:\nℹ In argument: `Home_Success_Pass =\n  as.numeric(.data[[\"Home_Success_Pass\"]])`.\nCaused by error in `.data[[\"Home_Success_Pass\"]]`:\n! Column `Home_Success_Pass` not found in `.data`.\n"
+[1] "\n"
+Lineups not available for https://fbref.com/en/matches/06517ea5/Toulouse-Ajaccio-May-27-2018-French-12-RelegationPromotion-Play-offs
+[1] "Error at URL: https://fbref.com/en/matches/06517ea5/Toulouse-Ajaccio-May-27-2018-French-12-RelegationPromotion-Play-offs"
+[1] "Error:  Error in `map()`:\nℹ In index: 1.\nCaused by error in `dplyr::mutate()`:\nℹ In argument: `Home_Success_Pass =\n  as.numeric(.data[[\"Home_Success_Pass\"]])`.\nCaused by error in `.data[[\"Home_Success_Pass\"]]`:\n! Column `Home_Success_Pass` not found in `.data`.\n"
+[1] "\n"
+Lineups not available for https://fbref.com/en/matches/bfd434c1/Lens-Dijon-May-30-2019-French-12-RelegationPromotion-Play-offs
+[1] "Error at URL: https://fbref.com/en/matches/bfd434c1/Lens-Dijon-May-30-2019-French-12-RelegationPromotion-Play-offs"
+[1] "Error:  Error in `map()`:\nℹ In index: 1.\nCaused by error in `dplyr::mutate()`:\nℹ In argument: `Home_Success_Pass =\n  as.numeric(.data[[\"Home_Success_Pass\"]])`.\nCaused by error in `.data[[\"Home_Success_Pass\"]]`:\n! Column `Home_Success_Pass` not found in `.data`.\n"
+[1] "\n"
+Lineups not available for https://fbref.com/en/matches/ea5db1c4/Dijon-Lens-June-2-2019-French-12-RelegationPromotion-Play-offs
+[1] "Error at URL: https://fbref.com/en/matches/ea5db1c4/Dijon-Lens-June-2-2019-French-12-RelegationPromotion-Play-offs"
+[1] "Error:  Error in `map()`:\nℹ In index: 1.\nCaused by error in `dplyr::mutate()`:\nℹ In argument: `Home_Success_Pass =\n  as.numeric(.data[[\"Home_Success_Pass\"]])`.\nCaused by error in `.data[[\"Home_Success_Pass\"]]`:\n! Column `Home_Success_Pass` not found in `.data`.\n"
+[1] "\n"
+Lineups not available for https://fbref.com/en/matches/57db75ba/Nantes-Nimes-March-14-2020-Ligue-1
+[1] "Error at URL: https://fbref.com/en/matches/57db75ba/Nantes-Nimes-March-14-2020-Ligue-1"
+[1] "Error:  Error in `map()`:\nℹ In index: 1.\nCaused by error in `dplyr::mutate()`:\nℹ In argument: `Home_Success_Pass =\n  as.numeric(.data[[\"Home_Success_Pass\"]])`.\nCaused by error in `.data[[\"Home_Success_Pass\"]]`:\n! Column `Home_Success_Pass` not found in `.data`.\n"
+[1] "\n"
+Lineups not available for https://fbref.com/en/matches/0835d760/Saint-Etienne-Lille-May-9-2020-Ligue-1
+[1] "Error at URL: https://fbref.com/en/matches/0835d760/Saint-Etienne-Lille-May-9-2020-Ligue-1"
+[1] "Error:  Error in `map()`:\nℹ In index: 1.\nCaused by error in `dplyr::mutate()`:\nℹ In argument: `Home_Success_Pass =\n  as.numeric(.data[[\"Home_Success_Pass\"]])`.\nCaused by error in `.data[[\"Home_Success_Pass\"]]`:\n! Column `Home_Success_Pass` not found in `.data`.\n"
+[1] "\n"
+Lineups not available for https://fbref.com/en/matches/fc542da7/Reims-Amiens-May-9-2020-Ligue-1
+[1] "Error at URL: https://fbref.com/en/matches/fc542da7/Reims-Amiens-May-9-2020-Ligue-1"
+[1] "Error:  Error in `map()`:\nℹ In index: 1.\nCaused by error in `dplyr::mutate()`:\nℹ In argument: `Home_Success_Pass =\n  as.numeric(.data[[\"Home_Success_Pass\"]])`.\nCaused by error in `.data[[\"Home_Success_Pass\"]]`:\n! Column `Home_Success_Pass` not found in `.data`.\n"
+[1] "\n"
+Lineups not available for https://fbref.com/en/matches/9574cfb7/Nantes-Brest-May-9-2020-Ligue-1
+[1] "Error at URL: https://fbref.com/en/matches/9574cfb7/Nantes-Brest-May-9-2020-Ligue-1"
+[1] "Error:  Error in `map()`:\nℹ In index: 1.\nCaused by error in `dplyr::mutate()`:\nℹ In argument: `Home_Success_Pass =\n  as.numeric(.data[[\"Home_Success_Pass\"]])`.\nCaused by error in `.data[[\"Home_Success_Pass\"]]`:\n! Column `Home_Success_Pass` not found in `.data`.\n"
+[1] "\n"
+Lineups not available for https://fbref.com/en/matches/c258110d/Bordeaux-Angers-May-9-2020-Ligue-1
+[1] "Error at URL: https://fbref.com/en/matches/c258110d/Bordeaux-Angers-May-9-2020-Ligue-1"
+[1] "Error:  Error in `map()`:\nℹ In index: 1.\nCaused by error in `dplyr::mutate()`:\nℹ In argument: `Home_Success_Pass =\n  as.numeric(.data[[\"Home_Success_Pass\"]])`.\nCaused by error in `.data[[\"Home_Success_Pass\"]]`:\n! Column `Home_Success_Pass` not found in `.data`.\n"
+[1] "\n"
+Lineups not available for https://fbref.com/en/matches/b18f296e/Angers-Toulouse-March-21-2020-Ligue-1
+[1] "Error at URL: https://fbref.com/en/matches/b18f296e/Angers-Toulouse-March-21-2020-Ligue-1"
+[1] "Error:  Error in `map()`:\nℹ In index: 1.\nCaused by error in `dplyr::mutate()`:\nℹ In argument: `Home_Success_Pass =\n  as.numeric(.data[[\"Home_Success_Pass\"]])`.\nCaused by error in `.data[[\"Home_Success_Pass\"]]`:\n! Column `Home_Success_Pass` not found in `.data`.\n"
+[1] "\n"
+Lineups not available for https://fbref.com/en/matches/3cbe315e/Paris-Saint-Germain-Saint-Etienne-April-18-2020-Ligue-1
+[1] "Error at URL: https://fbref.com/en/matches/3cbe315e/Paris-Saint-Germain-Saint-Etienne-April-18-2020-Ligue-1"
+[1] "Error:  Error in `map()`:\nℹ In index: 1.\nCaused by error in `dplyr::mutate()`:\nℹ In argument: `Home_Success_Pass =\n  as.numeric(.data[[\"Home_Success_Pass\"]])`.\nCaused by error in `.data[[\"Home_Success_Pass\"]]`:\n! Column `Home_Success_Pass` not found in `.data`.\n"
+[1] "\n"
+Lineups not available for https://fbref.com/en/matches/954c95bd/Rennes-Lyon-March-21-2020-Ligue-1
+[1] "Error at URL: https://fbref.com/en/matches/954c95bd/Rennes-Lyon-March-21-2020-Ligue-1"
+[1] "Error:  Error in `map()`:\nℹ In index: 1.\nCaused by error in `dplyr::mutate()`:\nℹ In argument: `Home_Success_Pass =\n  as.numeric(.data[[\"Home_Success_Pass\"]])`.\nCaused by error in `.data[[\"Home_Success_Pass\"]]`:\n! Column `Home_Success_Pass` not found in `.data`.\n"
+[1] "\n"
+Lineups not available for https://fbref.com/en/matches/385c7fa5/Choc-des-Olympiques-Lyon-Marseille-April-18-2020-Ligue-1
+[1] "Error at URL: https://fbref.com/en/matches/385c7fa5/Choc-des-Olympiques-Lyon-Marseille-April-18-2020-Ligue-1"
+[1] "Error:  Error in `map()`:\nℹ In index: 1.\nCaused by error in `dplyr::mutate()`:\nℹ In argument: `Home_Success_Pass =\n  as.numeric(.data[[\"Home_Success_Pass\"]])`.\nCaused by error in `.data[[\"Home_Success_Pass\"]]`:\n! Column `Home_Success_Pass` not found in `.data`.\n"
+[1] "\n"
+Lineups not available for https://fbref.com/en/matches/6da7fab9/Dijon-Angers-April-18-2020-Ligue-1
+[1] "Error at URL: https://fbref.com/en/matches/6da7fab9/Dijon-Angers-April-18-2020-Ligue-1"
+[1] "Error:  Error in `map()`:\nℹ In index: 1.\nCaused by error in `dplyr::mutate()`:\nℹ In argument: `Home_Success_Pass =\n  as.numeric(.data[[\"Home_Success_Pass\"]])`.\nCaused by error in `.data[[\"Home_Success_Pass\"]]`:\n! Column `Home_Success_Pass` not found in `.data`.\n"
+[1] "\n"
+Lineups not available for https://fbref.com/en/matches/47ef0ef7/Nice-Saint-Etienne-May-16-2020-Ligue-1
+[1] "Error at URL: https://fbref.com/en/matches/47ef0ef7/Nice-Saint-Etienne-May-16-2020-Ligue-1"
+[1] "Error:  Error in `map()`:\nℹ In index: 1.\nCaused by error in `dplyr::mutate()`:\nℹ In argument: `Home_Success_Pass =\n  as.numeric(.data[[\"Home_Success_Pass\"]])`.\nCaused by error in `.data[[\"Home_Success_Pass\"]]`:\n! Column `Home_Success_Pass` not found in `.data`.\n"
+[1] "\n"
+Lineups not available for https://fbref.com/en/matches/59d303b3/Lille-Monaco-March-20-2020-Ligue-1
+[1] "Error at URL: https://fbref.com/en/matches/59d303b3/Lille-Monaco-March-20-2020-Ligue-1"
+[1] "Error:  Error in `map()`:\nℹ In index: 1.\nCaused by error in `dplyr::mutate()`:\nℹ In argument: `Home_Success_Pass =\n  as.numeric(.data[[\"Home_Success_Pass\"]])`.\nCaused by error in `.data[[\"Home_Success_Pass\"]]`:\n! Column `Home_Success_Pass` not found in `.data`.\n"
+[1] "\n"
+Lineups not available for https://fbref.com/en/matches/5959f855/Monaco-Metz-May-2-2020-Ligue-1
+[1] "Error at URL: https://fbref.com/en/matches/5959f855/Monaco-Metz-May-2-2020-Ligue-1"
+[1] "Error:  Error in `map()`:\nℹ In index: 1.\nCaused by error in `dplyr::mutate()`:\nℹ In argument: `Home_Success_Pass =\n  as.numeric(.data[[\"Home_Success_Pass\"]])`.\nCaused by error in `.data[[\"Home_Success_Pass\"]]`:\n! Column `Home_Success_Pass` not found in `.data`.\n"
+[1] "\n"
+Lineups not available for https://fbref.com/en/matches/1d845950/Lyon-Reims-March-13-2020-Ligue-1
+[1] "Error at URL: https://fbref.com/en/matches/1d845950/Lyon-Reims-March-13-2020-Ligue-1"
+[1] "Error:  Error in `map()`:\nℹ In index: 1.\nCaused by error in `dplyr::mutate()`:\nℹ In argument: `Home_Success_Pass =\n  as.numeric(.data[[\"Home_Success_Pass\"]])`.\nCaused by error in `.data[[\"Home_Success_Pass\"]]`:\n! Column `Home_Success_Pass` not found in `.data`.\n"
+[1] "\n"
+Lineups not available for https://fbref.com/en/matches/13141f17/Toulouse-Paris-Saint-Germain-May-9-2020-Ligue-1
+[1] "Error at URL: https://fbref.com/en/matches/13141f17/Toulouse-Paris-Saint-Germain-May-9-2020-Ligue-1"
+[1] "Error:  Error in `map()`:\nℹ In index: 1.\nCaused by error in `dplyr::mutate()`:\nℹ In argument: `Home_Success_Pass =\n  as.numeric(.data[[\"Home_Success_Pass\"]])`.\nCaused by error in `.data[[\"Home_Success_Pass\"]]`:\n! Column `Home_Success_Pass` not found in `.data`.\n"
+[1] "\n"
+Lineups not available for https://fbref.com/en/matches/84b29f19/Bordeaux-Rennes-March-15-2020-Ligue-1
+[1] "Error at URL: https://fbref.com/en/matches/84b29f19/Bordeaux-Rennes-March-15-2020-Ligue-1"
+[1] "Error:  Error in `map()`:\nℹ In index: 1.\nCaused by error in `dplyr::mutate()`:\nℹ In argument: `Home_Success_Pass =\n  as.numeric(.data[[\"Home_Success_Pass\"]])`.\nCaused by error in `.data[[\"Home_Success_Pass\"]]`:\n! Column `Home_Success_Pass` not found in `.data`.\n"
+[1] "\n"
+Lineups not available for https://fbref.com/en/matches/7024e6a9/Nantes-Lyon-April-11-2020-Ligue-1
+[1] "Error at URL: https://fbref.com/en/matches/7024e6a9/Nantes-Lyon-April-11-2020-Ligue-1"
+[1] "Error:  Error in `map()`:\nℹ In index: 1.\nCaused by error in `dplyr::mutate()`:\nℹ In argument: `Home_Success_Pass =\n  as.numeric(.data[[\"Home_Success_Pass\"]])`.\nCaused by error in `.data[[\"Home_Success_Pass\"]]`:\n! Column `Home_Success_Pass` not found in `.data`.\n"
+[1] "\n"
+Lineups not available for https://fbref.com/en/matches/6ae2dd0a/Reims-Marseille-May-23-2020-Ligue-1
+[1] "Error at URL: https://fbref.com/en/matches/6ae2dd0a/Reims-Marseille-May-23-2020-Ligue-1"
+[1] "Error:  Error in `map()`:\nℹ In index: 1.\nCaused by error in `dplyr::mutate()`:\nℹ In argument: `Home_Success_Pass =\n  as.numeric(.data[[\"Home_Success_Pass\"]])`.\nCaused by error in `.data[[\"Home_Success_Pass\"]]`:\n! Column `Home_Success_Pass` not found in `.data`.\n"
+[1] "\n"
+Lineups not available for https://fbref.com/en/matches/15af867b/Reims-Nantes-March-22-2020-Ligue-1
+[1] "Error at URL: https://fbref.com/en/matches/15af867b/Reims-Nantes-March-22-2020-Ligue-1"
+[1] "Error:  Error in `map()`:\nℹ In index: 1.\nCaused by error in `dplyr::mutate()`:\nℹ In argument: `Home_Success_Pass =\n  as.numeric(.data[[\"Home_Success_Pass\"]])`.\nCaused by error in `.data[[\"Home_Success_Pass\"]]`:\n! Column `Home_Success_Pass` not found in `.data`.\n"
+[1] "\n"
+Lineups not available for https://fbref.com/en/matches/7c1066b8/Dijon-Amiens-March-21-2020-Ligue-1
+[1] "Error at URL: https://fbref.com/en/matches/7c1066b8/Dijon-Amiens-March-21-2020-Ligue-1"
+[1] "Error:  Error in `map()`:\nℹ In index: 1.\nCaused by error in `dplyr::mutate()`:\nℹ In argument: `Home_Success_Pass =\n  as.numeric(.data[[\"Home_Success_Pass\"]])`.\nCaused by error in `.data[[\"Home_Success_Pass\"]]`:\n! Column `Home_Success_Pass` not found in `.data`.\n"
+[1] "\n"
+Lineups not available for https://fbref.com/en/matches/e075de2d/Nimes-Paris-Saint-Germain-May-23-2020-Ligue-1
+[1] "Error at URL: https://fbref.com/en/matches/e075de2d/Nimes-Paris-Saint-Germain-May-23-2020-Ligue-1"
+[1] "Error:  Error in `map()`:\nℹ In index: 1.\nCaused by error in `dplyr::mutate()`:\nℹ In argument: `Home_Success_Pass =\n  as.numeric(.data[[\"Home_Success_Pass\"]])`.\nCaused by error in `.data[[\"Home_Success_Pass\"]]`:\n! Column `Home_Success_Pass` not found in `.data`.\n"
+[1] "\n"
+Lineups not available for https://fbref.com/en/matches/84d5f5dc/Toulouse-Nimes-May-2-2020-Ligue-1
+[1] "Error at URL: https://fbref.com/en/matches/84d5f5dc/Toulouse-Nimes-May-2-2020-Ligue-1"
+[1] "Error:  Error in `map()`:\nℹ In index: 1.\nCaused by error in `dplyr::mutate()`:\nℹ In argument: `Home_Success_Pass =\n  as.numeric(.data[[\"Home_Success_Pass\"]])`.\nCaused by error in `.data[[\"Home_Success_Pass\"]]`:\n! Column `Home_Success_Pass` not found in `.data`.\n"
+[1] "\n"
+Lineups not available for https://fbref.com/en/matches/8006241c/Saint-Etienne-Strasbourg-March-22-2020-Ligue-1
+[1] "Error at URL: https://fbref.com/en/matches/8006241c/Saint-Etienne-Strasbourg-March-22-2020-Ligue-1"
+[1] "Error:  Error in `map()`:\nℹ In index: 1.\nCaused by error in `dplyr::mutate()`:\nℹ In argument: `Home_Success_Pass =\n  as.numeric(.data[[\"Home_Success_Pass\"]])`.\nCaused by error in `.data[[\"Home_Success_Pass\"]]`:\n! Column `Home_Success_Pass` not found in `.data`.\n"
+[1] "\n"
+Lineups not available for https://fbref.com/en/matches/7db1787f/Marseille-Paris-Saint-Germain-March-22-2020-Ligue-1
+[1] "Error at URL: https://fbref.com/en/matches/7db1787f/Marseille-Paris-Saint-Germain-March-22-2020-Ligue-1"
+[1] "Error:  Error in `map()`:\nℹ In index: 1.\nCaused by error in `dplyr::mutate()`:\nℹ In argument: `Home_Success_Pass =\n  as.numeric(.data[[\"Home_Success_Pass\"]])`.\nCaused by error in `.data[[\"Home_Success_Pass\"]]`:\n! Column `Home_Success_Pass` not found in `.data`.\n"
+[1] "\n"
+Lineups not available for https://fbref.com/en/matches/9e780bc9/Reims-Paris-Saint-Germain-April-26-2020-Ligue-1
+[1] "Error at URL: https://fbref.com/en/matches/9e780bc9/Reims-Paris-Saint-Germain-April-26-2020-Ligue-1"
+[1] "Error:  Error in `map()`:\nℹ In index: 1.\nCaused by error in `dplyr::mutate()`:\nℹ In argument: `Home_Success_Pass =\n  as.numeric(.data[[\"Home_Success_Pass\"]])`.\nCaused by error in `.data[[\"Home_Success_Pass\"]]`:\n! Column `Home_Success_Pass` not found in `.data`.\n"
+[1] "\n"
+Lineups not available for https://fbref.com/en/matches/b39a4356/Brest-Lille-March-14-2020-Ligue-1
+[1] "Error at URL: https://fbref.com/en/matches/b39a4356/Brest-Lille-March-14-2020-Ligue-1"
+[1] "Error:  Error in `map()`:\nℹ In index: 1.\nCaused by error in `dplyr::mutate()`:\nℹ In argument: `Home_Success_Pass =\n  as.numeric(.data[[\"Home_Success_Pass\"]])`.\nCaused by error in `.data[[\"Home_Success_Pass\"]]`:\n! Column `Home_Success_Pass` not found in `.data`.\n"
+[1] "\n"
+Lineups not available for https://fbref.com/en/matches/7595ddd8/Marseille-Monaco-May-9-2020-Ligue-1
+[1] "Error at URL: https://fbref.com/en/matches/7595ddd8/Marseille-Monaco-May-9-2020-Ligue-1"
+[1] "Error:  Error in `map()`:\nℹ In index: 1.\nCaused by error in `dplyr::mutate()`:\nℹ In argument: `Home_Success_Pass =\n  as.numeric(.data[[\"Home_Success_Pass\"]])`.\nCaused by error in `.data[[\"Home_Success_Pass\"]]`:\n! Column `Home_Success_Pass` not found in `.data`.\n"
+[1] "\n"
+Lineups not available for https://fbref.com/en/matches/3dd2e74c/Nantes-Amiens-April-26-2020-Ligue-1
+[1] "Error at URL: https://fbref.com/en/matches/3dd2e74c/Nantes-Amiens-April-26-2020-Ligue-1"
+[1] "Error:  Error in `map()`:\nℹ In index: 1.\nCaused by error in `dplyr::mutate()`:\nℹ In argument: `Home_Success_Pass =\n  as.numeric(.data[[\"Home_Success_Pass\"]])`.\nCaused by error in `.data[[\"Home_Success_Pass\"]]`:\n! Column `Home_Success_Pass` not found in `.data`.\n"
+[1] "\n"
+Lineups not available for https://fbref.com/en/matches/6f7a911b/Dijon-Reims-May-16-2020-Ligue-1
+[1] "Error at URL: https://fbref.com/en/matches/6f7a911b/Dijon-Reims-May-16-2020-Ligue-1"
+[1] "Error:  Error in `map()`:\nℹ In index: 1.\nCaused by error in `dplyr::mutate()`:\nℹ In argument: `Home_Success_Pass =\n  as.numeric(.data[[\"Home_Success_Pass\"]])`.\nCaused by error in `.data[[\"Home_Success_Pass\"]]`:\n! Column `Home_Success_Pass` not found in `.data`.\n"
+[1] "\n"
+Lineups not available for https://fbref.com/en/matches/0331f622/Strasbourg-Angers-April-5-2020-Ligue-1
+[1] "Error at URL: https://fbref.com/en/matches/0331f622/Strasbourg-Angers-April-5-2020-Ligue-1"
+[1] "Error:  Error in `map()`:\nℹ In index: 1.\nCaused by error in `dplyr::mutate()`:\nℹ In argument: `Home_Success_Pass =\n  as.numeric(.data[[\"Home_Success_Pass\"]])`.\nCaused by error in `.data[[\"Home_Success_Pass\"]]`:\n! Column `Home_Success_Pass` not found in `.data`.\n"
+[1] "\n"
+Lineups not available for https://fbref.com/en/matches/a248011a/Amiens-Nice-May-23-2020-Ligue-1
+[1] "Error at URL: https://fbref.com/en/matches/a248011a/Amiens-Nice-May-23-2020-Ligue-1"
+[1] "Error:  Error in `map()`:\nℹ In index: 1.\nCaused by error in `dplyr::mutate()`:\nℹ In argument: `Home_Success_Pass =\n  as.numeric(.data[[\"Home_Success_Pass\"]])`.\nCaused by error in `.data[[\"Home_Success_Pass\"]]`:\n! Column `Home_Success_Pass` not found in `.data`.\n"
+[1] "\n"
+Lineups not available for https://fbref.com/en/matches/900d207e/Bordeaux-Amiens-April-11-2020-Ligue-1
+[1] "Error at URL: https://fbref.com/en/matches/900d207e/Bordeaux-Amiens-April-11-2020-Ligue-1"
+[1] "Error:  Error in `map()`:\nℹ In index: 1.\nCaused by error in `dplyr::mutate()`:\nℹ In argument: `Home_Success_Pass =\n  as.numeric(.data[[\"Home_Success_Pass\"]])`.\nCaused by error in `.data[[\"Home_Success_Pass\"]]`:\n! Column `Home_Success_Pass` not found in `.data`.\n"
+[1] "\n"
+Lineups not available for https://fbref.com/en/matches/f2512a78/Saint-Etienne-Dijon-May-23-2020-Ligue-1
+[1] "Error at URL: https://fbref.com/en/matches/f2512a78/Saint-Etienne-Dijon-May-23-2020-Ligue-1"
+[1] "Error:  Error in `map()`:\nℹ In index: 1.\nCaused by error in `dplyr::mutate()`:\nℹ In argument: `Home_Success_Pass =\n  as.numeric(.data[[\"Home_Success_Pass\"]])`.\nCaused by error in `.data[[\"Home_Success_Pass\"]]`:\n! Column `Home_Success_Pass` not found in `.data`.\n"
+[1] "\n"
+Lineups not available for https://fbref.com/en/matches/95d4d994/Bordeaux-Reims-April-5-2020-Ligue-1
+[1] "Error at URL: https://fbref.com/en/matches/95d4d994/Bordeaux-Reims-April-5-2020-Ligue-1"
+[1] "Error:  Error in `map()`:\nℹ In index: 1.\nCaused by error in `dplyr::mutate()`:\nℹ In argument: `Home_Success_Pass =\n  as.numeric(.data[[\"Home_Success_Pass\"]])`.\nCaused by error in `.data[[\"Home_Success_Pass\"]]`:\n! Column `Home_Success_Pass` not found in `.data`.\n"
+[1] "\n"
+Lineups not available for https://fbref.com/en/matches/57c36729/Toulouse-Nantes-April-18-2020-Ligue-1
+[1] "Error at URL: https://fbref.com/en/matches/57c36729/Toulouse-Nantes-April-18-2020-Ligue-1"
+[1] "Error:  Error in `map()`:\nℹ In index: 1.\nCaused by error in `dplyr::mutate()`:\nℹ In argument: `Home_Success_Pass =\n  as.numeric(.data[[\"Home_Success_Pass\"]])`.\nCaused by error in `.data[[\"Home_Success_Pass\"]]`:\n! Column `Home_Success_Pass` not found in `.data`.\n"
+[1] "\n"
+Lineups not available for https://fbref.com/en/matches/8fcf6aa2/Toulouse-Montpellier-May-23-2020-Ligue-1
+[1] "Error at URL: https://fbref.com/en/matches/8fcf6aa2/Toulouse-Montpellier-May-23-2020-Ligue-1"
+[1] "Error:  Error in `map()`:\nℹ In index: 1.\nCaused by error in `dplyr::mutate()`:\nℹ In argument: `Home_Success_Pass =\n  as.numeric(.data[[\"Home_Success_Pass\"]])`.\nCaused by error in `.data[[\"Home_Success_Pass\"]]`:\n! Column `Home_Success_Pass` not found in `.data`.\n"
+[1] "\n"
+Lineups not available for https://fbref.com/en/matches/61deec67/Lille-Amiens-May-16-2020-Ligue-1
+[1] "Error at URL: https://fbref.com/en/matches/61deec67/Lille-Amiens-May-16-2020-Ligue-1"
+[1] "Error:  Error in `map()`:\nℹ In index: 1.\nCaused by error in `dplyr::mutate()`:\nℹ In argument: `Home_Success_Pass =\n  as.numeric(.data[[\"Home_Success_Pass\"]])`.\nCaused by error in `.data[[\"Home_Success_Pass\"]]`:\n! Column `Home_Success_Pass` not found in `.data`.\n"
+[1] "\n"
+Lineups not available for https://fbref.com/en/matches/e0e0f972/Bordeaux-Lille-May-23-2020-Ligue-1
+[1] "Error at URL: https://fbref.com/en/matches/e0e0f972/Bordeaux-Lille-May-23-2020-Ligue-1"
+[1] "Error:  Error in `map()`:\nℹ In index: 1.\nCaused by error in `dplyr::mutate()`:\nℹ In argument: `Home_Success_Pass =\n  as.numeric(.data[[\"Home_Success_Pass\"]])`.\nCaused by error in `.data[[\"Home_Success_Pass\"]]`:\n! Column `Home_Success_Pass` not found in `.data`.\n"
+[1] "\n"
+Lineups not available for https://fbref.com/en/matches/cebe55f6/Amiens-Saint-Etienne-May-2-2020-Ligue-1
+[1] "Error at URL: https://fbref.com/en/matches/cebe55f6/Amiens-Saint-Etienne-May-2-2020-Ligue-1"
+[1] "Error:  Error in `map()`:\nℹ In index: 1.\nCaused by error in `dplyr::mutate()`:\nℹ In argument: `Home_Success_Pass =\n  as.numeric(.data[[\"Home_Success_Pass\"]])`.\nCaused by error in `.data[[\"Home_Success_Pass\"]]`:\n! Column `Home_Success_Pass` not found in `.data`.\n"
+[1] "\n"
+Lineups not available for https://fbref.com/en/matches/2fe7fd6d/Paris-Saint-Germain-Brest-May-2-2020-Ligue-1
+[1] "Error at URL: https://fbref.com/en/matches/2fe7fd6d/Paris-Saint-Germain-Brest-May-2-2020-Ligue-1"
+[1] "Error:  Error in `map()`:\nℹ In index: 1.\nCaused by error in `dplyr::mutate()`:\nℹ In argument: `Home_Success_Pass =\n  as.numeric(.data[[\"Home_Success_Pass\"]])`.\nCaused by error in `.data[[\"Home_Success_Pass\"]]`:\n! Column `Home_Success_Pass` not found in `.data`.\n"
+[1] "\n"
+Lineups not available for https://fbref.com/en/matches/d29312ea/Lille-Nice-April-18-2020-Ligue-1
+[1] "Error at URL: https://fbref.com/en/matches/d29312ea/Lille-Nice-April-18-2020-Ligue-1"
+[1] "Error:  Error in `map()`:\nℹ In index: 1.\nCaused by error in `dplyr::mutate()`:\nℹ In argument: `Home_Success_Pass =\n  as.numeric(.data[[\"Home_Success_Pass\"]])`.\nCaused by error in `.data[[\"Home_Success_Pass\"]]`:\n! Column `Home_Success_Pass` not found in `.data`.\n"
+[1] "\n"
+Lineups not available for https://fbref.com/en/matches/44a73b72/Saint-Etienne-Angers-April-26-2020-Ligue-1
+[1] "Error at URL: https://fbref.com/en/matches/44a73b72/Saint-Etienne-Angers-April-26-2020-Ligue-1"
+[1] "Error:  Error in `map()`:\nℹ In index: 1.\nCaused by error in `dplyr::mutate()`:\nℹ In argument: `Home_Success_Pass =\n  as.numeric(.data[[\"Home_Success_Pass\"]])`.\nCaused by error in `.data[[\"Home_Success_Pass\"]]`:\n! Column `Home_Success_Pass` not found in `.data`.\n"
+[1] "\n"
+Lineups not available for https://fbref.com/en/matches/91b282fd/Marseille-Dijon-April-11-2020-Ligue-1
+[1] "Error at URL: https://fbref.com/en/matches/91b282fd/Marseille-Dijon-April-11-2020-Ligue-1"
+[1] "Error:  Error in `map()`:\nℹ In index: 1.\nCaused by error in `dplyr::mutate()`:\nℹ In argument: `Home_Success_Pass =\n  as.numeric(.data[[\"Home_Success_Pass\"]])`.\nCaused by error in `.data[[\"Home_Success_Pass\"]]`:\n! Column `Home_Success_Pass` not found in `.data`.\n"
+[1] "\n"
+Lineups not available for https://fbref.com/en/matches/cfc6d72b/Monaco-Saint-Etienne-March-15-2020-Ligue-1
+[1] "Error at URL: https://fbref.com/en/matches/cfc6d72b/Monaco-Saint-Etienne-March-15-2020-Ligue-1"
+[1] "Error:  Error in `map()`:\nℹ In index: 1.\nCaused by error in `dplyr::mutate()`:\nℹ In argument: `Home_Success_Pass =\n  as.numeric(.data[[\"Home_Success_Pass\"]])`.\nCaused by error in `.data[[\"Home_Success_Pass\"]]`:\n! Column `Home_Success_Pass` not found in `.data`.\n"
+[1] "\n"
+Lineups not available for https://fbref.com/en/matches/16e073b9/Strasbourg-Paris-Saint-Germain-March-18-2020-Ligue-1
+[1] "Error at URL: https://fbref.com/en/matches/16e073b9/Strasbourg-Paris-Saint-Germain-March-18-2020-Ligue-1"
+[1] "Error:  Error in `map()`:\nℹ In index: 1.\nCaused by error in `dplyr::mutate()`:\nℹ In argument: `Home_Success_Pass =\n  as.numeric(.data[[\"Home_Success_Pass\"]])`.\nCaused by error in `.data[[\"Home_Success_Pass\"]]`:\n! Column `Home_Success_Pass` not found in `.data`.\n"
+[1] "\n"
+Lineups not available for https://fbref.com/en/matches/c6851d6c/Nice-Montpellier-March-21-2020-Ligue-1
+[1] "Error at URL: https://fbref.com/en/matches/c6851d6c/Nice-Montpellier-March-21-2020-Ligue-1"
+[1] "Error:  Error in `map()`:\nℹ In index: 1.\nCaused by error in `dplyr::mutate()`:\nℹ In argument: `Home_Success_Pass =\n  as.numeric(.data[[\"Home_Success_Pass\"]])`.\nCaused by error in `.data[[\"Home_Success_Pass\"]]`:\n! Column `Home_Success_Pass` not found in `.data`.\n"
+[1] "\n"
+Lineups not available for https://fbref.com/en/matches/826710b4/Lyon-Montpellier-May-9-2020-Ligue-1
+[1] "Error at URL: https://fbref.com/en/matches/826710b4/Lyon-Montpellier-May-9-2020-Ligue-1"
+[1] "Error:  Error in `map()`:\nℹ In index: 1.\nCaused by error in `dplyr::mutate()`:\nℹ In argument: `Home_Success_Pass =\n  as.numeric(.data[[\"Home_Success_Pass\"]])`.\nCaused by error in `.data[[\"Home_Success_Pass\"]]`:\n! Column `Home_Success_Pass` not found in `.data`.\n"
+[1] "\n"
+Lineups not available for https://fbref.com/en/matches/1b327b14/Brest-Monaco-April-11-2020-Ligue-1
+[1] "Error at URL: https://fbref.com/en/matches/1b327b14/Brest-Monaco-April-11-2020-Ligue-1"
+[1] "Error:  Error in `map()`:\nℹ In index: 1.\nCaused by error in `dplyr::mutate()`:\nℹ In argument: `Home_Success_Pass =\n  as.numeric(.data[[\"Home_Success_Pass\"]])`.\nCaused by error in `.data[[\"Home_Success_Pass\"]]`:\n! Column `Home_Success_Pass` not found in `.data`.\n"
+[1] "\n"
+Lineups not available for https://fbref.com/en/matches/da07629a/Montpellier-Bordeaux-May-2-2020-Ligue-1
+[1] "Error at URL: https://fbref.com/en/matches/da07629a/Montpellier-Bordeaux-May-2-2020-Ligue-1"
+[1] "Error:  Error in `map()`:\nℹ In index: 1.\nCaused by error in `dplyr::mutate()`:\nℹ In argument: `Home_Success_Pass =\n  as.numeric(.data[[\"Home_Success_Pass\"]])`.\nCaused by error in `.data[[\"Home_Success_Pass\"]]`:\n! Column `Home_Success_Pass` not found in `.data`.\n"
+[1] "\n"
+Lineups not available for https://fbref.com/en/matches/b4fb1a04/Nice-Strasbourg-April-11-2020-Ligue-1
+[1] "Error at URL: https://fbref.com/en/matches/b4fb1a04/Nice-Strasbourg-April-11-2020-Ligue-1"
+[1] "Error:  Error in `map()`:\nℹ In index: 1.\nCaused by error in `dplyr::mutate()`:\nℹ In argument: `Home_Success_Pass =\n  as.numeric(.data[[\"Home_Success_Pass\"]])`.\nCaused by error in `.data[[\"Home_Success_Pass\"]]`:\n! Column `Home_Success_Pass` not found in `.data`.\n"
+[1] "\n"
+Lineups not available for https://fbref.com/en/matches/25b47edc/Monaco-Bordeaux-April-18-2020-Ligue-1
+[1] "Error at URL: https://fbref.com/en/matches/25b47edc/Monaco-Bordeaux-April-18-2020-Ligue-1"
+[1] "Error:  Error in `map()`:\nℹ In index: 1.\nCaused by error in `dplyr::mutate()`:\nℹ In argument: `Home_Success_Pass =\n  as.numeric(.data[[\"Home_Success_Pass\"]])`.\nCaused by error in `.data[[\"Home_Success_Pass\"]]`:\n! Column `Home_Success_Pass` not found in `.data`.\n"
+[1] "\n"
+Lineups not available for https://fbref.com/en/matches/7c5d60f4/Metz-Brest-March-21-2020-Ligue-1
+[1] "Error at URL: https://fbref.com/en/matches/7c5d60f4/Metz-Brest-March-21-2020-Ligue-1"
+[1] "Error:  Error in `map()`:\nℹ In index: 1.\nCaused by error in `dplyr::mutate()`:\nℹ In argument: `Home_Success_Pass =\n  as.numeric(.data[[\"Home_Success_Pass\"]])`.\nCaused by error in `.data[[\"Home_Success_Pass\"]]`:\n! Column `Home_Success_Pass` not found in `.data`.\n"
+[1] "\n"
+Lineups not available for https://fbref.com/en/matches/a151d71c/Strasbourg-Brest-April-18-2020-Ligue-1
+[1] "Error at URL: https://fbref.com/en/matches/a151d71c/Strasbourg-Brest-April-18-2020-Ligue-1"
+[1] "Error:  Error in `map()`:\nℹ In index: 1.\nCaused by error in `dplyr::mutate()`:\nℹ In argument: `Home_Success_Pass =\n  as.numeric(.data[[\"Home_Success_Pass\"]])`.\nCaused by error in `.data[[\"Home_Success_Pass\"]]`:\n! Column `Home_Success_Pass` not found in `.data`.\n"
+[1] "\n"
+Lineups not available for https://fbref.com/en/matches/6921eaba/Metz-Dijon-April-26-2020-Ligue-1
+[1] "Error at URL: https://fbref.com/en/matches/6921eaba/Metz-Dijon-April-26-2020-Ligue-1"
+[1] "Error:  Error in `map()`:\nℹ In index: 1.\nCaused by error in `dplyr::mutate()`:\nℹ In argument: `Home_Success_Pass =\n  as.numeric(.data[[\"Home_Success_Pass\"]])`.\nCaused by error in `.data[[\"Home_Success_Pass\"]]`:\n! Column `Home_Success_Pass` not found in `.data`.\n"
+[1] "\n"
+Lineups not available for https://fbref.com/en/matches/dd0f8fc6/Lyon-Brest-May-23-2020-Ligue-1
+[1] "Error at URL: https://fbref.com/en/matches/dd0f8fc6/Lyon-Brest-May-23-2020-Ligue-1"
+[1] "Error:  Error in `map()`:\nℹ In index: 1.\nCaused by error in `dplyr::mutate()`:\nℹ In argument: `Home_Success_Pass =\n  as.numeric(.data[[\"Home_Success_Pass\"]])`.\nCaused by error in `.data[[\"Home_Success_Pass\"]]`:\n! Column `Home_Success_Pass` not found in `.data`.\n"
+[1] "\n"
+Lineups not available for https://fbref.com/en/matches/a9969cbc/Monaco-Nantes-April-5-2020-Ligue-1
+[1] "Error at URL: https://fbref.com/en/matches/a9969cbc/Monaco-Nantes-April-5-2020-Ligue-1"
+[1] "Error:  Error in `map()`:\nℹ In index: 1.\nCaused by error in `dplyr::mutate()`:\nℹ In argument: `Home_Success_Pass =\n  as.numeric(.data[[\"Home_Success_Pass\"]])`.\nCaused by error in `.data[[\"Home_Success_Pass\"]]`:\n! Column `Home_Success_Pass` not found in `.data`.\n"
+[1] "\n"
+Lineups not available for https://fbref.com/en/matches/0cbe7254/Metz-Angers-May-23-2020-Ligue-1
+[1] "Error at URL: https://fbref.com/en/matches/0cbe7254/Metz-Angers-May-23-2020-Ligue-1"
+[1] "Error:  Error in `map()`:\nℹ In index: 1.\nCaused by error in `dplyr::mutate()`:\nℹ In argument: `Home_Success_Pass =\n  as.numeric(.data[[\"Home_Success_Pass\"]])`.\nCaused by error in `.data[[\"Home_Success_Pass\"]]`:\n! Column `Home_Success_Pass` not found in `.data`.\n"
+[1] "\n"
+Lineups not available for https://fbref.com/en/matches/8aa9d26a/Paris-Saint-Germain-Metz-April-5-2020-Ligue-1
+[1] "Error at URL: https://fbref.com/en/matches/8aa9d26a/Paris-Saint-Germain-Metz-April-5-2020-Ligue-1"
+[1] "Error:  Error in `map()`:\nℹ In index: 1.\nCaused by error in `dplyr::mutate()`:\nℹ In argument: `Home_Success_Pass =\n  as.numeric(.data[[\"Home_Success_Pass\"]])`.\nCaused by error in `.data[[\"Home_Success_Pass\"]]`:\n! Column `Home_Success_Pass` not found in `.data`.\n"
+[1] "\n"
+Lineups not available for https://fbref.com/en/matches/cea88bc9/Brest-Nimes-May-16-2020-Ligue-1
+[1] "Error at URL: https://fbref.com/en/matches/cea88bc9/Brest-Nimes-May-16-2020-Ligue-1"
+[1] "Error:  Error in `map()`:\nℹ In index: 1.\nCaused by error in `dplyr::mutate()`:\nℹ In argument: `Home_Success_Pass =\n  as.numeric(.data[[\"Home_Success_Pass\"]])`.\nCaused by error in `.data[[\"Home_Success_Pass\"]]`:\n! Column `Home_Success_Pass` not found in `.data`.\n"
+[1] "\n"
+Lineups not available for https://fbref.com/en/matches/718cf017/Nantes-Strasbourg-May-23-2020-Ligue-1
+[1] "Error at URL: https://fbref.com/en/matches/718cf017/Nantes-Strasbourg-May-23-2020-Ligue-1"
+[1] "Error:  Error in `map()`:\nℹ In index: 1.\nCaused by error in `dplyr::mutate()`:\nℹ In argument: `Home_Success_Pass =\n  as.numeric(.data[[\"Home_Success_Pass\"]])`.\nCaused by error in `.data[[\"Home_Success_Pass\"]]`:\n! Column `Home_Success_Pass` not found in `.data`.\n"
+[1] "\n"
+Lineups not available for https://fbref.com/en/matches/67588c5b/Brest-Montpellier-April-26-2020-Ligue-1
+[1] "Error at URL: https://fbref.com/en/matches/67588c5b/Brest-Montpellier-April-26-2020-Ligue-1"
+[1] "Error:  Error in `map()`:\nℹ In index: 1.\nCaused by error in `dplyr::mutate()`:\nℹ In argument: `Home_Success_Pass =\n  as.numeric(.data[[\"Home_Success_Pass\"]])`.\nCaused by error in `.data[[\"Home_Success_Pass\"]]`:\n! Column `Home_Success_Pass` not found in `.data`.\n"
+[1] "\n"
+Lineups not available for https://fbref.com/en/matches/93f7437a/Nice-Nantes-May-2-2020-Ligue-1
+[1] "Error at URL: https://fbref.com/en/matches/93f7437a/Nice-Nantes-May-2-2020-Ligue-1"
+[1] "Error:  Error in `map()`:\nℹ In index: 1.\nCaused by error in `dplyr::mutate()`:\nℹ In argument: `Home_Success_Pass =\n  as.numeric(.data[[\"Home_Success_Pass\"]])`.\nCaused by error in `.data[[\"Home_Success_Pass\"]]`:\n! Column `Home_Success_Pass` not found in `.data`.\n"
+[1] "\n"
+Lineups not available for https://fbref.com/en/matches/65f39018/Montpellier-Nantes-May-16-2020-Ligue-1
+[1] "Error at URL: https://fbref.com/en/matches/65f39018/Montpellier-Nantes-May-16-2020-Ligue-1"
+[1] "Error:  Error in `map()`:\nℹ In index: 1.\nCaused by error in `dplyr::mutate()`:\nℹ In argument: `Home_Success_Pass =\n  as.numeric(.data[[\"Home_Success_Pass\"]])`.\nCaused by error in `.data[[\"Home_Success_Pass\"]]`:\n! Column `Home_Success_Pass` not found in `.data`.\n"
+[1] "\n"
+Lineups not available for https://fbref.com/en/matches/aeffdfae/Paris-Saint-Germain-Rennes-May-16-2020-Ligue-1
+[1] "Error at URL: https://fbref.com/en/matches/aeffdfae/Paris-Saint-Germain-Rennes-May-16-2020-Ligue-1"
+[1] "Error:  Error in `map()`:\nℹ In index: 1.\nCaused by error in `dplyr::mutate()`:\nℹ In argument: `Home_Success_Pass =\n  as.numeric(.data[[\"Home_Success_Pass\"]])`.\nCaused by error in `.data[[\"Home_Success_Pass\"]]`:\n! Column `Home_Success_Pass` not found in `.data`.\n"
+[1] "\n"
+Lineups not available for https://fbref.com/en/matches/1e73cccc/Dijon-Lyon-May-2-2020-Ligue-1
+[1] "Error at URL: https://fbref.com/en/matches/1e73cccc/Dijon-Lyon-May-2-2020-Ligue-1"
+[1] "Error:  Error in `map()`:\nℹ In index: 1.\nCaused by error in `dplyr::mutate()`:\nℹ In argument: `Home_Success_Pass =\n  as.numeric(.data[[\"Home_Success_Pass\"]])`.\nCaused by error in `.data[[\"Home_Success_Pass\"]]`:\n! Column `Home_Success_Pass` not found in `.data`.\n"
+[1] "\n"
+Lineups not available for https://fbref.com/en/matches/d9f87fb2/Amiens-Nimes-April-18-2020-Ligue-1
+[1] "Error at URL: https://fbref.com/en/matches/d9f87fb2/Amiens-Nimes-April-18-2020-Ligue-1"
+[1] "Error:  Error in `map()`:\nℹ In index: 1.\nCaused by error in `dplyr::mutate()`:\nℹ In argument: `Home_Success_Pass =\n  as.numeric(.data[[\"Home_Success_Pass\"]])`.\nCaused by error in `.data[[\"Home_Success_Pass\"]]`:\n! Column `Home_Success_Pass` not found in `.data`.\n"
+[1] "\n"
+Lineups not available for https://fbref.com/en/matches/515c0e73/Bordeaux-Toulouse-April-26-2020-Ligue-1
+[1] "Error at URL: https://fbref.com/en/matches/515c0e73/Bordeaux-Toulouse-April-26-2020-Ligue-1"
+[1] "Error:  Error in `map()`:\nℹ In index: 1.\nCaused by error in `dplyr::mutate()`:\nℹ In argument: `Home_Success_Pass =\n  as.numeric(.data[[\"Home_Success_Pass\"]])`.\nCaused by error in `.data[[\"Home_Success_Pass\"]]`:\n! Column `Home_Success_Pass` not found in `.data`.\n"
+[1] "\n"
+Lineups not available for https://fbref.com/en/matches/98d0c3f5/Paris-Saint-Germain-Nice-March-15-2020-Ligue-1
+[1] "Error at URL: https://fbref.com/en/matches/98d0c3f5/Paris-Saint-Germain-Nice-March-15-2020-Ligue-1"
+[1] "Error:  Error in `map()`:\nℹ In index: 1.\nCaused by error in `dplyr::mutate()`:\nℹ In argument: `Home_Success_Pass =\n  as.numeric(.data[[\"Home_Success_Pass\"]])`.\nCaused by error in `.data[[\"Home_Success_Pass\"]]`:\n! Column `Home_Success_Pass` not found in `.data`.\n"
+[1] "\n"
+Lineups not available for https://fbref.com/en/matches/8e059c84/Toulouse-Saint-Etienne-April-4-2020-Ligue-1
+[1] "Error at URL: https://fbref.com/en/matches/8e059c84/Toulouse-Saint-Etienne-April-4-2020-Ligue-1"
+[1] "Error:  Error in `map()`:\nℹ In index: 1.\nCaused by error in `dplyr::mutate()`:\nℹ In argument: `Home_Success_Pass =\n  as.numeric(.data[[\"Home_Success_Pass\"]])`.\nCaused by error in `.data[[\"Home_Success_Pass\"]]`:\n! Column `Home_Success_Pass` not found in `.data`.\n"
+[1] "\n"
+Lineups not available for https://fbref.com/en/matches/13c491ff/Rennes-Dijon-May-9-2020-Ligue-1
+[1] "Error at URL: https://fbref.com/en/matches/13c491ff/Rennes-Dijon-May-9-2020-Ligue-1"
+[1] "Error:  Error in `map()`:\nℹ In index: 1.\nCaused by error in `dplyr::mutate()`:\nℹ In argument: `Home_Success_Pass =\n  as.numeric(.data[[\"Home_Success_Pass\"]])`.\nCaused by error in `.data[[\"Home_Success_Pass\"]]`:\n! Column `Home_Success_Pass` not found in `.data`.\n"
+[1] "\n"
+Lineups not available for https://fbref.com/en/matches/39ea3e29/Nimes-Lille-April-26-2020-Ligue-1
+[1] "Error at URL: https://fbref.com/en/matches/39ea3e29/Nimes-Lille-April-26-2020-Ligue-1"
+[1] "Error:  Error in `map()`:\nℹ In index: 1.\nCaused by error in `dplyr::mutate()`:\nℹ In argument: `Home_Success_Pass =\n  as.numeric(.data[[\"Home_Success_Pass\"]])`.\nCaused by error in `.data[[\"Home_Success_Pass\"]]`:\n! Column `Home_Success_Pass` not found in `.data`.\n"
+[1] "\n"
+Lineups not available for https://fbref.com/en/matches/f4337de9/Rennes-Metz-April-18-2020-Ligue-1
+[1] "Error at URL: https://fbref.com/en/matches/f4337de9/Rennes-Metz-April-18-2020-Ligue-1"
+[1] "Error:  Error in `map()`:\nℹ In index: 1.\nCaused by error in `dplyr::mutate()`:\nℹ In argument: `Home_Success_Pass =\n  as.numeric(.data[[\"Home_Success_Pass\"]])`.\nCaused by error in `.data[[\"Home_Success_Pass\"]]`:\n! Column `Home_Success_Pass` not found in `.data`.\n"
+[1] "\n"
+Lineups not available for https://fbref.com/en/matches/c9cadfbb/Montpellier-Reims-April-18-2020-Ligue-1
+[1] "Error at URL: https://fbref.com/en/matches/c9cadfbb/Montpellier-Reims-April-18-2020-Ligue-1"
+[1] "Error:  Error in `map()`:\nℹ In index: 1.\nCaused by error in `dplyr::mutate()`:\nℹ In argument: `Home_Success_Pass =\n  as.numeric(.data[[\"Home_Success_Pass\"]])`.\nCaused by error in `.data[[\"Home_Success_Pass\"]]`:\n! Column `Home_Success_Pass` not found in `.data`.\n"
+[1] "\n"
+Lineups not available for https://fbref.com/en/matches/d12d3ca0/Strasbourg-Marseille-May-2-2020-Ligue-1
+[1] "Error at URL: https://fbref.com/en/matches/d12d3ca0/Strasbourg-Marseille-May-2-2020-Ligue-1"
+[1] "Error:  Error in `map()`:\nℹ In index: 1.\nCaused by error in `dplyr::mutate()`:\nℹ In argument: `Home_Success_Pass =\n  as.numeric(.data[[\"Home_Success_Pass\"]])`.\nCaused by error in `.data[[\"Home_Success_Pass\"]]`:\n! Column `Home_Success_Pass` not found in `.data`.\n"
+[1] "\n"
+Lineups not available for https://fbref.com/en/matches/b107c312/Brest-Marseille-April-5-2020-Ligue-1
+[1] "Error at URL: https://fbref.com/en/matches/b107c312/Brest-Marseille-April-5-2020-Ligue-1"
+[1] "Error:  Error in `map()`:\nℹ In index: 1.\nCaused by error in `dplyr::mutate()`:\nℹ In argument: `Home_Success_Pass =\n  as.numeric(.data[[\"Home_Success_Pass\"]])`.\nCaused by error in `.data[[\"Home_Success_Pass\"]]`:\n! Column `Home_Success_Pass` not found in `.data`.\n"
+[1] "\n"
+Lineups not available for https://fbref.com/en/matches/6af82534/Monaco-Toulouse-May-16-2020-Ligue-1
+[1] "Error at URL: https://fbref.com/en/matches/6af82534/Monaco-Toulouse-May-16-2020-Ligue-1"
+[1] "Error:  Error in `map()`:\nℹ In index: 1.\nCaused by error in `dplyr::mutate()`:\nℹ In argument: `Home_Success_Pass =\n  as.numeric(.data[[\"Home_Success_Pass\"]])`.\nCaused by error in `.data[[\"Home_Success_Pass\"]]`:\n! Column `Home_Success_Pass` not found in `.data`.\n"
+[1] "\n"
+Lineups not available for https://fbref.com/en/matches/9a7e6ab4/Nimes-Bordeaux-March-21-2020-Ligue-1
+[1] "Error at URL: https://fbref.com/en/matches/9a7e6ab4/Nimes-Bordeaux-March-21-2020-Ligue-1"
+[1] "Error:  Error in `map()`:\nℹ In index: 1.\nCaused by error in `dplyr::mutate()`:\nℹ In argument: `Home_Success_Pass =\n  as.numeric(.data[[\"Home_Success_Pass\"]])`.\nCaused by error in `.data[[\"Home_Success_Pass\"]]`:\n! Column `Home_Success_Pass` not found in `.data`.\n"
+[1] "\n"
+Lineups not available for https://fbref.com/en/matches/9a6f4349/Strasbourg-Dijon-March-14-2020-Ligue-1
+[1] "Error at URL: https://fbref.com/en/matches/9a6f4349/Strasbourg-Dijon-March-14-2020-Ligue-1"
+[1] "Error:  Error in `map()`:\nℹ In index: 1.\nCaused by error in `dplyr::mutate()`:\nℹ In argument: `Home_Success_Pass =\n  as.numeric(.data[[\"Home_Success_Pass\"]])`.\nCaused by error in `.data[[\"Home_Success_Pass\"]]`:\n! Column `Home_Success_Pass` not found in `.data`.\n"
+[1] "\n"
+Lineups not available for https://fbref.com/en/matches/208e0770/Rennes-Strasbourg-April-26-2020-Ligue-1
+[1] "Error at URL: https://fbref.com/en/matches/208e0770/Rennes-Strasbourg-April-26-2020-Ligue-1"
+[1] "Error:  Error in `map()`:\nℹ In index: 1.\nCaused by error in `dplyr::mutate()`:\nℹ In argument: `Home_Success_Pass =\n  as.numeric(.data[[\"Home_Success_Pass\"]])`.\nCaused by error in `.data[[\"Home_Success_Pass\"]]`:\n! Column `Home_Success_Pass` not found in `.data`.\n"
+[1] "\n"
+Lineups not available for https://fbref.com/en/matches/c3399237/Angers-Lyon-May-16-2020-Ligue-1
+[1] "Error at URL: https://fbref.com/en/matches/c3399237/Angers-Lyon-May-16-2020-Ligue-1"
+[1] "Error:  Error in `map()`:\nℹ In index: 1.\nCaused by error in `dplyr::mutate()`:\nℹ In argument: `Home_Success_Pass =\n  as.numeric(.data[[\"Home_Success_Pass\"]])`.\nCaused by error in `.data[[\"Home_Success_Pass\"]]`:\n! Column `Home_Success_Pass` not found in `.data`.\n"
+[1] "\n"
+Lineups not available for https://fbref.com/en/matches/a2b045b6/Toulouse-Metz-March-14-2020-Ligue-1
+[1] "Error at URL: https://fbref.com/en/matches/a2b045b6/Toulouse-Metz-March-14-2020-Ligue-1"
+[1] "Error:  Error in `map()`:\nℹ In index: 1.\nCaused by error in `dplyr::mutate()`:\nℹ In argument: `Home_Success_Pass =\n  as.numeric(.data[[\"Home_Success_Pass\"]])`.\nCaused by error in `.data[[\"Home_Success_Pass\"]]`:\n! Column `Home_Success_Pass` not found in `.data`.\n"
+[1] "\n"
+Lineups not available for https://fbref.com/en/matches/4539502a/Angers-Paris-Saint-Germain-April-11-2020-Ligue-1
+[1] "Error at URL: https://fbref.com/en/matches/4539502a/Angers-Paris-Saint-Germain-April-11-2020-Ligue-1"
+[1] "Error:  Error in `map()`:\nℹ In index: 1.\nCaused by error in `dplyr::mutate()`:\nℹ In argument: `Home_Success_Pass =\n  as.numeric(.data[[\"Home_Success_Pass\"]])`.\nCaused by error in `.data[[\"Home_Success_Pass\"]]`:\n! Column `Home_Success_Pass` not found in `.data`.\n"
+[1] "\n"
+Lineups not available for https://fbref.com/en/matches/09bd6051/Angers-Rennes-May-2-2020-Ligue-1
+[1] "Error at URL: https://fbref.com/en/matches/09bd6051/Angers-Rennes-May-2-2020-Ligue-1"
+[1] "Error:  Error in `map()`:\nℹ In index: 1.\nCaused by error in `dplyr::mutate()`:\nℹ In argument: `Home_Success_Pass =\n  as.numeric(.data[[\"Home_Success_Pass\"]])`.\nCaused by error in `.data[[\"Home_Success_Pass\"]]`:\n! Column `Home_Success_Pass` not found in `.data`.\n"
+[1] "\n"
+Lineups not available for https://fbref.com/en/matches/b2c790b4/Marseille-Metz-May-16-2020-Ligue-1
+[1] "Error at URL: https://fbref.com/en/matches/b2c790b4/Marseille-Metz-May-16-2020-Ligue-1"
+[1] "Error:  Error in `map()`:\nℹ In index: 1.\nCaused by error in `dplyr::mutate()`:\nℹ In argument: `Home_Success_Pass =\n  as.numeric(.data[[\"Home_Success_Pass\"]])`.\nCaused by error in `.data[[\"Home_Success_Pass\"]]`:\n! Column `Home_Success_Pass` not found in `.data`.\n"
+[1] "\n"
+Lineups not available for https://fbref.com/en/matches/66a90faf/Lyon-Nimes-April-5-2020-Ligue-1
+[1] "Error at URL: https://fbref.com/en/matches/66a90faf/Lyon-Nimes-April-5-2020-Ligue-1"
+[1] "Error:  Error in `map()`:\nℹ In index: 1.\nCaused by error in `dplyr::mutate()`:\nℹ In argument: `Home_Success_Pass =\n  as.numeric(.data[[\"Home_Success_Pass\"]])`.\nCaused by error in `.data[[\"Home_Success_Pass\"]]`:\n! Column `Home_Success_Pass` not found in `.data`.\n"
+[1] "\n"
+Lineups not available for https://fbref.com/en/matches/5fa33756/Nimes-Strasbourg-May-9-2020-Ligue-1
+[1] "Error at URL: https://fbref.com/en/matches/5fa33756/Nimes-Strasbourg-May-9-2020-Ligue-1"
+[1] "Error:  Error in `map()`:\nℹ In index: 1.\nCaused by error in `dplyr::mutate()`:\nℹ In argument: `Home_Success_Pass =\n  as.numeric(.data[[\"Home_Success_Pass\"]])`.\nCaused by error in `.data[[\"Home_Success_Pass\"]]`:\n! Column `Home_Success_Pass` not found in `.data`.\n"
+[1] "\n"
+Lineups not available for https://fbref.com/en/matches/f4fca137/Montpellier-Marseille-March-14-2020-Ligue-1
+[1] "Error at URL: https://fbref.com/en/matches/f4fca137/Montpellier-Marseille-March-14-2020-Ligue-1"
+[1] "Error:  Error in `map()`:\nℹ In index: 1.\nCaused by error in `dplyr::mutate()`:\nℹ In argument: `Home_Success_Pass =\n  as.numeric(.data[[\"Home_Success_Pass\"]])`.\nCaused by error in `.data[[\"Home_Success_Pass\"]]`:\n! Column `Home_Success_Pass` not found in `.data`.\n"
+[1] "\n"
+Lineups not available for https://fbref.com/en/matches/65bc39f7/Strasbourg-Bordeaux-May-16-2020-Ligue-1
+[1] "Error at URL: https://fbref.com/en/matches/65bc39f7/Strasbourg-Bordeaux-May-16-2020-Ligue-1"
+[1] "Error:  Error in `map()`:\nℹ In index: 1.\nCaused by error in `dplyr::mutate()`:\nℹ In argument: `Home_Success_Pass =\n  as.numeric(.data[[\"Home_Success_Pass\"]])`.\nCaused by error in `.data[[\"Home_Success_Pass\"]]`:\n! Column `Home_Success_Pass` not found in `.data`.\n"
+[1] "\n"
+Lineups not available for https://fbref.com/en/matches/10b7bd4b/Nimes-Montpellier-April-11-2020-Ligue-1
+[1] "Error at URL: https://fbref.com/en/matches/10b7bd4b/Nimes-Montpellier-April-11-2020-Ligue-1"
+[1] "Error:  Error in `map()`:\nℹ In index: 1.\nCaused by error in `dplyr::mutate()`:\nℹ In argument: `Home_Success_Pass =\n  as.numeric(.data[[\"Home_Success_Pass\"]])`.\nCaused by error in `.data[[\"Home_Success_Pass\"]]`:\n! Column `Home_Success_Pass` not found in `.data`.\n"
+[1] "\n"
+Lineups not available for https://fbref.com/en/matches/7f9ca85d/Rennes-Monaco-May-23-2020-Ligue-1
+[1] "Error at URL: https://fbref.com/en/matches/7f9ca85d/Rennes-Monaco-May-23-2020-Ligue-1"
+[1] "Error:  Error in `map()`:\nℹ In index: 1.\nCaused by error in `dplyr::mutate()`:\nℹ In argument: `Home_Success_Pass =\n  as.numeric(.data[[\"Home_Success_Pass\"]])`.\nCaused by error in `.data[[\"Home_Success_Pass\"]]`:\n! Column `Home_Success_Pass` not found in `.data`.\n"
+[1] "\n"
+Lineups not available for https://fbref.com/en/matches/d111b826/Amiens-Angers-March-14-2020-Ligue-1
+[1] "Error at URL: https://fbref.com/en/matches/d111b826/Amiens-Angers-March-14-2020-Ligue-1"
+[1] "Error:  Error in `map()`:\nℹ In index: 1.\nCaused by error in `dplyr::mutate()`:\nℹ In argument: `Home_Success_Pass =\n  as.numeric(.data[[\"Home_Success_Pass\"]])`.\nCaused by error in `.data[[\"Home_Success_Pass\"]]`:\n! Column `Home_Success_Pass` not found in `.data`.\n"
+[1] "\n"
+Lineups not available for https://fbref.com/en/matches/1a829f24/Reims-Toulouse-April-11-2020-Ligue-1
+[1] "Error at URL: https://fbref.com/en/matches/1a829f24/Reims-Toulouse-April-11-2020-Ligue-1"
+[1] "Error:  Error in `map()`:\nℹ In index: 1.\nCaused by error in `dplyr::mutate()`:\nℹ In argument: `Home_Success_Pass =\n  as.numeric(.data[[\"Home_Success_Pass\"]])`.\nCaused by error in `.data[[\"Home_Success_Pass\"]]`:\n! Column `Home_Success_Pass` not found in `.data`.\n"
+[1] "\n"
+Lineups not available for https://fbref.com/en/matches/a9a4fa42/Metz-Lille-April-11-2020-Ligue-1
+[1] "Error at URL: https://fbref.com/en/matches/a9a4fa42/Metz-Lille-April-11-2020-Ligue-1"
+[1] "Error:  Error in `map()`:\nℹ In index: 1.\nCaused by error in `dplyr::mutate()`:\nℹ In argument: `Home_Success_Pass =\n  as.numeric(.data[[\"Home_Success_Pass\"]])`.\nCaused by error in `.data[[\"Home_Success_Pass\"]]`:\n! Column `Home_Success_Pass` not found in `.data`.\n"
+[1] "\n"
+Lineups not available for https://fbref.com/en/matches/a2b504b7/Amiens-Rennes-April-5-2020-Ligue-1
+[1] "Error at URL: https://fbref.com/en/matches/a2b504b7/Amiens-Rennes-April-5-2020-Ligue-1"
+[1] "Error:  Error in `map()`:\nℹ In index: 1.\nCaused by error in `dplyr::mutate()`:\nℹ In argument: `Home_Success_Pass =\n  as.numeric(.data[[\"Home_Success_Pass\"]])`.\nCaused by error in `.data[[\"Home_Success_Pass\"]]`:\n! Column `Home_Success_Pass` not found in `.data`.\n"
+[1] "\n"
+Lineups not available for https://fbref.com/en/matches/609ab72b/Lille-Reims-May-2-2020-Ligue-1
+[1] "Error at URL: https://fbref.com/en/matches/609ab72b/Lille-Reims-May-2-2020-Ligue-1"
+[1] "Error:  Error in `map()`:\nℹ In index: 1.\nCaused by error in `dplyr::mutate()`:\nℹ In argument: `Home_Success_Pass =\n  as.numeric(.data[[\"Home_Success_Pass\"]])`.\nCaused by error in `.data[[\"Home_Success_Pass\"]]`:\n! Column `Home_Success_Pass` not found in `.data`.\n"
+[1] "\n"
+Lineups not available for https://fbref.com/en/matches/f8ba7a02/Metz-Nice-May-9-2020-Ligue-1
+[1] "Error at URL: https://fbref.com/en/matches/f8ba7a02/Metz-Nice-May-9-2020-Ligue-1"
+[1] "Error:  Error in `map()`:\nℹ In index: 1.\nCaused by error in `dplyr::mutate()`:\nℹ In argument: `Home_Success_Pass =\n  as.numeric(.data[[\"Home_Success_Pass\"]])`.\nCaused by error in `.data[[\"Home_Success_Pass\"]]`:\n! Column `Home_Success_Pass` not found in `.data`.\n"
+[1] "\n"
+Lineups not available for https://fbref.com/en/matches/f27a8e0e/Marseille-Nice-April-26-2020-Ligue-1
+[1] "Error at URL: https://fbref.com/en/matches/f27a8e0e/Marseille-Nice-April-26-2020-Ligue-1"
+[1] "Error:  Error in `map()`:\nℹ In index: 1.\nCaused by error in `dplyr::mutate()`:\nℹ In argument: `Home_Success_Pass =\n  as.numeric(.data[[\"Home_Success_Pass\"]])`.\nCaused by error in `.data[[\"Home_Success_Pass\"]]`:\n! Column `Home_Success_Pass` not found in `.data`.\n"
+[1] "\n"
+Lineups not available for https://fbref.com/en/matches/dc3dc940/Lyon-Monaco-April-26-2020-Ligue-1
+[1] "Error at URL: https://fbref.com/en/matches/dc3dc940/Lyon-Monaco-April-26-2020-Ligue-1"
+[1] "Error:  Error in `map()`:\nℹ In index: 1.\nCaused by error in `dplyr::mutate()`:\nℹ In argument: `Home_Success_Pass =\n  as.numeric(.data[[\"Home_Success_Pass\"]])`.\nCaused by error in `.data[[\"Home_Success_Pass\"]]`:\n! Column `Home_Success_Pass` not found in `.data`.\n"
+[1] "\n"
+Lineups not available for https://fbref.com/en/matches/30d69d30/Montpellier-Lille-April-4-2020-Ligue-1
+[1] "Error at URL: https://fbref.com/en/matches/30d69d30/Montpellier-Lille-April-4-2020-Ligue-1"
+[1] "Error:  Error in `map()`:\nℹ In index: 1.\nCaused by error in `dplyr::mutate()`:\nℹ In argument: `Home_Success_Pass =\n  as.numeric(.data[[\"Home_Success_Pass\"]])`.\nCaused by error in `.data[[\"Home_Success_Pass\"]]`:\n! Column `Home_Success_Pass` not found in `.data`.\n"
+[1] "\n"
+Lineups not available for https://fbref.com/en/matches/94873d92/Dijon-Nice-April-5-2020-Ligue-1
+[1] "Error at URL: https://fbref.com/en/matches/94873d92/Dijon-Nice-April-5-2020-Ligue-1"
+[1] "Error:  Error in `map()`:\nℹ In index: 1.\nCaused by error in `dplyr::mutate()`:\nℹ In argument: `Home_Success_Pass =\n  as.numeric(.data[[\"Home_Success_Pass\"]])`.\nCaused by error in `.data[[\"Home_Success_Pass\"]]`:\n! Column `Home_Success_Pass` not found in `.data`.\n"
+[1] "\n"
+Lineups not available for https://fbref.com/en/matches/a6220762/Saint-Etienne-Rennes-April-11-2020-Ligue-1
+[1] "Error at URL: https://fbref.com/en/matches/a6220762/Saint-Etienne-Rennes-April-11-2020-Ligue-1"
+[1] "Error:  Error in `map()`:\nℹ In index: 1.\nCaused by error in `dplyr::mutate()`:\nℹ In argument: `Home_Success_Pass =\n  as.numeric(.data[[\"Home_Success_Pass\"]])`.\nCaused by error in `.data[[\"Home_Success_Pass\"]]`:\n! Column `Home_Success_Pass` not found in `.data`.\n"
+[1] "\n"
+Lineups not available for https://fbref.com/en/matches/621f8a81/Toulouse-Nantes-May-27-2021-French-12-RelegationPromotion-Play-offs
+[1] "Error at URL: https://fbref.com/en/matches/621f8a81/Toulouse-Nantes-May-27-2021-French-12-RelegationPromotion-Play-offs"
+[1] "Error:  Error in `map()`:\nℹ In index: 1.\nCaused by error in `dplyr::mutate()`:\nℹ In argument: `Home_Success_Pass =\n  as.numeric(.data[[\"Home_Success_Pass\"]])`.\nCaused by error in `.data[[\"Home_Success_Pass\"]]`:\n! Column `Home_Success_Pass` not found in `.data`.\n"
+[1] "\n"
+Lineups not available for https://fbref.com/en/matches/28ce9808/Nantes-Toulouse-May-30-2021-French-12-RelegationPromotion-Play-offs
+[1] "Error at URL: https://fbref.com/en/matches/28ce9808/Nantes-Toulouse-May-30-2021-French-12-RelegationPromotion-Play-offs"
+[1] "Error:  Error in `map()`:\nℹ In index: 1.\nCaused by error in `dplyr::mutate()`:\nℹ In argument: `Home_Success_Pass =\n  as.numeric(.data[[\"Home_Success_Pass\"]])`.\nCaused by error in `.data[[\"Home_Success_Pass\"]]`:\n! Column `Home_Success_Pass` not found in `.data`.\n"
+[1] "\n"
+Lineups not available for https://fbref.com/en/matches/78ed8c0d/Saint-Etienne-Auxerre-May-29-2022-French-12-RelegationPromotion-Play-offs
+[1] "Error at URL: https://fbref.com/en/matches/78ed8c0d/Saint-Etienne-Auxerre-May-29-2022-French-12-RelegationPromotion-Play-offs"
+[1] "Error:  Error in `map()`:\nℹ In index: 1.\nCaused by error in `dplyr::mutate()`:\nℹ In argument: `Home_Success_Pass =\n  as.numeric(.data[[\"Home_Success_Pass\"]])`.\nCaused by error in `.data[[\"Home_Success_Pass\"]]`:\n! Column `Home_Success_Pass` not found in `.data`.\n"
+[1] "\n"
+Lineups not available for https://fbref.com/en/matches/2d094951/Bordeaux-Lorient-May-14-2022-Ligue-1
+Match Summary not available for https://fbref.com/en/matches/2d094951/Bordeaux-Lorient-May-14-2022-Ligue-1
+https://fbref.com/en/matches/2d094951/Bordeaux-Lorient-May-14-2022-Ligue-1 is not available
+Stats data not available for https://fbref.com/en/matches/2d094951/Bordeaux-Lorient-May-14-2022-Ligue-1
+Lineups not available for https://fbref.com/en/matches/4903c5a0/Lorient-Paris-Saint-Germain-December-22-2021-Ligue-1
+Match Summary not available for https://fbref.com/en/matches/4903c5a0/Lorient-Paris-Saint-Germain-December-22-2021-Ligue-1
+https://fbref.com/en/matches/4903c5a0/Lorient-Paris-Saint-Germain-December-22-2021-Ligue-1 is not available
+Stats data not available for https://fbref.com/en/matches/4903c5a0/Lorient-Paris-Saint-Germain-December-22-2021-Ligue-1
+Lineups not available for https://fbref.com/en/matches/22d0a008/Lille-Brest-October-23-2021-Ligue-1
+Match Summary not available for https://fbref.com/en/matches/22d0a008/Lille-Brest-October-23-2021-Ligue-1
+https://fbref.com/en/matches/22d0a008/Lille-Brest-October-23-2021-Ligue-1 is not available
+Stats data not available for https://fbref.com/en/matches/22d0a008/Lille-Brest-October-23-2021-Ligue-1
+Lineups not available for https://fbref.com/en/matches/a3d178bd/Metz-Angers-May-14-2022-Ligue-1
+Match Summary not available for https://fbref.com/en/matches/a3d178bd/Metz-Angers-May-14-2022-Ligue-1
+https://fbref.com/en/matches/a3d178bd/Metz-Angers-May-14-2022-Ligue-1 is not available
+Stats data not available for https://fbref.com/en/matches/a3d178bd/Metz-Angers-May-14-2022-Ligue-1
+Lineups not available for https://fbref.com/en/matches/f1560d55/Auxerre-Saint-Etienne-May-26-2022-French-12-RelegationPromotion-Play-offs
+Match Summary not available for https://fbref.com/en/matches/f1560d55/Auxerre-Saint-Etienne-May-26-2022-French-12-RelegationPromotion-Play-offs
+https://fbref.com/en/matches/f1560d55/Auxerre-Saint-Etienne-May-26-2022-French-12-RelegationPromotion-Play-offs is not available
+Stats data not available for https://fbref.com/en/matches/f1560d55/Auxerre-Saint-Etienne-May-26-2022-French-12-RelegationPromotion-Play-offs
+Lineups not available for https://fbref.com/en/matches/aa237faf/Saint-Etienne-Bordeaux-September-18-2021-Ligue-1
+Match Summary not available for https://fbref.com/en/matches/aa237faf/Saint-Etienne-Bordeaux-September-18-2021-Ligue-1
+https://fbref.com/en/matches/aa237faf/Saint-Etienne-Bordeaux-September-18-2021-Ligue-1 is not available
+Stats data not available for https://fbref.com/en/matches/aa237faf/Saint-Etienne-Bordeaux-September-18-2021-Ligue-1
+Lineups not available for https://fbref.com/en/matches/87fd9dbd/Lille-Metz-February-18-2022-Ligue-1
+Match Summary not available for https://fbref.com/en/matches/87fd9dbd/Lille-Metz-February-18-2022-Ligue-1
+https://fbref.com/en/matches/87fd9dbd/Lille-Metz-February-18-2022-Ligue-1 is not available
+Stats data not available for https://fbref.com/en/matches/87fd9dbd/Lille-Metz-February-18-2022-Ligue-1
+Lineups not available for https://fbref.com/en/matches/f8d5fe10/Metz-Paris-Saint-Germain-September-22-2021-Ligue-1
+Match Summary not available for https://fbref.com/en/matches/f8d5fe10/Metz-Paris-Saint-Germain-September-22-2021-Ligue-1
+https://fbref.com/en/matches/f8d5fe10/Metz-Paris-Saint-Germain-September-22-2021-Ligue-1 is not available
+Stats data not available for https://fbref.com/en/matches/f8d5fe10/Metz-Paris-Saint-Germain-September-22-2021-Ligue-1
+Lineups not available for https://fbref.com/en/matches/78d842a6/Nice-Lorient-April-17-2022-Ligue-1
+Match Summary not available for https://fbref.com/en/matches/78d842a6/Nice-Lorient-April-17-2022-Ligue-1
+https://fbref.com/en/matches/78d842a6/Nice-Lorient-April-17-2022-Ligue-1 is not available
+Stats data not available for https://fbref.com/en/matches/78d842a6/Nice-Lorient-April-17-2022-Ligue-1
+Lineups not available for https://fbref.com/en/matches/983887bf/Reims-Lorient-September-19-2021-Ligue-1
+Match Summary not available for https://fbref.com/en/matches/983887bf/Reims-Lorient-September-19-2021-Ligue-1
+https://fbref.com/en/matches/983887bf/Reims-Lorient-September-19-2021-Ligue-1 is not available
+Stats data not available for https://fbref.com/en/matches/983887bf/Reims-Lorient-September-19-2021-Ligue-1
+Lineups not available for https://fbref.com/en/matches/b43eb4eb/Nice-Bordeaux-August-28-2021-Ligue-1
+Match Summary not available for https://fbref.com/en/matches/b43eb4eb/Nice-Bordeaux-August-28-2021-Ligue-1
+https://fbref.com/en/matches/b43eb4eb/Nice-Bordeaux-August-28-2021-Ligue-1 is not available
+Stats data not available for https://fbref.com/en/matches/b43eb4eb/Nice-Bordeaux-August-28-2021-Ligue-1
+Lineups not available for https://fbref.com/en/matches/cc1c0429/Nice-Marseille-October-27-2021-Ligue-1
+Match Summary not available for https://fbref.com/en/matches/cc1c0429/Nice-Marseille-October-27-2021-Ligue-1
+https://fbref.com/en/matches/cc1c0429/Nice-Marseille-October-27-2021-Ligue-1 is not available
+Stats data not available for https://fbref.com/en/matches/cc1c0429/Nice-Marseille-October-27-2021-Ligue-1
+Lineups not available for https://fbref.com/en/matches/5680ee6e/Rennes-Bordeaux-January-16-2022-Ligue-1
+Match Summary not available for https://fbref.com/en/matches/5680ee6e/Rennes-Bordeaux-January-16-2022-Ligue-1
+https://fbref.com/en/matches/5680ee6e/Rennes-Bordeaux-January-16-2022-Ligue-1 is not available
+Stats data not available for https://fbref.com/en/matches/5680ee6e/Rennes-Bordeaux-January-16-2022-Ligue-1
+Lineups not available for https://fbref.com/en/matches/ee9df9d3/Reims-Troyes-October-24-2021-Ligue-1
+Match Summary not available for https://fbref.com/en/matches/ee9df9d3/Reims-Troyes-October-24-2021-Ligue-1
+https://fbref.com/en/matches/ee9df9d3/Reims-Troyes-October-24-2021-Ligue-1 is not available
+Stats data not available for https://fbref.com/en/matches/ee9df9d3/Reims-Troyes-October-24-2021-Ligue-1
+Lineups not available for https://fbref.com/en/matches/95c02ffd/Saint-Etienne-Montpellier-February-5-2022-Ligue-1
+Match Summary not available for https://fbref.com/en/matches/95c02ffd/Saint-Etienne-Montpellier-February-5-2022-Ligue-1
+https://fbref.com/en/matches/95c02ffd/Saint-Etienne-Montpellier-February-5-2022-Ligue-1 is not available
+Stats data not available for https://fbref.com/en/matches/95c02ffd/Saint-Etienne-Montpellier-February-5-2022-Ligue-1
+Lineups not available for https://fbref.com/en/matches/79950a77/Paris-Saint-Germain-Lens-April-23-2022-Ligue-1
+Match Summary not available for https://fbref.com/en/matches/79950a77/Paris-Saint-Germain-Lens-April-23-2022-Ligue-1
+https://fbref.com/en/matches/79950a77/Paris-Saint-Germain-Lens-April-23-2022-Ligue-1 is not available
+Stats data not available for https://fbref.com/en/matches/79950a77/Paris-Saint-Germain-Lens-April-23-2022-Ligue-1
+Lineups not available for https://fbref.com/en/matches/0f64084b/Angers-Bordeaux-May-8-2022-Ligue-1
+Match Summary not available for https://fbref.com/en/matches/0f64084b/Angers-Bordeaux-May-8-2022-Ligue-1
+https://fbref.com/en/matches/0f64084b/Angers-Bordeaux-May-8-2022-Ligue-1 is not available
+Stats data not available for https://fbref.com/en/matches/0f64084b/Angers-Bordeaux-May-8-2022-Ligue-1
+Lineups not available for https://fbref.com/en/matches/f1b4e563/Montpellier-Reims-April-17-2022-Ligue-1
+Match Summary not available for https://fbref.com/en/matches/f1b4e563/Montpellier-Reims-April-17-2022-Ligue-1
+https://fbref.com/en/matches/f1b4e563/Montpellier-Reims-April-17-2022-Ligue-1 is not available
+Stats data not available for https://fbref.com/en/matches/f1b4e563/Montpellier-Reims-April-17-2022-Ligue-1
+Lineups not available for https://fbref.com/en/matches/4c35c9da/Reims-Rennes-April-9-2022-Ligue-1
+Match Summary not available for https://fbref.com/en/matches/4c35c9da/Reims-Rennes-April-9-2022-Ligue-1
+https://fbref.com/en/matches/4c35c9da/Reims-Rennes-April-9-2022-Ligue-1 is not available
+Stats data not available for https://fbref.com/en/matches/4c35c9da/Reims-Rennes-April-9-2022-Ligue-1
+Lineups not available for https://fbref.com/en/matches/22f9fbae/Lyon-Brest-August-7-2021-Ligue-1
+Match Summary not available for https://fbref.com/en/matches/22f9fbae/Lyon-Brest-August-7-2021-Ligue-1
+https://fbref.com/en/matches/22f9fbae/Lyon-Brest-August-7-2021-Ligue-1 is not available
+Stats data not available for https://fbref.com/en/matches/22f9fbae/Lyon-Brest-August-7-2021-Ligue-1
+Lineups not available for https://fbref.com/en/matches/0acc7165/Montpellier-Strasbourg-October-2-2021-Ligue-1
+Match Summary not available for https://fbref.com/en/matches/0acc7165/Montpellier-Strasbourg-October-2-2021-Ligue-1
+https://fbref.com/en/matches/0acc7165/Montpellier-Strasbourg-October-2-2021-Ligue-1 is not available
+Stats data not available for https://fbref.com/en/matches/0acc7165/Montpellier-Strasbourg-October-2-2021-Ligue-1
+Lineups not available for https://fbref.com/en/matches/4633aec1/Nantes-Saint-Etienne-May-21-2022-Ligue-1
+Match Summary not available for https://fbref.com/en/matches/4633aec1/Nantes-Saint-Etienne-May-21-2022-Ligue-1
+https://fbref.com/en/matches/4633aec1/Nantes-Saint-Etienne-May-21-2022-Ligue-1 is not available
+Stats data not available for https://fbref.com/en/matches/4633aec1/Nantes-Saint-Etienne-May-21-2022-Ligue-1
+Lineups not available for https://fbref.com/en/matches/a084351b/Saint-Etienne-Rennes-December-5-2021-Ligue-1
+Match Summary not available for https://fbref.com/en/matches/a084351b/Saint-Etienne-Rennes-December-5-2021-Ligue-1
+https://fbref.com/en/matches/a084351b/Saint-Etienne-Rennes-December-5-2021-Ligue-1 is not available
+There were 50 or more warnings (use warnings() to see the first 50)
