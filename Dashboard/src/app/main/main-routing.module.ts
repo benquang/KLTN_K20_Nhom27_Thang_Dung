@@ -97,6 +97,34 @@ const routes: Routes = [
     title: `Matches Future | ${SystemConstant.WEB_NAME}`,
   },
 
+  {
+    path: 'lich-thi-dau/:league',
+    component: MainLayoutComponent,
+    loadChildren: () => import('./lich-thi-dau/lich-thi-dau.module').then(m => m.LichThiDauModule),
+    title: `Lịch thi đấu | ${SystemConstant.WEB_NAME}`,
+  },
+
+  {
+    path: 'ket-qua/:league',
+    component: MainLayoutComponent,
+    loadChildren: () => import('./ket-qua/ket-qua.module').then(m => m.KetQuaModule),
+    title: `Kết quả | ${SystemConstant.WEB_NAME}`,
+  },
+  
+  {
+    path: 'tran-dau/:league',
+    component: MainLayoutComponent,
+    loadChildren: () => import('./thong-so-tran-dau/thong-so-tran-dau.module').then(m => m.ThongSoTranDauModule),
+    title: `Trận đấu | ${SystemConstant.WEB_NAME}`,
+  },
+
+  {
+    path: 'upcoming/:league',
+    component: MainLayoutComponent,
+    loadChildren: () => import('./upcoming-tran-dau/upcoming-tran-dau.module').then(m => m.UpcomingTranDauModule),
+    title: `Upcoming | ${SystemConstant.WEB_NAME}`,
+  },
+
 ];
 
 @NgModule({

@@ -28,6 +28,9 @@ module.exports = {
         'metadata2': [ '12px', '18px' ],
         'metadata3': [ '10px', '15px' ],
         'action3': [ '16px', '24px' ],
+        'cus1': [ '16px', '27px' ],
+
+        'cus2': [ '11px', '18px' ],
       },
       padding: {
         '5x1': '5px',
@@ -106,6 +109,8 @@ module.exports = {
         'lightblack': '#424242',
         'lightblack-dark': '#353535',
         'dotim': '#9F224E',
+        'xam': '#e5e5e5',
+        'xamdam': '#757575',
       },
     },
     fontFamily: {

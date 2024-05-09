@@ -7,4 +7,10 @@ import { Component } from '@angular/core';
 })
 export class MainNavComponent {
 
+  isResponsive = false;
+
+  toggleResponsive() {
+    this.isResponsive = !this.isResponsive;
+  }
+
 }
