@@ -99,7 +99,8 @@ class Functions:
     #     return result
     def GetFirstDaysOfEachMonth(self,df):
         # Format "date" column
-        df['date'] = pd.to_datetime(df['date'], format="%b %d, %Y")
+        df['date'] = pd.to_datetime(df['date'], format="%b %d, %Y", errors='coerce')
+        df = df.dropna(subset=['date'])
         df['year'] = df['date'].dt.year
         df['month'] = df['date'].dt.month
         df['day'] = df['date'].dt.day
