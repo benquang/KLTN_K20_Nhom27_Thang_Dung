@@ -38,7 +38,8 @@ class CrawlplayersSpider(scrapy.Spider):
             url+='&lg%5B%5D='+leauge
         return url
     def parse_on_versions(self,response):
-        versions = response.xpath('//select[@name="version"]/option/@value').extract()[self.numOfVersions-1]
+        versions = response.xpath('//select[@name="version"]/option/@value').extract()[:self.numOfVersions]
+        print('Number of versions:',len(versions))
         for version in versions:
             current_url = self.start_url+version
             yield response.follow(current_url,callback = self.parse_on_updates,
@@ -51,7 +52,8 @@ class CrawlplayersSpider(scrapy.Spider):
         update_dates = response.xpath('//select[@name="roster"]/option/text()').extract()
         update = pd.DataFrame({'url':update_urls,'date':update_dates})
         update = function.GetFirstDaysOfEachMonth(update)
-        next_urls = update['url'].tolist()
+        #Demo only
+        next_urls = update['url'].tolist()[0]
 
         for next_url in next_urls:
             yield response.follow(self.start_url+next_url,callback = self.parse_on_pages,
@@ -61,6 +63,7 @@ class CrawlplayersSpider(scrapy.Spider):
 
     def parse_on_pages(self,response):
         players = response.xpath('//tr/td/a[@data-tippy-top]/@href').extract()
+        print('Number of players:',len(players))
         for player in players:
             yield response.follow(self.start_url+player,callback = self.parse_on_players,
                                   meta = {'current_url':self.start_url+player}
