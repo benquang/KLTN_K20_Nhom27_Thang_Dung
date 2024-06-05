@@ -38,9 +38,7 @@ class CrawlplayersSpider(scrapy.Spider):
             url+='&lg%5B%5D='+leauge
         return url
     def parse_on_versions(self,response):
-        versions = response.xpath('//select[@name="version"]/option/@value').extract()
-        # Remove the first element because it is FC 24, which is already done
-        versions = versions[1:self.numOfVersions]
+        versions = response.xpath('//select[@name="version"]/option/@value').extract()[self.numOfVersions-1]
         for version in versions:
             current_url = self.start_url+version
             yield response.follow(current_url,callback = self.parse_on_updates,
