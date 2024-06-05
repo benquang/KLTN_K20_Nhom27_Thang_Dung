@@ -5,12 +5,12 @@ import pandas as pd
 from crawlFootball.items import *
 from crawlFootball.spiders.functions import *
 class CrawlplayersSpider(scrapy.Spider):
-    name = "crawlPlayers"
+    name = "crawlPlayersDemo"
     allowed_domains = ["sofifa.com"]
     
     custom_settings = {
         'FEEDS':{
-            'player_attr.csv':{'format':'csv','overwrite':True}
+            'player_attr_demo.csv':{'format':'csv','overwrite':True}
             },
         'ITEM_PIPELINES':{
             "crawlFootball.pipelines.GoogleCloudStoragePipeline": 300,
@@ -22,13 +22,9 @@ class CrawlplayersSpider(scrapy.Spider):
     }
     start_urls = ["https://sofifa.com"]
     start_url = "https://sofifa.com"
-    leauges = ['13', #Premier League
-               '16', #League 1
-               '19', #Bundesliga
-               '31', #Serie A
-               '53' #LaLiga
+    leauges = ['13'
                ] 
-    numOfVersions = 7
+    numOfVersions = 1
     
     def parse(self, response):
         current_url = self.start_url
@@ -71,7 +67,8 @@ class CrawlplayersSpider(scrapy.Spider):
             yield response.follow(self.start_url+player,callback = self.parse_on_players,
                                   meta = {'current_url':self.start_url+player}
                                   )
-        next_page_url = response.xpath('//div[@class="pagination"]/a[contains(text(), "Next")]/@href').get()
+        # next_page_url = response.xpath('//div[@class="pagination"]/a[contains(text(), "Next")]/@href').get()
+        next_page_url = None
         if (next_page_url is not None):
             yield response.follow(self.start_url+next_page_url,callback = self.parse_on_pages,
                                     meta = {'current_url':next_page_url}

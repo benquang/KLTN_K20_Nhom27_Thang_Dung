@@ -1,0 +1,48 @@
+2024-06-05 15:27:49 [asyncio] DEBUG: Using selector: SelectSelector
+2024-06-05 15:27:49 [scrapy.utils.log] DEBUG: Using reactor: twisted.internet.asyncioreactor.AsyncioSelectorReactor
+2024-06-05 15:27:49 [scrapy.utils.log] DEBUG: Using asyncio event loop: asyncio.windows_events._WindowsSelectorEventLoop
+2024-06-05 15:27:49 [scrapy.extensions.telnet] INFO: Telnet Password: 5622740ad31f4051
+2024-06-05 15:27:50 [scrapy.middleware] INFO: Enabled extensions:
+['scrapy.extensions.corestats.CoreStats',
+ 'scrapy.extensions.telnet.TelnetConsole',
+ 'scrapy.extensions.logstats.LogStats']
+2024-06-05 15:27:52 [scrapy.middleware] INFO: Enabled downloader middlewares:
+['crawlFootball.middlewares.RandomDelayMiddleware',
+ 'scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware',
+ 'scrapy.downloadermiddlewares.downloadtimeout.DownloadTimeoutMiddleware',
+ 'scrapy.downloadermiddlewares.defaultheaders.DefaultHeadersMiddleware',
+ 'scrapy.downloadermiddlewares.httpproxy.HttpProxyMiddleware',
+ 'scrapy.downloadermiddlewares.useragent.UserAgentMiddleware',
+ 'scrapy.downloadermiddlewares.retry.RetryMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.MetaRefreshMiddleware',
+ 'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.RedirectMiddleware',
+ 'scrapy.downloadermiddlewares.cookies.CookiesMiddleware',
+ 'scrapy.downloadermiddlewares.stats.DownloaderStats']
+2024-06-05 15:27:52 [scrapy.middleware] INFO: Enabled spider middlewares:
+['scrapy.spidermiddlewares.httperror.HttpErrorMiddleware',
+ 'scrapy.spidermiddlewares.offsite.OffsiteMiddleware',
+ 'scrapy.spidermiddlewares.referer.RefererMiddleware',
+ 'scrapy.spidermiddlewares.urllength.UrlLengthMiddleware',
+ 'scrapy.spidermiddlewares.depth.DepthMiddleware']
+2024-06-05 15:27:52 [scrapy.middleware] INFO: Enabled item pipelines:
+['crawlFootball.pipelines.MultiCSVItemPipeline']
+2024-06-05 15:27:52 [scrapy.core.engine] INFO: Spider opened
+2024-06-05 15:27:52 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2024-06-05 15:27:52 [scrapy.extensions.telnet] INFO: Telnet console listening on 127.0.0.1:6023
+2024-06-05 15:30:09 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2024-06-05 15:30:10 [scrapy.downloadermiddlewares.retry] DEBUG: Retrying <GET https://fbref.com/en/comps/9/schedule/Premier-League-Scores-and-Fixtures> (failed 1 times): 403 Forbidden
+2024-06-05 15:32:31 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2024-06-05 15:32:31 [scrapy.downloadermiddlewares.retry] DEBUG: Retrying <GET https://fbref.com/en/comps/9/schedule/Premier-League-Scores-and-Fixtures> (failed 2 times): 403 Forbidden
+2024-06-05 15:34:29 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2024-06-05 15:34:29 [scrapy.downloadermiddlewares.retry] DEBUG: Retrying <GET https://fbref.com/en/comps/9/schedule/Premier-League-Scores-and-Fixtures> (failed 3 times): 403 Forbidden
+2024-06-05 15:37:01 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2024-06-05 15:37:03 [scrapy.downloadermiddlewares.retry] DEBUG: Retrying <GET https://fbref.com/en/comps/9/schedule/Premier-League-Scores-and-Fixtures> (failed 4 times): 403 Forbidden
+2024-06-05 15:38:47 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2024-06-05 15:38:47 [scrapy.downloadermiddlewares.retry] DEBUG: Retrying <GET https://fbref.com/en/comps/9/schedule/Premier-League-Scores-and-Fixtures> (failed 5 times): 403 Forbidden
+2024-06-05 15:41:26 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2024-06-05 15:41:27 [scrapy.downloadermiddlewares.retry] DEBUG: Retrying <GET https://fbref.com/en/comps/9/schedule/Premier-League-Scores-and-Fixtures> (failed 6 times): 403 Forbidden
+2024-06-05 15:43:27 [scrapy.crawler] INFO: Received SIGINT, shutting down gracefully. Send again to force 
+2024-06-05 15:43:28 [scrapy.crawler] INFO: Received SIGINT twice, forcing unclean shutdown
+2024-06-05 15:43:31 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2024-06-05 15:43:31 [scrapy.core.engine] INFO: Closing spider (shutdown)

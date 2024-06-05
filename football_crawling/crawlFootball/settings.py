@@ -6,7 +6,9 @@
 #     https://docs.scrapy.org/en/latest/topics/settings.html
 #     https://docs.scrapy.org/en/latest/topics/downloader-middleware.html
 #     https://docs.scrapy.org/en/latest/topics/spider-middleware.html
-
+GCS_BUCKET_NAME = 'football-data-etl'
+GCS_SERVICE_ACCOUNT_KEY = '../key.json'
+GCS_FOLDER_NAME = 'football-crawl-data'
 BOT_NAME = "crawlFootball"
 
 SPIDER_MODULES = ["crawlFootball.spiders"]
