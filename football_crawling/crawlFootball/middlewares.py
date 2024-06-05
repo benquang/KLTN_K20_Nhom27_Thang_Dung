@@ -9,6 +9,8 @@ from scrapy import signals
 from itemadapter import is_item, ItemAdapter
 from scrapy.downloadermiddlewares.retry import RetryMiddleware
 from scrapy.utils.response import response_status_message
+import time
+import random
 
 class CrawlfootballSpiderMiddleware:
     # Not all methods need to be defined. If a method is not defined,
@@ -239,3 +241,19 @@ class MyProxyMiddleware:
         host = 'http://{endpoint}:{port}'.format(endpoint=self.endpoint, port=self.port)
         request.meta['proxy'] = host
         request.headers['Proxy-Authorization'] = basic_authentication
+
+class RandomDelayMiddleware:
+    def __init__(self, min_delay, max_delay):
+        self.min_delay = min_delay
+        self.max_delay = max_delay
+
+    @classmethod
+    def from_crawler(cls, crawler):
+        settings = crawler.settings
+        min_delay = settings.getfloat('RANDOM_DELAY_MIN', 160)
+        max_delay = settings.getfloat('RANDOM_DELAY_MAX', 100)
+        return cls(min_delay, max_delay)
+
+    def process_request(self, request, spider):
+        delay = random.uniform(self.min_delay, self.max_delay)
+        time.sleep(delay)

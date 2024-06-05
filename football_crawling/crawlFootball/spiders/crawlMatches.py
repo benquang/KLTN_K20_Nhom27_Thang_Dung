@@ -17,21 +17,17 @@ class CrawlmatchSpider(scrapy.Spider):
     season = 2023
     numOfSeason = 6
     custom_settings = {
-        # 'FEEDS':{
-        #     'matches.csv':{'format':'csv','overwrite':True}
-        #     },
         'DOWNLOADER_MIDDLEWARES':{
-            # "crawlFootball.middlewares.ScrapeOpsFakeUserAgentMiddleWare":100,
-            # 'crawlFootball.middlewares.ScrapeOpsFakeBrowserHeadersMiddleware': 200,
-            'crawlFootball.middlewares.MyProxyMiddleware': 300, 
+            'crawlFootball.middlewares.RandomDelayMiddleware':100,
+            # 'crawlFootball.middlewares.MyProxyMiddleware': 300, 
             'scrapy.downloadermiddlewares.httpproxy.HttpProxyMiddleware': 400, 
+
         },
         'LOG_STDOUT' : {True},
         "LOG_FILE" :'./logs/crawlMatches_log.txt',
         'ITEM_PIPELINES':{
             "crawlFootball.pipelines.MultiCSVItemPipeline": 300,
         },
-        'DOWNLOAD_DELAY' : 2,
         'CONCURRENT_REQUESTS' : 1,
         'RETRY_HTTP_CODES' : [429,403],
         'RETRY_TIMES' : 50
