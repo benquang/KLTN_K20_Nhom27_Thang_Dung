@@ -1,0 +1,69 @@
+Skipping install of 'worldfootballR' from a github remote, the SHA1 (703904a3) has not changed since last install.
+  Use `force = TRUE` to force installation
+
+Attaching package: ‘dplyr’
+
+The following objects are masked from ‘package:stats’:
+
+    filter, lag
+
+The following objects are masked from ‘package:base’:
+
+    intersect, setdiff, setequal, union
+
+Lineups not available for https://fbref.com/en/matches/a846550e/Real-Sociedad-Almeria-May-23-2023-La-Liga
+Match Summary not available for https://fbref.com/en/matches/a846550e/Real-Sociedad-Almeria-May-23-2023-La-Liga
+https://fbref.com/en/matches/a846550e/Real-Sociedad-Almeria-May-23-2023-La-Liga is not available
+Stats data not available for https://fbref.com/en/matches/a846550e/Real-Sociedad-Almeria-May-23-2023-La-Liga
+Lineups not available for https://fbref.com/en/matches/e7ddd0e2/Sevilla-Real-Madrid-May-27-2023-La-Liga
+Match Summary not available for https://fbref.com/en/matches/e7ddd0e2/Sevilla-Real-Madrid-May-27-2023-La-Liga
+https://fbref.com/en/matches/e7ddd0e2/Sevilla-Real-Madrid-May-27-2023-La-Liga is not available
+Stats data not available for https://fbref.com/en/matches/e7ddd0e2/Sevilla-Real-Madrid-May-27-2023-La-Liga
+Lineups not available for https://fbref.com/en/matches/fe69c87b/Valencia-Real-Sociedad-February-25-2023-La-Liga
+Match Summary not available for https://fbref.com/en/matches/fe69c87b/Valencia-Real-Sociedad-February-25-2023-La-Liga
+https://fbref.com/en/matches/fe69c87b/Valencia-Real-Sociedad-February-25-2023-La-Liga is not available
+Stats data not available for https://fbref.com/en/matches/fe69c87b/Valencia-Real-Sociedad-February-25-2023-La-Liga
+Lineups not available for https://fbref.com/en/matches/5b7029e3/Celta-Vigo-Valladolid-February-26-2023-La-Liga
+Match Summary not available for https://fbref.com/en/matches/5b7029e3/Celta-Vigo-Valladolid-February-26-2023-La-Liga
+https://fbref.com/en/matches/5b7029e3/Celta-Vigo-Valladolid-February-26-2023-La-Liga is not available
+Stats data not available for https://fbref.com/en/matches/5b7029e3/Celta-Vigo-Valladolid-February-26-2023-La-Liga
+Error in `purrr::map()`:
+ℹ In index: 1.
+Caused by error in `read_html.response()`:
+! Forbidden (HTTP 403).
+Backtrace:
+     ▆
+  1. ├─global main()
+  2. │ └─global parse()
+  3. │   └─global parse_on_country()
+  4. │     └─global parse_on_season(country = country)
+  5. │       └─worldfootballR::fb_match_urls(...)
+  6. │         └─fixtures_url %>% purrr::map(get_each_seasons_urls) %>% ...
+  7. ├─base::unlist(.)
+  8. ├─purrr::map(., get_each_seasons_urls)
+  9. │ └─purrr:::map_("list", .x, .f, ..., .progress = .progress)
+ 10. │   ├─purrr:::with_indexed_errors(...)
+ 11. │   │ └─base::withCallingHandlers(...)
+ 12. │   ├─purrr:::call_with_cleanup(...)
+ 13. │   └─worldfootballR (local) .f(.x[[i]], ...)
+ 14. │     ├─... %>% unique()
+ 15. │     └─worldfootballR:::.load_page(fixture_url)
+ 16. │       ├─xml2::read_html(session)
+ 17. │       └─rvest:::read_html.rvest_session(session)
+ 18. │         ├─rvest:::env_cache(...)
+ 19. │         │ └─rlang::env_poke(env, nm, value)
+ 20. │         ├─xml2::read_html(x$response, ..., base_url = x$url)
+ 21. │         └─xml2:::read_html.response(x$response, ..., base_url = x$url)
+ 22. │           └─httr::stop_for_status(x)
+ 23. │             └─base::stop(http_condition(x, "error", task = task, call = call))
+ 24. ├─base::unique(.)
+ 25. ├─base::paste0(main_url, .)
+ 26. ├─rvest::html_attr(., "href")
+ 27. │ └─xml2::xml_attr(x, name, default = default)
+ 28. ├─rvest::html_nodes(., "td.left~ .left+ .left a")
+ 29. │ └─rvest::html_elements(...)
+ 30. └─purrr (local) `<fn>`(`<http_403>`)
+ 31.   └─cli::cli_abort(...)
+ 32.     └─rlang::abort(...)
+There were 23 warnings (use warnings() to see them)
+Execution halted
