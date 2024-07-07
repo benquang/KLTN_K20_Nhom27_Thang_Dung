@@ -1,0 +1,893 @@
+<app-tin-tuc></app-tin-tuc>
+
+<div class="xs:hidden xl:block">
+
+    <div nz-row class="pb-10">
+
+      <div id="section1" nz-col nzXl="24" class="pr-4"><p class="text-blue text-title4">Premier League</p></div>
+
+      <div nz-col nzXl="17" class="pr-4">
+
+        <div nz-row class="khungbxh">
+  
+            <div class="tieudebxh py-3 bg-cover bg-no-repeat" style="background-image: url('assets/img/logo/bg-bxh.JPG');">
+              <img src="assets/img/logo/Premier-League-Symbol.png" class="max-w-[50px]">
+              <div class="tenbxh">Bảng xếp hạng</div>
+            </div>
+    
+            <div nz-row class="tencotbxh py-3">
+              <div nz-col nzXl="8" class="pl-2 font-light">Thứ hạng
+              </div>
+              <div nz-col nzXl="2" class="font-light flex justify-center">Trận
+               </div>
+              <div nz-col nzXl="2" class="font-light flex justify-center">Thắng
+              </div>
+              <div nz-col nzXl="2" class="font-light flex justify-center">Hòa
+                </div>
+              <div nz-col nzXl="2" class="font-light flex justify-center">Bại
+              </div>
+              <div nz-col nzXl="2" class="font-light flex justify-center">BT
+              </div>
+              <div nz-col nzXl="2" class="pr-2 font-light flex justify-end">BB
+              </div>
+              <div nz-col nzXl="2" class="pr-2 font-light flex justify-end">+/-
+              </div>
+              <div nz-col nzXl="2" class="pr-2 font-light flex justify-end">Điểm
+              </div>
+            </div>
+    
+            <div *ngFor="let item of premier; let i = index" nz-row class="hangbxh py-3">
+              <div nz-col nzXl="2" class="stt flex justify-center pl-1">{{i+1}}
+              </div>
+              <div nz-col nzXl="6" class="pl-2 font-light text-metadata1">
+                <img [src]="returnImage(item.Team)" class="max-h-[18px]">
+                {{item.Team}}
+              </div>
+              <div nz-col nzXl="2" class="font-light flex justify-center">{{item.Tong_Tran}}
+                </div>
+                <div nz-col nzXl="2" class="font-light flex justify-center">{{item.Tong_Thang}}
+                </div>
+                <div nz-col nzXl="2" class="font-light flex justify-center">{{item.Tong_Hoa}}
+                </div>
+                <div nz-col nzXl="2" class="font-light flex justify-center">{{item.Tong_Bai}}
+                </div>
+                <div nz-col nzXl="2" class="font-light flex justify-center">{{item.Tong_BT}}
+                </div>
+                <div nz-col nzXl="2" class="pr-2 font-light flex justify-end">{{item.Tong_BB}}
+                </div>
+                <div nz-col nzXl="2" class="pr-2 font-light flex justify-end">{{item.Tong_HS}}
+                </div>
+                <div nz-col nzXl="2" class="pr-4 font-bold flex justify-end">{{item.Tong_Diem}}
+                </div>
+            </div>
+         
+    
+          </div>
+
+      </div>
+
+      <div nz-col nzXl="7" class="pl-4">
+
+        <div nz-row class="khungbxh">
+  
+          <div class="tieudebxh py-5">
+            <div class="tenbxh1">Vua phá lưới</div>
+          </div>
+
+        
+
+          <div *ngFor="let dataitem of premier1, let i = index" nz-row class="tencotbxh py-3">
+            <div nz-col nzXl="2" class="pl-2 font-light">{{i+1}}
+            </div>
+            <div nz-col nzXl="3" class="font-light flex justify-center">              
+                <img [src]="returnImage(dataitem.Team_Name)" class="max-w-[18px]">
+            </div>
+            <div nz-col nzXl="16" class="tenvpl font-light flex justify-center">
+              {{dataitem.Player_Name}}
+            </div>
+            <div nz-col nzXl="3" class="pr-2 font-bold flex justify-end">{{dataitem.Scores}}
+            </div>
+          </div>
+  
+        </div>
+
+      </div>
+
+  </div>
+
+  <div nz-row class="pb-10">
+    <div nz-col nzXl="24">
+
+      <img src="/assets/img/Top_Staticstics_Premier_League_2024-1.png" 
+      class="max-w-[1105px]">
+
+
+    </div>
+  </div>
+
+  <!--Serie A-->
+  <div nz-row class="pb-10">
+
+    <div id="section2" nz-col nzXl="24" class="pr-4"><p class="text-blue text-title4">Serie A</p></div>
+
+    <div nz-col nzXl="17" class="pr-4">
+
+      <div nz-row class="khungbxh">
+
+          <div class="tieudebxh py-3 bg-cover bg-no-repeat" style="background-image: url('assets/img/logo/bg-bxh.JPG');">
+            <img src="assets/img/logo/seria_symbol.png" class="max-w-[50px]">
+            <div class="tenbxh pl-3">Bảng xếp hạng</div>
+          </div>
+  
+          <div nz-row class="tencotbxh py-3">
+            <div nz-col nzXl="8" class="pl-2 font-light">Thứ hạng
+            </div>
+            <div nz-col nzXl="2" class="font-light flex justify-center">Trận
+             </div>
+            <div nz-col nzXl="2" class="font-light flex justify-center">Thắng
+            </div>
+            <div nz-col nzXl="2" class="font-light flex justify-center">Hòa
+              </div>
+            <div nz-col nzXl="2" class="font-light flex justify-center">Bại
+            </div>
+            <div nz-col nzXl="2" class="font-light flex justify-center">BT
+            </div>
+            <div nz-col nzXl="2" class="pr-2 font-light flex justify-end">BB
+            </div>
+            <div nz-col nzXl="2" class="pr-2 font-light flex justify-end">+/-
+            </div>
+            <div nz-col nzXl="2" class="pr-2 font-light flex justify-end">Điểm
+            </div>
+          </div>
+  
+          <div *ngFor="let item of serie; let i = index" nz-row class="hangbxh py-3">
+            <div nz-col nzXl="2" class="stt flex justify-center pl-1">{{i+1}}
+            </div>
+            <div nz-col nzXl="6" class="pl-2 font-light text-metadata1">
+              <img [src]="returnImage(item.Team)" class="max-h-[18px]">
+              {{item.Team}}
+            </div>
+            <div nz-col nzXl="2" class="font-light flex justify-center">{{item.Tong_Tran}}
+              </div>
+              <div nz-col nzXl="2" class="font-light flex justify-center">{{item.Tong_Thang}}
+              </div>
+              <div nz-col nzXl="2" class="font-light flex justify-center">{{item.Tong_Hoa}}
+              </div>
+              <div nz-col nzXl="2" class="font-light flex justify-center">{{item.Tong_Bai}}
+              </div>
+              <div nz-col nzXl="2" class="font-light flex justify-center">{{item.Tong_BT}}
+              </div>
+              <div nz-col nzXl="2" class="pr-2 font-light flex justify-end">{{item.Tong_BB}}
+              </div>
+              <div nz-col nzXl="2" class="pr-2 font-light flex justify-end">{{item.Tong_HS}}
+              </div>
+              <div nz-col nzXl="2" class="pr-4 font-bold flex justify-end">{{item.Tong_Diem}}
+              </div>
+          </div>
+       
+  
+        </div>
+
+    </div>
+
+    <div nz-col nzXl="7" class="pl-4">
+
+      <div nz-row class="khungbxh">
+
+        <div class="tieudebxh py-5">
+          <div class="tenbxh1">Vua phá lưới</div>
+        </div>
+
+      
+
+        <div *ngFor="let dataitem of serie1, let i = index" nz-row class="tencotbxh py-3">
+          <div nz-col nzXl="2" class="pl-2 font-light">{{i+1}}
+          </div>
+          <div nz-col nzXl="3" class="font-light flex justify-center">              
+              <img [src]="returnImage(dataitem.Team_Name)" class="max-w-[18px]">
+          </div>
+          <div nz-col nzXl="16" class="tenvpl font-light flex justify-center">
+            {{dataitem.Player_Name}}
+          </div>
+          <div nz-col nzXl="3" class="pr-2 font-bold flex justify-end">{{dataitem.Scores}}
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+
+</div>
+
+<div nz-row class="pb-10">
+  <div nz-col nzXl="24">
+    <img src="/assets/img/Top_Staticstics_Serie_A_2024-1.png" 
+    class="max-w-[1105px]">
+  </div>
+</div>
+
+  <!--La Liga-->
+  <div nz-row class="pb-10">
+
+    <div id="section3" nz-col nzXl="24" class="pr-4"><p class="text-blue text-title4">La Liga</p></div>
+
+    <div nz-col nzXl="17" class="pr-4">
+
+      <div nz-row class="khungbxh">
+
+          <div class="tieudebxh py-3 bg-cover bg-no-repeat" style="background-image: url('assets/img/logo/bg-bxh.JPG');">
+            <img src="assets/img/laliga_symbol.png" class="max-w-[50px]">
+            <div class="tenbxh pl-3">Bảng xếp hạng</div>
+          </div>
+  
+          <div nz-row class="tencotbxh py-3">
+            <div nz-col nzXl="8" class="pl-2 font-light">Thứ hạng
+            </div>
+            <div nz-col nzXl="2" class="font-light flex justify-center">Trận
+             </div>
+            <div nz-col nzXl="2" class="font-light flex justify-center">Thắng
+            </div>
+            <div nz-col nzXl="2" class="font-light flex justify-center">Hòa
+              </div>
+            <div nz-col nzXl="2" class="font-light flex justify-center">Bại
+            </div>
+            <div nz-col nzXl="2" class="font-light flex justify-center">BT
+            </div>
+            <div nz-col nzXl="2" class="pr-2 font-light flex justify-end">BB
+            </div>
+            <div nz-col nzXl="2" class="pr-2 font-light flex justify-end">+/-
+            </div>
+            <div nz-col nzXl="2" class="pr-2 font-light flex justify-end">Điểm
+            </div>
+          </div>
+  
+          <div *ngFor="let item of laliga; let i = index" nz-row class="hangbxh py-3">
+            <div nz-col nzXl="2" class="stt flex justify-center pl-1">{{i+1}}
+            </div>
+            <div nz-col nzXl="6" class="pl-2 font-light text-metadata1">
+              <img [src]="returnImage(item.Team)" class="max-h-[18px]">
+              {{item.Team}}
+            </div>
+            <div nz-col nzXl="2" class="font-light flex justify-center">{{item.Tong_Tran}}
+              </div>
+              <div nz-col nzXl="2" class="font-light flex justify-center">{{item.Tong_Thang}}
+              </div>
+              <div nz-col nzXl="2" class="font-light flex justify-center">{{item.Tong_Hoa}}
+              </div>
+              <div nz-col nzXl="2" class="font-light flex justify-center">{{item.Tong_Bai}}
+              </div>
+              <div nz-col nzXl="2" class="font-light flex justify-center">{{item.Tong_BT}}
+              </div>
+              <div nz-col nzXl="2" class="pr-2 font-light flex justify-end">{{item.Tong_BB}}
+              </div>
+              <div nz-col nzXl="2" class="pr-2 font-light flex justify-end">{{item.Tong_HS}}
+              </div>
+              <div nz-col nzXl="2" class="pr-4 font-bold flex justify-end">{{item.Tong_Diem}}
+              </div>
+          </div>
+       
+  
+        </div>
+
+    </div>
+
+    <div nz-col nzXl="7" class="pl-4">
+
+      <div nz-row class="khungbxh">
+
+        <div class="tieudebxh py-5">
+          <div class="tenbxh1">Vua phá lưới</div>
+        </div>
+
+      
+
+        <div *ngFor="let dataitem of laliga1, let i = index" nz-row class="tencotbxh py-3">
+          <div nz-col nzXl="2" class="pl-2 font-light">{{i+1}}
+          </div>
+          <div nz-col nzXl="3" class="font-light flex justify-center">              
+              <img [src]="returnImage(dataitem.Team_Name)" class="max-w-[18px]">
+          </div>
+          <div nz-col nzXl="16" class="tenvpl font-light flex justify-center">
+            {{dataitem.Player_Name}}
+          </div>
+          <div nz-col nzXl="3" class="pr-2 font-bold flex justify-end">{{dataitem.Scores}}
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+
+</div>
+
+<div nz-row class="pb-10">
+  <div nz-col nzXl="24">
+    <img src="/assets/img/Top_Staticstics_La_Liga_2024-1.png" 
+    class="max-w-[1105px]">
+  </div>
+</div>
+
+  <!--Bundesliga-->
+  <div nz-row class="pb-10">
+
+    <div id="section4" nz-col nzXl="24" class="pr-4"><p class="text-blue text-title4">Bundesliga</p></div>
+
+    <div nz-col nzXl="17" class="pr-4">
+
+      <div nz-row class="khungbxh">
+
+          <div class="tieudebxh py-3 bg-cover bg-no-repeat" style="background-image: url('assets/img/logo/bg-bxh.JPG');">
+            <img src="assets/img/logo/bundes_symbol.png" class="max-w-[50px]">
+            <div class="tenbxh pl-3">Bảng xếp hạng</div>
+          </div>
+  
+          <div nz-row class="tencotbxh py-3">
+            <div nz-col nzXl="8" class="pl-2 font-light">Thứ hạng
+            </div>
+            <div nz-col nzXl="2" class="font-light flex justify-center">Trận
+             </div>
+            <div nz-col nzXl="2" class="font-light flex justify-center">Thắng
+            </div>
+            <div nz-col nzXl="2" class="font-light flex justify-center">Hòa
+              </div>
+            <div nz-col nzXl="2" class="font-light flex justify-center">Bại
+            </div>
+            <div nz-col nzXl="2" class="font-light flex justify-center">BT
+            </div>
+            <div nz-col nzXl="2" class="pr-2 font-light flex justify-end">BB
+            </div>
+            <div nz-col nzXl="2" class="pr-2 font-light flex justify-end">+/-
+            </div>
+            <div nz-col nzXl="2" class="pr-2 font-light flex justify-end">Điểm
+            </div>
+          </div>
+  
+          <div *ngFor="let item of bundes; let i = index" nz-row class="hangbxh py-3">
+            <div nz-col nzXl="2" class="stt flex justify-center pl-1">{{i+1}}
+            </div>
+            <div nz-col nzXl="6" class="pl-2 font-light text-metadata1">
+              <img [src]="returnImage(item.Team)" class="max-h-[18px]">
+              {{item.Team}}
+            </div>
+            <div nz-col nzXl="2" class="font-light flex justify-center">{{item.Tong_Tran}}
+              </div>
+              <div nz-col nzXl="2" class="font-light flex justify-center">{{item.Tong_Thang}}
+              </div>
+              <div nz-col nzXl="2" class="font-light flex justify-center">{{item.Tong_Hoa}}
+              </div>
+              <div nz-col nzXl="2" class="font-light flex justify-center">{{item.Tong_Bai}}
+              </div>
+              <div nz-col nzXl="2" class="font-light flex justify-center">{{item.Tong_BT}}
+              </div>
+              <div nz-col nzXl="2" class="pr-2 font-light flex justify-end">{{item.Tong_BB}}
+              </div>
+              <div nz-col nzXl="2" class="pr-2 font-light flex justify-end">{{item.Tong_HS}}
+              </div>
+              <div nz-col nzXl="2" class="pr-4 font-bold flex justify-end">{{item.Tong_Diem}}
+              </div>
+          </div>
+       
+  
+        </div>
+
+    </div>
+
+    <div nz-col nzXl="7" class="pl-4">
+
+      <div nz-row class="khungbxh">
+
+        <div class="tieudebxh py-5">
+          <div class="tenbxh1">Vua phá lưới</div>
+        </div>
+
+      
+
+        <div *ngFor="let dataitem of bundes1, let i = index" nz-row class="tencotbxh py-3">
+          <div nz-col nzXl="2" class="pl-2 font-light">{{i+1}}
+          </div>
+          <div nz-col nzXl="3" class="font-light flex justify-center">              
+              <img [src]="returnImage(dataitem.Team_Name)" class="max-w-[18px]">
+          </div>
+          <div nz-col nzXl="16" class="tenvpl font-light flex justify-center">
+            {{dataitem.Player_Name}}
+          </div>
+          <div nz-col nzXl="3" class="pr-2 font-bold flex justify-end">{{dataitem.Scores}}
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+
+</div>
+
+<div nz-row class="pb-10">
+  <div nz-col nzXl="24">
+    <img src="/assets/img/Top_Staticstics_Bundesliga_2024-1.png" 
+    class="max-w-[1105px]">
+  </div>
+</div>
+
+  <!--Ligue 1-->
+  <div nz-row class="pb-10">
+
+    <div id="section5" nz-col nzXl="24" class="pr-4"><p class="text-blue text-title4">Ligue 1</p></div>
+
+    <div nz-col nzXl="17" class="pr-4">
+
+      <div nz-row class="khungbxh">
+
+          <div class="tieudebxh py-3 bg-cover bg-no-repeat" style="background-image: url('assets/img/logo/bg-bxh.JPG');">
+            <img src="assets/img/logo/ligue_symbol.png" class="max-w-[50px]">
+            <div class="tenbxh pl-3">Bảng xếp hạng</div>
+          </div>
+  
+          <div nz-row class="tencotbxh py-3">
+            <div nz-col nzXl="8" class="pl-2 font-light">Thứ hạng
+            </div>
+            <div nz-col nzXl="2" class="font-light flex justify-center">Trận
+             </div>
+            <div nz-col nzXl="2" class="font-light flex justify-center">Thắng
+            </div>
+            <div nz-col nzXl="2" class="font-light flex justify-center">Hòa
+              </div>
+            <div nz-col nzXl="2" class="font-light flex justify-center">Bại
+            </div>
+            <div nz-col nzXl="2" class="font-light flex justify-center">BT
+            </div>
+            <div nz-col nzXl="2" class="pr-2 font-light flex justify-end">BB
+            </div>
+            <div nz-col nzXl="2" class="pr-2 font-light flex justify-end">+/-
+            </div>
+            <div nz-col nzXl="2" class="pr-2 font-light flex justify-end">Điểm
+            </div>
+          </div>
+  
+          <div *ngFor="let item of ligue; let i = index" nz-row class="hangbxh py-3">
+            <div nz-col nzXl="2" class="stt flex justify-center pl-1">{{i+1}}
+            </div>
+            <div nz-col nzXl="6" class="pl-2 font-light text-metadata1">
+              <img [src]="returnImage(item.Team)" class="max-h-[18px]">
+              {{item.Team}}
+            </div>
+            <div nz-col nzXl="2" class="font-light flex justify-center">{{item.Tong_Tran}}
+              </div>
+              <div nz-col nzXl="2" class="font-light flex justify-center">{{item.Tong_Thang}}
+              </div>
+              <div nz-col nzXl="2" class="font-light flex justify-center">{{item.Tong_Hoa}}
+              </div>
+              <div nz-col nzXl="2" class="font-light flex justify-center">{{item.Tong_Bai}}
+              </div>
+              <div nz-col nzXl="2" class="font-light flex justify-center">{{item.Tong_BT}}
+              </div>
+              <div nz-col nzXl="2" class="pr-2 font-light flex justify-end">{{item.Tong_BB}}
+              </div>
+              <div nz-col nzXl="2" class="pr-2 font-light flex justify-end">{{item.Tong_HS}}
+              </div>
+              <div nz-col nzXl="2" class="pr-4 font-bold flex justify-end">{{item.Tong_Diem}}
+              </div>
+          </div>
+       
+  
+        </div>
+
+    </div>
+
+    <div nz-col nzXl="7" class="pl-4">
+
+      <div nz-row class="khungbxh">
+
+        <div class="tieudebxh py-5">
+          <div class="tenbxh1">Vua phá lưới</div>
+        </div>
+
+      
+
+        <div *ngFor="let dataitem of ligue1, let i = index" nz-row class="tencotbxh py-3">
+          <div nz-col nzXl="2" class="pl-2 font-light">{{i+1}}
+          </div>
+          <div nz-col nzXl="3" class="font-light flex justify-center">              
+              <img [src]="returnImage(dataitem.Team_Name)" class="max-w-[18px]">
+          </div>
+          <div nz-col nzXl="16" class="tenvpl font-light flex justify-center">
+            {{dataitem.Player_Name}}
+          </div>
+          <div nz-col nzXl="3" class="pr-2 font-bold flex justify-end">{{dataitem.Scores}}
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+
+</div>
+<div nz-row class="pb-10">
+  <div nz-col nzXl="24">
+    <img src="/assets/img/Top_Staticstics_Ligue_1_2024-1.png" 
+    class="max-w-[1105px]">
+</div>
+
+
+</div>
+</div>
+
+<!--mobile-->
+  <div class="xs:block xl:hidden">
+
+    <div nz-row class="pb-10">
+      <div nz-col nzXl="24" class="pr-4"><p class="text-blue text-title4">Premier League</p></div>
+
+      <div nz-col nzXs="24" class="table-container pb-5">
+
+        <div nz-row class="khungbxh">
+  
+          <div class="tieudebxh py-3" style="background-image: url('assets/img/logo/bg-bxh.JPG');">
+            <img src="assets/img/logo/Premier-League-Symbol.png" class="max-w-[50px]">
+            <div class="tenbxh">Bảng xếp hạng</div>
+          </div>
+  
+          <div nz-row class="tencotbxh py-3">
+            <div nz-col nzXs="12" class="pl-2 font-light">Thứ hạng
+            </div>
+            <div nz-col nzXs="4" class="font-light flex justify-center">Trận
+            </div>
+            <div nz-col nzXs="4" class="font-light flex justify-center">+/-
+            </div>
+            <div nz-col nzXs="4" class="pr-2 font-light flex justify-end">Điểm
+            </div>
+          </div>
+  
+          <div *ngFor="let item of premier; let i = index" nz-row class="hangbxh py-3">
+            <div nz-col nzXs="2" class="stt flex justify-center pl-1">{{i+1}}
+            </div>
+            <div nz-col nzXs="10" class="pl-2 font-light text-metadata1">
+              <img [src]="returnImage(item.Team)" class="max-w-[18px]">
+              {{item.Team}}
+            </div>
+            <div nz-col nzXs="4" class="font-light flex justify-center">{{item.Tong_Tran}}
+            </div>
+            <div nz-col nzXs="4" class="font-light flex justify-center">{{item.Tong_HS}}
+            </div>
+            <div nz-col nzXs="4" class="font-bold flex justify-center">{{item.Tong_Diem}}
+            </div>
+          </div>
+  
+
+        </div>
+
+      </div>
+
+      <div nz-col nzXs="24">
+  
+        <div nz-row class="khungbxh">
+  
+          <div class="tieudebxh py-5">
+            <div class="tenbxh1">Vua phá lưới</div>
+          </div>
+  
+          <div *ngFor="let dataitem of premier1, let i = index" nz-row class="tencotbxh py-3">
+            <div nz-col nzXs="2" class="pl-5 font-light">{{i+1}}
+            </div>
+            <div nz-col nzXs="3" class="font-light flex justify-center">              
+                <img [src]="returnImage(dataitem.Team_Name)" class="max-w-[18px]">
+            </div>
+            <div nz-col nzXs="16" class="tenvpl font-light flex justify-center">
+              {{dataitem.Player_Name}}
+            </div>
+            <div nz-col nzXs="3" class="pr-5 font-bold flex justify-end">{{dataitem.Scores}}
+            </div>
+          </div>
+
+  
+        </div>
+  
+      </div>
+
+      <div nz-col nzXs="24">
+
+        <img src="/assets/img/Top_Staticstics_Premier_League_2024_-_Mobile-1.png" 
+        class="max-w-[400px]">
+
+      </div>
+    </div>
+
+    <div nz-row class="pb-10">
+      <div nz-col nzXl="24" class="pr-4"><p class="text-blue text-title4">Serie A</p></div>
+
+      <div nz-col nzXs="24" class="table-container pb-5">
+
+        <div nz-row class="khungbxh">
+  
+          <div class="tieudebxh py-3" style="background-image: url('assets/img/logo/bg-bxh.JPG');">
+            <img src="assets/img/logo/seria_symbol.png" class="max-w-[50px]">
+            <div class="tenbxh">Bảng xếp hạng</div>
+          </div>
+  
+          <div nz-row class="tencotbxh py-3">
+            <div nz-col nzXs="12" class="pl-2 font-light">Thứ hạng
+            </div>
+            <div nz-col nzXs="4" class="font-light flex justify-center">Trận
+            </div>
+            <div nz-col nzXs="4" class="font-light flex justify-center">+/-
+            </div>
+            <div nz-col nzXs="4" class="pr-2 font-light flex justify-end">Điểm
+            </div>
+          </div>
+  
+          <div *ngFor="let item of serie; let i = index" nz-row class="hangbxh py-3">
+            <div nz-col nzXs="2" class="stt flex justify-center pl-1">{{i+1}}
+            </div>
+            <div nz-col nzXs="10" class="pl-2 font-light text-metadata1">
+              <img [src]="returnImage(item.Team)" class="max-w-[18px]">
+              {{item.Team}}
+            </div>
+            <div nz-col nzXs="4" class="font-light flex justify-center">{{item.Tong_Tran}}
+            </div>
+            <div nz-col nzXs="4" class="font-light flex justify-center">{{item.Tong_HS}}
+            </div>
+            <div nz-col nzXs="4" class="font-bold flex justify-center">{{item.Tong_Diem}}
+            </div>
+          </div>
+  
+
+        </div>
+
+      </div>
+
+      <div nz-col nzXs="24">
+  
+        <div nz-row class="khungbxh">
+  
+          <div class="tieudebxh py-5">
+            <div class="tenbxh1">Vua phá lưới</div>
+          </div>
+  
+          <div *ngFor="let dataitem of serie1, let i = index" nz-row class="tencotbxh py-3">
+            <div nz-col nzXs="2" class="pl-5 font-light">{{i+1}}
+            </div>
+            <div nz-col nzXs="3" class="font-light flex justify-center">              
+                <img [src]="returnImage(dataitem.Team_Name)" class="max-w-[18px]">
+            </div>
+            <div nz-col nzXs="16" class="tenvpl font-light flex justify-center">
+              {{dataitem.Player_Name}}
+            </div>
+            <div nz-col nzXs="3" class="pr-5 font-bold flex justify-end">{{dataitem.Scores}}
+            </div>
+          </div>
+
+  
+        </div>
+  
+      </div>
+
+      <div nz-col nzXs="24">
+        <img src="/assets/img/Top_Staticstics_Serie_A_2024_-_Mobile-1.png" 
+        class="max-w-[400px]">
+      </div>
+    </div>
+
+
+    <div nz-row class="pb-10">
+      <div nz-col nzXl="24" class="pr-4"><p class="text-blue text-title4">La Liga</p></div>
+
+      <div nz-col nzXs="24" class="table-container pb-5">
+
+        <div nz-row class="khungbxh">
+  
+          <div class="tieudebxh py-3" style="background-image: url('assets/img/logo/bg-bxh.JPG');">
+            <img src="assets/img/logo/laliga_symbol.png" class="max-w-[50px]">
+            <div class="tenbxh">Bảng xếp hạng</div>
+          </div>
+  
+          <div nz-row class="tencotbxh py-3">
+            <div nz-col nzXs="12" class="pl-2 font-light">Thứ hạng
+            </div>
+            <div nz-col nzXs="4" class="font-light flex justify-center">Trận
+            </div>
+            <div nz-col nzXs="4" class="font-light flex justify-center">+/-
+            </div>
+            <div nz-col nzXs="4" class="pr-2 font-light flex justify-end">Điểm
+            </div>
+          </div>
+  
+          <div *ngFor="let item of laliga; let i = index" nz-row class="hangbxh py-3">
+            <div nz-col nzXs="2" class="stt flex justify-center pl-1">{{i+1}}
+            </div>
+            <div nz-col nzXs="10" class="pl-2 font-light text-metadata1">
+              <img [src]="returnImage(item.Team)" class="max-w-[18px]">
+              {{item.Team}}
+            </div>
+            <div nz-col nzXs="4" class="font-light flex justify-center">{{item.Tong_Tran}}
+            </div>
+            <div nz-col nzXs="4" class="font-light flex justify-center">{{item.Tong_HS}}
+            </div>
+            <div nz-col nzXs="4" class="font-bold flex justify-center">{{item.Tong_Diem}}
+            </div>
+          </div>
+  
+
+        </div>
+
+      </div>
+
+      <div nz-col nzXs="24">
+  
+        <div nz-row class="khungbxh">
+  
+          <div class="tieudebxh py-5">
+            <div class="tenbxh1">Vua phá lưới</div>
+          </div>
+  
+          <div *ngFor="let dataitem of laliga1, let i = index" nz-row class="tencotbxh py-3">
+            <div nz-col nzXs="2" class="pl-5 font-light">{{i+1}}
+            </div>
+            <div nz-col nzXs="3" class="font-light flex justify-center">              
+                <img [src]="returnImage(dataitem.Team_Name)" class="max-w-[18px]">
+            </div>
+            <div nz-col nzXs="16" class="tenvpl font-light flex justify-center">
+              {{dataitem.Player_Name}}
+            </div>
+            <div nz-col nzXs="3" class="pr-5 font-bold flex justify-end">{{dataitem.Scores}}
+            </div>
+          </div>
+
+  
+        </div>
+  
+      </div>
+
+      <div nz-col nzXs="24">
+        <img src="/assets/img/Top_Staticstics_La_Liga_2024_-_Mobile-1.png" 
+        class="max-w-[400px]"></div>
+    </div>
+
+
+    <div nz-row class="pb-10">
+      <div nz-col nzXl="24" class="pr-4"><p class="text-blue text-title4">Bundesliga</p></div>
+
+      <div nz-col nzXs="24" class="table-container pb-5">
+
+        <div nz-row class="khungbxh">
+  
+          <div class="tieudebxh py-3" style="background-image: url('assets/img/logo/bg-bxh.JPG');">
+            <img src="assets/img/logo/bundes_symbol.png" class="max-w-[50px]">
+            <div class="tenbxh">Bảng xếp hạng</div>
+          </div>
+  
+          <div nz-row class="tencotbxh py-3">
+            <div nz-col nzXs="12" class="pl-2 font-light">Thứ hạng
+            </div>
+            <div nz-col nzXs="4" class="font-light flex justify-center">Trận
+            </div>
+            <div nz-col nzXs="4" class="font-light flex justify-center">+/-
+            </div>
+            <div nz-col nzXs="4" class="pr-2 font-light flex justify-end">Điểm
+            </div>
+          </div>
+  
+          <div *ngFor="let item of bundes; let i = index" nz-row class="hangbxh py-3">
+            <div nz-col nzXs="2" class="stt flex justify-center pl-1">{{i+1}}
+            </div>
+            <div nz-col nzXs="10" class="pl-2 font-light text-metadata1">
+              <img [src]="returnImage(item.Team)" class="max-w-[18px]">
+              {{item.Team}}
+            </div>
+            <div nz-col nzXs="4" class="font-light flex justify-center">{{item.Tong_Tran}}
+            </div>
+            <div nz-col nzXs="4" class="font-light flex justify-center">{{item.Tong_HS}}
+            </div>
+            <div nz-col nzXs="4" class="font-bold flex justify-center">{{item.Tong_Diem}}
+            </div>
+          </div>
+  
+
+        </div>
+
+      </div>
+
+      <div nz-col nzXs="24">
+  
+        <div nz-row class="khungbxh">
+  
+          <div class="tieudebxh py-5">
+            <div class="tenbxh1">Vua phá lưới</div>
+          </div>
+  
+          <div *ngFor="let dataitem of bundes1, let i = index" nz-row class="tencotbxh py-3">
+            <div nz-col nzXs="2" class="pl-5 font-light">{{i+1}}
+            </div>
+            <div nz-col nzXs="3" class="font-light flex justify-center">              
+                <img [src]="returnImage(dataitem.Team_Name)" class="max-w-[18px]">
+            </div>
+            <div nz-col nzXs="16" class="tenvpl font-light flex justify-center">
+              {{dataitem.Player_Name}}
+            </div>
+            <div nz-col nzXs="3" class="pr-5 font-bold flex justify-end">{{dataitem.Scores}}
+            </div>
+          </div>
+
+  
+        </div>
+  
+      </div>
+
+      <div nz-col nzXs="24">
+        <img src="/assets/img/Top_Staticstics_Bundesliga_2024_-_Mobile-1.png" 
+        class="max-w-[400px]"></div>
+    </div>
+
+    <div nz-row class="pb-10">
+      <div nz-col nzXl="24" class="pr-4"><p class="text-blue text-title4">Ligue 1</p></div>
+
+      <div nz-col nzXs="24" class="table-container pb-5">
+
+        <div nz-row class="khungbxh">
+  
+          <div class="tieudebxh py-3" style="background-image: url('assets/img/logo/bg-bxh.JPG');">
+            <img src="assets/img/logo/ligue_symbol.png" class="max-w-[50px]">
+            <div class="tenbxh">Bảng xếp hạng</div>
+          </div>
+  
+          <div nz-row class="tencotbxh py-3">
+            <div nz-col nzXs="12" class="pl-2 font-light">Thứ hạng
+            </div>
+            <div nz-col nzXs="4" class="font-light flex justify-center">Trận
+            </div>
+            <div nz-col nzXs="4" class="font-light flex justify-center">+/-
+            </div>
+            <div nz-col nzXs="4" class="pr-2 font-light flex justify-end">Điểm
+            </div>
+          </div>
+  
+          <div *ngFor="let item of ligue; let i = index" nz-row class="hangbxh py-3">
+            <div nz-col nzXs="2" class="stt flex justify-center pl-1">{{i+1}}
+            </div>
+            <div nz-col nzXs="10" class="pl-2 font-light text-metadata1">
+              <img [src]="returnImage(item.Team)" class="max-w-[18px]">
+              {{item.Team}}
+            </div>
+            <div nz-col nzXs="4" class="font-light flex justify-center">{{item.Tong_Tran}}
+            </div>
+            <div nz-col nzXs="4" class="font-light flex justify-center">{{item.Tong_HS}}
+            </div>
+            <div nz-col nzXs="4" class="font-bold flex justify-center">{{item.Tong_Diem}}
+            </div>
+          </div>
+  
+
+        </div>
+
+      </div>
+
+      <div nz-col nzXs="24">
+  
+        <div nz-row class="khungbxh">
+  
+          <div class="tieudebxh py-5">
+            <div class="tenbxh1">Vua phá lưới</div>
+          </div>
+  
+          <div *ngFor="let dataitem of ligue1, let i = index" nz-row class="tencotbxh py-3">
+            <div nz-col nzXs="2" class="pl-5 font-light">{{i+1}}
+            </div>
+            <div nz-col nzXs="3" class="font-light flex justify-center">              
+                <img [src]="returnImage(dataitem.Team_Name)" class="max-w-[18px]">
+            </div>
+            <div nz-col nzXs="16" class="tenvpl font-light flex justify-center">
+              {{dataitem.Player_Name}}
+            </div>
+            <div nz-col nzXs="3" class="pr-5 font-bold flex justify-end">{{dataitem.Scores}}
+            </div>
+          </div>
+
+  
+        </div>
+  
+      </div>
+
+      <div nz-col nzXs="24">
+        <img src="/assets/img/Top_Staticstics_Ligue_1_2024_-_Mobile-1.png" 
+        class="max-w-[400px]"></div>
+    </div>
+
+  </div>

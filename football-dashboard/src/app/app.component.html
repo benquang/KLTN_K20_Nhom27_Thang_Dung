@@ -1,0 +1,99 @@
+<div class="w-full">
+
+  <!--Header-->
+  <div class="w-full mx-auto bg-white">
+    <div class="xs:hidden xl:block pl-[125px] pr-[125px]">
+
+      <div nz-row class="py-6">
+        <div nz-col nzXl="12">
+          <img src="assets/img/logo/sport6.JPG" class="max-h-[27px]">
+        </div>
+        <div nz-col nzXl="12">
+          <div nz-row>
+            <div nz-col nzXl="18">
+              <div class="float-right text-cus1 text-xamdam font-normal">Thứ 2</div>
+            </div>
+            <div nz-col nzXl="1" class="flex justify-center">
+              <div class="text-#e5e5e5 text-subtitle font-hairline">|</div>
+            </div>
+            <div nz-col nzXl="4">
+              <div class="text-cus1 text-xamdam font-normal">08/07/2024</div>
+            </div>
+            <div nz-col nzXl="1">
+              <div class="float-right text-subtitle font-hairline">|</div>
+            </div>
+          </div>
+          
+        </div>
+      </div>
+      
+    </div>
+    
+    <div class="xs:block xl:hidden pl-[15px] pr-[15px]">
+    
+      <div nz-row class="py-6">
+        <div nz-col nzXs="24" class="flex justify-center">
+          <img src="assets/img/logo/sport6.JPG" class="max-h-[17px]">
+        </div>
+      </div>
+      
+    </div>
+  </div>
+
+
+  <!--Nav-->
+  <div class="w-full mx-auto bg-white">
+    <div class="w-full">
+      <!--<app-navbar-home-slider></app-navbar-home-slider>-->
+    
+        <!-- Load an icon library to show a hamburger menu (bars) on small screens -->
+    
+      <div class="xs:hidden xl:block">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    
+        <div [ngClass]="{'topnav': true, 'responsive': isResponsive}" id="myTopnav">
+          <a routerLink="/" class="active">Home</a>
+          <a routerLink="/lich-thi-dau/Premier League">Lịch thi đấu</a>
+          <a routerLink="/ket-qua/Premier League/2024">Kết quả</a>
+          <a routerLink="/leagues">Leagues</a>
+          <a href="javascript:void(0);" class="icon" (click)="toggleResponsive()">
+            <i class="fa fa-bars"></i>
+          </a>
+        </div>
+      </div>
+    
+      <div class="xs:block xl:hidden">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    
+        <div [ngClass]="{'topnav1': true, 'responsive': isResponsive}" id="myTopnav">
+          <a routerLink="/" class="active">Home</a>
+          <a routerLink="/lich-thi-dau/Premier League">Lịch thi đấu</a>
+          <a routerLink="/ket-qua/Premier League/2024">Kết quả</a>
+          <a routerLink="/leagues">Leagues</a>
+          <a href="javascript:void(0);" class="icon" (click)="toggleResponsive()">
+            <i class="fa fa-bars"></i>
+          </a>
+        </div>
+      </div>
+    
+    
+    </div>
+  </div>
+
+  <!--Home-->
+  <div class="w-full max-w-[1440px] mx-auto px-5x3 lg:px-[125px]">
+    <router-outlet></router-outlet>
+  </div>
+
+
+  <!--Footer-->
+  <div class="w-full mx-auto bg-white">
+    <footer class="bg-[url('assets/img/bg/footer-bg.jpg')] bg-center bg-cover h-40">
+      <!--<div nz-row [nzGutter]="16" class="px-5x2 lg:px-[50px] pt-[150px] pb-[120px]">
+      </div> -->
+    </footer>
+  </div>
+
+  
+  
+</div>
